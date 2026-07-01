@@ -41,7 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # projeto
-# testan*/
-# testan*.*
-# teste*/
-# teste*.*
+testan*/
+testan*.*
+teste*/
+teste*.*
