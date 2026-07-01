@@ -1,6 +1,6 @@
 export default function Funcionamento() {
   return (
-    <div>
+    <div className="text-white">
       <h2 className="font-semibold text-2xl">Como funciona</h2>
       <p>#1 PDF com detalhes</p>
       <p>#2 Preenche um formulário</p>

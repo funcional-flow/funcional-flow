@@ -39,7 +39,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} ${carter.variable} ${bangers.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col font-carter">{children}</body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }
