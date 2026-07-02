@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Carter_One, Bangers, Alkatra, Boogaloo } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Carter_One,
+  Bangers,
+  Alkatra,
+  Boogaloo,
+  Iansui
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,26 +23,32 @@ const geistMono = Geist_Mono({
 const carter = Carter_One({
   variable: "--font-carter",
   subsets: ["latin"],
-  weight: "400"
-})
+  weight: "400",
+});
 
 const bangers = Bangers({
   variable: "--font-bangers",
   subsets: ["latin"],
-  weight: "400"
-})
+  weight: "400",
+});
 
 const alkatra = Alkatra({
   variable: "--font-alkatra",
   subsets: ["latin"],
-  weight: "400"
-})
+  weight: "400",
+});
 
 const boogaloo = Boogaloo({
   variable: "--font-boogaloo",
   subsets: ["latin"],
-  weight: "400"
-})
+  weight: "400",
+});
+
+const iansui = Iansui({
+  variable: "--font-iansui",
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -49,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} ${carter.variable} ${bangers.variable} ${alkatra.variable} ${boogaloo.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${carter.variable} ${bangers.variable} ${alkatra.variable} ${boogaloo.variable} ${iansui.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
