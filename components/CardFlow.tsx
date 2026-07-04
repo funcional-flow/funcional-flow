@@ -14,9 +14,11 @@ export default function CardFlow() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">Treino personalizado</h3>
+            <h3 className="text-xl font-semibold tracking-wide">
+              TREINO PERSONALIZADO
+            </h3>
 
-            <p className="mt-2 text-sm leading-6 text-zinc-600">
+            <p className="mt-2 tracking-wide leading-6 text-zinc-600">
               Treinos criados de acordo com o seu nível atual. Garantindo que
               cada exercício seja eficiente para você naquele momento.
             </p>

@@ -15,15 +15,15 @@ export default function Home() {
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
       <main className="container mx-auto flex flex-col gap-10 bg-yellow-50">
-        <section id="hero">
+        <section id="hero" className="font-teko">
           <ImageGradient imageUrl="/hero/2.jpg">
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative">
+        <section id="beneficios" className="relative font-teko">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative">
+        <section id="funcionamento" className="bg-purple4 relative font-teko">
           <Funcionamento />
         </section>
         <section id="diferenciais" className="relative">

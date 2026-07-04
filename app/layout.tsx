@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import {
   Geist,
-  Geist_Mono,
-  Carter_One,
-  Bangers,
-  Alkatra,
-  Boogaloo,
-  Iansui
+  Teko,
 } from "next/font/google";
 import "./globals.css";
 
@@ -15,37 +10,8 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const carter = Carter_One({
-  variable: "--font-carter",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const bangers = Bangers({
-  variable: "--font-bangers",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const alkatra = Alkatra({
-  variable: "--font-alkatra",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const boogaloo = Boogaloo({
-  variable: "--font-boogaloo",
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const iansui = Iansui({
-  variable: "--font-iansui",
+const teko = Teko({
+  variable: "--font-teko",
   subsets: ["latin"],
   weight: "400",
 });
@@ -63,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} ${carter.variable} ${bangers.variable} ${alkatra.variable} ${boogaloo.variable} ${iansui.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${teko.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
