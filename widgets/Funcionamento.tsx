@@ -4,8 +4,8 @@ import CardEtapas from "@/components/CardEtapas";
 export default function Funcionamento() {
   return (
     <ImageBackground imageUrl="/funcionamento/fundo2.jpeg">
-      <div className="px-5 py-15 text-white">
-        <h2 className="text-4xl text-center pb-2 font-bold">
+      <div className="mx-5 py-15 text-white">
+        <h2 className="titulo text-center pb-2">
           O CAMINHO PARA SUA TRANSFORMAÇÃO
         </h2>
         <p className="text-xl text-gray-300 text-center">

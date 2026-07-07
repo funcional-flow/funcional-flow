@@ -22,7 +22,7 @@ export default function CardFlow({ icone, titulo, descricao }: CardFlowProps) {
               <Image src={icone} alt="" width={64} height={64} className="w-16 h-16" />
             </div> */}
           </div>
-          <p className="mt-2 leading-6 text-lg text-zinc-600 pb-3">
+          <p className="mt-2 leading-6 text-zinc-600 pb-3">
             {descricao}
           </p>
         </div>

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
-      <main className="container mx-auto flex flex-col gap-10 font-teko tracking-wide">
+      <main className="container mx-auto flex flex-col gap-10 font-teko text-lg tracking-wide">
         <section id="hero" className="">
           <ImageGradient imageUrl="/hero/2.jpg">
             <Hero />
@@ -29,14 +29,14 @@ export default function Home() {
         <section id="diferenciais" className="relative">
           <Diferenciais />
         </section>
+        <section className="relative">
+          <Resultados />
+        </section>
         <section id="publico" className="relative">
           <Publico />
         </section>
         <section id="sobre" className="relative">
           <Sobre />
-        </section>
-        <section className="relative">
-          <Resultados />
         </section>
         <section className="relative">
           <Planos />
