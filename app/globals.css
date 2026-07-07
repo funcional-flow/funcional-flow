@@ -3,7 +3,6 @@
 @import "shadcn/tailwind.css";
 @import "./my-styles.css";
 
-
 @custom-variant dark (&:is(.dark *));
 
 /* Paleta 
@@ -71,7 +70,7 @@ oklch(0.4792 0.1019 305.18)
 }
 
 :root {
-  --background: oklch(1 0 0);
+  --background: oklch(0.9584 0.017 76.11);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -108,14 +107,16 @@ oklch(0.4792 0.1019 305.18)
   --yellow3: #daa80c;
   --purple1: oklch(0.4792 0.1019 305.18);
   --purple2: oklch(0.3158 0.1055 296.17);
-  --purple3: oklch(0.25 0.1 300);
-  --purple4: oklch(0.1458 0.0606 300.63); /* #0f031f - oklch (0.1458 0.0606 300.63) */
-  --hue-1:#ff0088;
-  --hue-2:#dd00ee;
-  --hue-3:#9911ff;
-  --hue-4:#0072ff;
-  --hue-5:#00c6ff;
-  --hue-6:#00ff99;
+  --purple3: oklch(0.25 0.1 300); /* #2e0a4d - oklch (0.25 0.1 300) */
+  --purple4: oklch(
+    0.1458 0.0606 300.63
+  ); /* #0f031f - oklch (0.1458 0.0606 300.63) */
+  --hue-1: #ff0088;
+  --hue-2: #dd00ee;
+  --hue-3: #9911ff;
+  --hue-4: #0072ff;
+  --hue-5: #00c6ff;
+  --hue-6: #00ff99;
 }
 
 .dark {

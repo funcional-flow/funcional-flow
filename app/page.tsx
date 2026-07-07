@@ -14,16 +14,16 @@ export default function Home() {
   return (
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
-      <main className="container mx-auto flex flex-col gap-10 bg-yellow-50">
-        <section id="hero" className="font-teko">
+      <main className="container mx-auto flex flex-col gap-10 font-teko tracking-wide">
+        <section id="hero" className="">
           <ImageGradient imageUrl="/hero/2.jpg">
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative font-teko">
+        <section id="beneficios" className="relative">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative font-teko">
+        <section id="funcionamento" className="bg-purple4 relative">
           <Funcionamento />
         </section>
         <section id="diferenciais" className="relative">

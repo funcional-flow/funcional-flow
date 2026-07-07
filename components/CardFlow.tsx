@@ -1,28 +1,30 @@
-import { Dumbbell } from "lucide-react";
+// import Image from "next/image";
 
-export default function CardFlow() {
+interface CardFlowProps {
+  icone: string | React.ReactNode;
+  titulo: string;
+  descricao: string;
+}
+
+export default function CardFlow({ icone, titulo, descricao }: CardFlowProps) {
   return (
-    <div className="group relative overflow-hidden rounded-2xl p-1">
+    <div className="group relative overflow-hidden rounded-2xl p-1 shadow-xl">
       <div className="bg-purple2 absolute inset-0" />
 
       <div className="shine-light absolute inset-0" />
 
-      <div className="relative rounded-2xl bg-white p-5">
-        <div className="flex gap-4 rounded-2xl">
-          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-yellow-100">
-            <Dumbbell className="h-10 w-10 text-yellow-600" />
+      <div className="relative rounded-2xl bg-white">
+        <div className="flex flex-col px-5">
+          <div className="flex justify-between items-center py-4">
+            <h3 className="text-xl font-semibold text-purple3">{titulo}</h3>
+            <div>{icone}</div>
+            {/* <div className="flex h-16 w-16">
+              <Image src={icone} alt="" width={64} height={64} className="w-16 h-16" />
+            </div> */}
           </div>
-
-          <div>
-            <h3 className="text-xl font-semibold tracking-wide">
-              TREINO PERSONALIZADO
-            </h3>
-
-            <p className="mt-2 tracking-wide leading-6 text-zinc-600">
-              Treinos criados de acordo com o seu nível atual. Garantindo que
-              cada exercício seja eficiente para você naquele momento.
-            </p>
-          </div>
+          <p className="mt-2 leading-6 text-lg text-zinc-600 pb-3">
+            {descricao}
+          </p>
         </div>
       </div>
     </div>

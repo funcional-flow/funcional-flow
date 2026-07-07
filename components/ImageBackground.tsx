@@ -17,7 +17,7 @@ export default function ImageBackground({
       className="relative min-h-[130svh] bg-cover bg-center md:min-h-svh lg:min-h-[110dvh]"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="absolute inset-0 bg-purple4/80" />
+      <div className="absolute inset-0 bg-purple4/70" />
 
       <div className="relative z-10">{children}</div>
       
