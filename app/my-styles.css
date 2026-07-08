@@ -101,30 +101,36 @@
 }
 
 @theme {
-  --animate-stripe-front: stripe-front 6s ease-in-out infinite;
-  --animate-stripe-back: stripe-back 6s ease-in-out infinite;
+  --animate-stripe-front: stripe-front 10s ease-in-out infinite;
+  --animate-stripe-back: stripe-back 10s ease-in-out infinite;
 
   @keyframes stripe-front {
-    0% {
+    0%, 100% {
       transform: translateX(0) translateY(0);
     }
-    50% {
-      transform: translateX(-5px) translateY(-4px);
-    }
-    100% {
-      transform: translateX(0) translateY(0);
-    }
-  }
-
-  @keyframes stripe-back {
-    0% {
-      transform: translateX(0) translateY(0);
+    25% {
+      transform: translateX(4px) translateY(0px);
     }
     50% {
       transform: translateX(4px) translateY(4px);
     }
-    100% {
+    75% {
+      transform: translateX(0px) translateY(4px);
+    }
+  }
+
+  @keyframes stripe-back {
+    0%, 100% {
       transform: translateX(0) translateY(0);
+    }
+    25% {
+      transform: translateX(-4px) translateY(0px);
+    }
+    50% {
+      transform: translateX(-4px) translateY(-4px);
+    }
+    75% {
+      transform: translateX(0px) translateY(-4px);
     }
   }
 }
