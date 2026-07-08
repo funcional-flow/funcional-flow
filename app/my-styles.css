@@ -99,3 +99,32 @@
   transform: translateX(-120%);
   animation: shine-dark 5s infinite;
 }
+
+@theme {
+  --animate-stripe-front: stripe-front 6s ease-in-out infinite;
+  --animate-stripe-back: stripe-back 6s ease-in-out infinite;
+
+  @keyframes stripe-front {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(-5px) translateY(-4px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+
+  @keyframes stripe-back {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: translateX(4px) translateY(5px);
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+    }
+  }
+}
