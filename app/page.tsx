@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
-      <main className="container mx-auto flex flex-col gap-10 font-teko text-lg tracking-wide">
+      <main className="container mx-auto flex flex-col gap-10">
         <section id="hero" className="">
           <ImageGradient imageUrl="/hero/2.jpg">
             <Hero />
@@ -32,7 +32,7 @@ export default function Home() {
         <section className="relative">
           <Resultados />
         </section>
-        <section id="publico" className="relative">
+        <section id="publico" className="relative bg-purple4 text-white">
           <Publico />
         </section>
         <section id="sobre" className="relative">

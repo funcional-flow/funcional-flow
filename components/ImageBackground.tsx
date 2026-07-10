@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 interface ImageBackgroundProps {
   imageUrl: string;
+  svh?: string;
   children: ReactNode;
 }
 
@@ -11,11 +12,12 @@ interface ImageBackgroundProps {
 export default function ImageBackground({
   imageUrl,
   children,
+  svh = "130"
 }: ImageBackgroundProps) {
   return (
     <div
-      className="relative min-h-[130svh] bg-cover bg-center md:min-h-svh lg:min-h-[110dvh]"
-      style={{ backgroundImage: `url(${imageUrl})` }}
+      className={`relative bg-cover bg-center md:min-h-svh lg:min-h-[110dvh]`}
+      style={{ backgroundImage: `url(${imageUrl})`, minHeight: svh + "svh" }}
     >
       <div className="absolute inset-0 bg-purple4/70" />
 

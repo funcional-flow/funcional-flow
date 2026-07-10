@@ -134,3 +134,16 @@
     }
   }
 }
+
+@theme {
+  --animate-icone-beneficios: icone-beneficios 5s ease-in-out infinite;
+
+  @keyframes icone-beneficios {
+    0%, 100% {
+      transform: translateX(0) translateY(0);
+    }
+    50% {
+      transform: scale(1.1) translateY(0px);
+    }
+  }
+}
