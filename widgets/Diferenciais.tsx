@@ -1,9 +1,23 @@
 import CardDif from "@/components/CardDif";
+import { DiaTextReveal } from "@/components/ui/dia-text-reveal";
 
 export default function Diferenciais() {
   return (
     <div className="mx-5">
-      <h2 className="titulo text-center">O QUE TORNA NOSSO TRABALHO DIFERENTE</h2>
+      <h2 className="titulo text-center">
+        O QUE TORNA NOSSO{" "}
+        <DiaTextReveal
+          repeat
+          repeatDelay={1.2}
+          colors={[
+            "oklch(0.8301 0.0904 79.25)",
+            "oklch(0.7659 0.1132 80.72)",
+            "oklch(0.4792 0.1019 305.18)",
+            "oklch(0.3158 0.1055 296.17)",
+          ]}
+          text={["TRABALHO DIFERENTE", "MÉTODO EFICAZ"]}
+        />
+      </h2>
       <div className="mt-10 flex flex-col gap-20">
         <CardDif
           titulo="ATENDIMENTO TOTALMENTE INDIVIDUAL"
