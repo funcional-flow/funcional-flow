@@ -1,6 +1,9 @@
 @layer components {
-  .titulo {
-    @apply text-4xl font-bold;
+  .titulo-lightmode {
+    @apply text-4xl font-bold text-purple3;
+  }
+  .titulo-darkmode {
+    @apply text-4xl font-bold text-white;
   }
 }
 

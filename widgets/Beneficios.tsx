@@ -5,7 +5,7 @@ import CardFlow from "../components/CardFlow";
 export default function Beneficios() {
   return (
     <div className="mx-5">
-      <h2 className="mb-4 text-4xl font-extrabold">BENEFÍCIOS</h2>
+      <h2 className="mb-4 titulo-lightmode text-center">BENEFÍCIOS</h2>
       <div className="flex flex-col gap-5">
         <CardFlow
           icone='treino_personalizado.png'
@@ -29,7 +29,6 @@ export default function Beneficios() {
         />
         <CardFlow
           icone='resultados_reais.png'
-        //   icone="/beneficios/resultados_reais.png"
           titulo="RESULTADOS REAIS"
           descricao="Um treinamento eficiente é aquele que você consegue sustentar. Por isso, ajustamos a frequência, duração e organização dos treinos para que você consiga evoluir sem comprometer suas responsabilidades do dia a dia."
         />

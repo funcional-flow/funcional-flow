@@ -4,7 +4,7 @@ import { DiaTextReveal } from "@/components/ui/dia-text-reveal";
 export default function Diferenciais() {
   return (
     <div className="mx-5">
-      <h2 className="titulo text-center">
+      <h2 className="titulo-lightmode text-center">
         O QUE TORNA NOSSO{" "}
         <DiaTextReveal
           repeat
