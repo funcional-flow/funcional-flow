@@ -6,13 +6,13 @@ import CardPublico from "@/components/CardPublico";
 export default function Publico() {
   return (
     <ImageBackground imageUrl="/fundo.jpeg" svh="100">
-      <LightRays
+      {/* <LightRays
         color="var(--purple3)"
         blur={36}
         speed={14}
         count={7}
         className="z-10 h-full w-full"
-      />
+      /> */}
       <div className="relative mx-10 flex flex-col py-15">
         <h2 className="titulo-darkmode text-yellow3 z-20 pb-10 text-center">
           Pra quem é a Mentoria?
@@ -33,7 +33,7 @@ export default function Publico() {
             }
           />
           <CardPublico
-            titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
+            titulo="PERFORMANCE SEM ATALHOS"
             descricao="Deseja melhorar sua performance física sem depender de métodos
             extremos."
             icone={
@@ -41,21 +41,21 @@ export default function Publico() {
             }
           />
           <CardPublico
-            titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
+            titulo="TREINAR COM PROPÓSITO"
             descricao="Quer treinar com propósito e entender o porquê de cada exercício."
             icone={
               <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
-            titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
+            titulo="RESULTADOS DURADOUROS"
             descricao="Procura resultados duradouros e sustentáveis."
             icone={
               <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
-            titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
+            titulo="QUALIDADE DE MOVIMENTO"
             descricao="Valoriza qualidade de movimento tanto quanto resultados estéticos."
             icone={
               <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
