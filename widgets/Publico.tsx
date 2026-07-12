@@ -1,6 +1,12 @@
 import ImageBackground from "@/components/ImageBackground";
-import { LightRays } from "@/components/ui/light-rays";
-import { Check, ClipboardCheck } from "lucide-react";
+import {
+  BicepsFlexed,
+  ClipboardCheck,
+  ChartNoAxesCombined,
+  Target,
+  Trophy,
+  Medal,
+} from "lucide-react";
 import CardPublico from "@/components/CardPublico";
 
 export default function Publico() {
@@ -29,56 +35,32 @@ export default function Publico() {
             titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
             descricao="Busca mais mobilidade, força, controle e condicionamento."
             icone={
-              <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
+              <BicepsFlexed className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
             titulo="PERFORMANCE SEM ATALHOS"
-            descricao="Deseja melhorar sua performance física sem depender de métodos
+            descricao="Melhorar sua performance física sem depender de métodos
             extremos."
             icone={
-              <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
+              <ChartNoAxesCombined className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
             titulo="TREINAR COM PROPÓSITO"
             descricao="Quer treinar com propósito e entender o porquê de cada exercício."
-            icone={
-              <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
-            }
+            icone={<Target className="h-10 w-10 shrink-0 text-purple-700" />}
           />
           <CardPublico
             titulo="RESULTADOS DURADOUROS"
             descricao="Procura resultados duradouros e sustentáveis."
-            icone={
-              <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
-            }
+            icone={<Trophy className="h-10 w-10 shrink-0 text-purple-700" />}
           />
           <CardPublico
             titulo="QUALIDADE DE MOVIMENTO"
             descricao="Valoriza qualidade de movimento tanto quanto resultados estéticos."
-            icone={
-              <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
-            }
+            icone={<Medal className="h-10 w-10 shrink-0 text-purple-700" />}
           />
-          {/* 
-          <p className="flex gap-2">
-            <Check className="h-7 w-7 shrink-0 text-green-500" />
-            Deseja melhorar sua performance física sem depender de métodos
-            extremos.
-          </p>
-          <p className="flex gap-2">
-            <Check className="h-7 w-7 shrink-0 text-green-500" />
-            Quer treinar com propósito e entender o porquê de cada exercício.
-          </p>
-          <p className="flex gap-2">
-            <Check className="h-7 w-7 shrink-0 text-green-500" />
-            Procura resultados duradouros e sustentáveis.
-          </p>
-          <p className="flex gap-2">
-            <Check className="h-7 w-7 shrink-0 text-green-500" />
-            Valoriza qualidade de movimento tanto quanto resultados estéticos.
-          </p> */}
         </div>
       </div>
     </ImageBackground>
