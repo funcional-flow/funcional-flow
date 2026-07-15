@@ -38,7 +38,7 @@ export default function Home() {
         <section id="sobre" className="relative">
           <Sobre />
         </section>
-        <section className="relative">
+        <section className="relative bg-purple4 text-white">
           <Planos />
         </section>
         <section className="relative">

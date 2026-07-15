@@ -67,6 +67,15 @@ oklch(0.4792 0.1019 305.18)
   --color-purple2: var(--purple2);
   --color-purple3: var(--purple3);
   --color-purple4: var(--purple4);
+  --animate-background-position-spin: background-position-spin 3000ms infinite alternate;
+  @keyframes background-position-spin {
+  0% {
+    background-position: top center;
+    }
+  100% {
+    background-position: bottom center;
+    }
+  }
 }
 
 :root {
