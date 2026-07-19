@@ -16,7 +16,7 @@ export default function Home() {
       <header className="container mx-auto">{/* <Navbar /> */}</header>
       <main className="container mx-auto flex flex-col gap-10">
         <section id="hero" className="">
-          <ImageGradient imageUrl="/hero/2.jpg">
+          <ImageGradient imageUrl="/hero/hero1.png">
             <Hero />
           </ImageGradient>
         </section>

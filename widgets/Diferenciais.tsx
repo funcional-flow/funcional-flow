@@ -15,7 +15,7 @@ export default function Diferenciais() {
             "oklch(0.4792 0.1019 305.18)",
             "oklch(0.3158 0.1055 296.17)",
           ]}
-          text={["TRABALHO DIFERENTE", "MÉTODO EFICAZ"]}
+          text={["RESULTADO REAL", "ACOMPANHAMENTO DIFERENTE", "MÉTODO ÚNICO"]}
         />
       </h2>
       <div className="mt-10 flex flex-col gap-20">
