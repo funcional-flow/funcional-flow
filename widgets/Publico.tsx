@@ -11,7 +11,7 @@ import CardPublico from "@/components/CardPublico";
 
 export default function Publico() {
   return (
-    <ImageBackground imageUrl="/fundo.jpeg" svh="100">
+    <ImageBackground imageUrl="/fundo.jpeg" svh="105">
       {/* <LightRays
         color="var(--purple3)"
         blur={36}
@@ -23,7 +23,7 @@ export default function Publico() {
         <h2 className="titulo-darkmode text-yellow3 z-20 pb-10 text-center">
           Pra quem é a Mentoria?
         </h2>
-        <div className="z-20 flex flex-col gap-4">
+        <div className="z-20 flex flex-col gap-7">
           <CardPublico
             titulo="CORPO ATLÉTICO E PREPARADO"
             descricao="Quer desenvolver um corpo atlético e preparado para qualquer desafio."

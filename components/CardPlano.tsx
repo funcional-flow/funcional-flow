@@ -27,10 +27,10 @@ export default function CardPlano({
 }: CardPlanoProps) {
   return (
     <Card className="text-purple4 p-6 text-base">
-      <h2 className="text-purple3 pb-5 text-center text-2xl font-bold text-shadow-lg">
+      <h2 className="text-purple3 pb-1 text-center text-2xl font-bold text-shadow-lg">
         {tipo_plano}
       </h2>
-      <p className="pb-5 text-sm tracking-wider text-gray-600 italic">
+      <p className="pb-1 text-sm tracking-wider text-gray-600 italic">
         {descricao_plano}
       </p>
       <div className="relative flex flex-col gap-2 pb-5">
@@ -40,11 +40,11 @@ export default function CardPlano({
               <AccordionTrigger>
                 <div className="flex gap-1">
                   <Check className="h-4 w-4 text-green-600" />
-                  <p className="">{feature.title}</p>
+                  <p className="text-base">{feature.title}</p>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="pl-5 text-xs italic">{feature.description}</div>
+                <div className="pl-5">{feature.description}</div>
               </AccordionContent>
             </AccordionItem>
           ))}

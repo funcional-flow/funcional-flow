@@ -44,18 +44,16 @@ export const listDataPlans: Plano[] = [
     descricao_plano:
       "Para quem quer um acompanhamento completo e mais próximo durante toda a evolução.",
     features: [
-      { title: "Treino personalizado mensal", description: "Planejamento mensal de treinos individualizado." },
+      { title: "Ajustes frequentes do treino", description: "Acompanhamento contínuo e ajustes frequentes do planejamento." },
       { title: "Progressão adaptada ao seu nível", description: "Estrutura de progressão semanal ajustada ao seu nível." },
       { title: "Orientação técnica dos exercícios", description: "Orientações técnicas para execução dos exercícios." },
       { title: "Ajustes conforme sua evolução", description: "Ajustes pontuais conforme evolução registrada." },
-      { title: "Suporte via WhatsApp para dúvidas gerais", description: "Suporte direto via WhatsApp para dúvidas gerais." },
+      { title: "Suporte diário via WhatsApp", description: "Suporte direto e constante via WhatsApp para ajustes e orientação diária." },
       { title: "Treinos adaptados à sua rotina e disponibilidade", description: "Organização do treino de acordo com sua rotina e disponibilidade." },
-      { title: "Ajustes frequentes do treino", description: "Acompanhamento contínuo e ajustes frequentes do planejamento." },
       { title: "Análise técnica em vídeo", description: "Análise técnica detalhada da execução dos exercícios em vídeo." },
       { title: "Correção de execução e postura", description: "Correção de postura, controle e intensidade em tempo real." },
       { title: "Check-ins periódicos", description: "Check-ins regulares de evolução e desempenho." },
       { title: "Reavaliação constante do plano", description: "Avaliação periódica do progresso e reestruturação do plano quando necessário." },
-      { title: "Suporte diário via WhatsApp", description: "Suporte direto e constante via WhatsApp para ajustes e orientação diária." },
     ],
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",

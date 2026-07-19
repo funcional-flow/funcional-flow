@@ -3,8 +3,8 @@ import CardEtapas from "@/components/CardEtapas";
 
 export default function Funcionamento() {
   return (
-    <ImageBackground imageUrl="/funcionamento/fundo2.jpeg">
-      <div className="mx-5 py-15 text-white">
+    <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="110">
+      <div className="flex flex-col mx-5 text-white">
         <h2 className="titulo-darkmode text-center pb-2">
           O CAMINHO PARA SUA TRANSFORMAÇÃO
         </h2>

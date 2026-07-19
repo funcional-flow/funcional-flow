@@ -16,7 +16,7 @@ export default function ImageBackground({
 }: ImageBackgroundProps) {
   return (
     <div
-      className={`relative bg-cover bg-center md:min-h-svh lg:min-h-[110dvh]`}
+      className={`relative bg-cover bg-center flex flex-col justify-center`}
       style={{ backgroundImage: `url(${imageUrl})`, minHeight: svh + "svh" }}
     >
       <div className="absolute inset-0 bg-purple4/70" />
