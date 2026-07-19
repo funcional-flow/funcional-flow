@@ -34,7 +34,7 @@ export default function CardPlano({
         {descricao_plano}
       </p>
       <div className="relative flex flex-col gap-2 pb-5">
-        <Accordion type="single" defaultValue="0" className="">
+        <Accordion className="">
           {features.map((feature, index) => (
             <AccordionItem key={index} value={index.toString()}>
               <AccordionTrigger>
