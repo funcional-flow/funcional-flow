@@ -6,7 +6,7 @@ import CardPlano from "@/components/CardPlano";
 export default function Planos() {
   return (
     <div className="mx-10 my-20">
-      <h2 className="font-semibold text-2xl pb-15">Planos</h2>
+      <h2 className="font-semibold text-2xl pb-15 text-center">Planos</h2>
       <div className="flex flex-col gap-10">
         {listDataPlans.map((plano) => (
           <CardPlano

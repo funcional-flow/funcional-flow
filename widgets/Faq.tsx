@@ -1,14 +1,24 @@
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { listaFaq } from "@/data/lista_faq";
+
 export default function Faq() {
   return (
     <div>
-      <h2 className="font-semibold text-2xl">FAQ</h2>
-      <p>Serve pra iniciantes?</p>
-      <p>Pode ser online ou somente presencial?</p>
-      <p>Quanto tempo demora para receber o treino?</p>
-      <p>Posso treinar em casa?</p>
-      <p>Como funciona o suporte?</p>
-      <p>Tem garantia?</p>
-      <p>Posso cancelar a qualquer momento?</p>
+      <h2 className="font-semibold text-2xl text-center mb-4">FAQ</h2>
+      <Accordion className="px-10">
+          {listaFaq.map((faq, index) => (
+            <AccordionItem key={index} value={index.toString()}>
+              <AccordionTrigger>
+                <div className="flex gap-1">
+                  <p className="text-base">{faq.pergunta}</p>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="pl-5">{faq.resposta}</div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
     </div>
   )
 }

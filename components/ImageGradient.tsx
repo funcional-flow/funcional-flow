@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 interface ImageGradientProps {
   imageUrl: string;
   children: ReactNode;
+  minHeight?: string;
 }
 
 // Image Url Example inside a folder: /folder/image.jpg
@@ -11,10 +12,11 @@ interface ImageGradientProps {
 export default function ImageGradient({
   imageUrl,
   children,
+  minHeight = "min-h-svh",
 }: ImageGradientProps) {
   return (
     <div
-      className="relative min-h-[130svh] bg-cover bg-center md:min-h-svh lg:min-h-[110dvh]"
+      className={`relative ${minHeight} bg-cover bg-center md:min-h-svh lg:min-h-[110dvh]`}
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <div className="absolute inset-0 bg-black/50" />

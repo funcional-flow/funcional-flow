@@ -16,7 +16,7 @@ export default function Home() {
       <header className="container mx-auto">{/* <Navbar /> */}</header>
       <main className="container mx-auto flex flex-col gap-10">
         <section id="hero" className="">
-          <ImageGradient imageUrl="/hero/hero1.png">
+          <ImageGradient imageUrl="/hero/hero1.png" minHeight="min-h-[100svh]">
             <Hero />
           </ImageGradient>
         </section>
@@ -29,7 +29,7 @@ export default function Home() {
         <section id="diferenciais" className="relative">
           <Diferenciais />
         </section>
-        <section className="relative">
+        <section id="resultados" className="relative">
           <Resultados />
         </section>
         <section id="publico" className="relative bg-purple4 text-white">
@@ -38,13 +38,13 @@ export default function Home() {
         <section id="sobre" className="relative">
           <Sobre />
         </section>
-        <section className="relative bg-purple4 text-white">
+        <section id="planos" className="relative bg-purple4 text-white">
           <Planos />
         </section>
-        <section className="relative">
+        <section id="faq" className="relative">
           <Faq />
         </section>
-        <section className="relative">
+        <section id="cta" className="relative bg-purple4 text-white py-10">
           <Cta />
         </section>
       </main>
