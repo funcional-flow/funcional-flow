@@ -1,5 +1,5 @@
 import { NumberTicker } from "@/components/ui/number-ticker";
-import { Award, Users, Dumbbell, Heart, Quote, ArrowRight } from "lucide-react";
+import { Award, Users, Dumbbell, Quote, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
@@ -8,23 +8,23 @@ const stats = [
   { icon: Dumbbell, startValue: 0, value: 12, label: "Certificações" },
 ];
 
-const values = [
-  {
-    icon: Dumbbell,
-    title: "Treino funcional",
-    desc: "Movimentos que respeitam seu corpo e constroem força real para o dia a dia.",
-  },
-  {
-    icon: Heart,
-    title: "Saúde primeiro",
-    desc: "Performance sem abrir mão do bem-estar e da qualidade de vida.",
-  },
-  {
-    icon: Users,
-    title: "Acompanhamento real",
-    desc: "Cada plano é único, ajustado ao seu ritmo, seus objetivos e sua rotina.",
-  },
-];
+// const values = [
+//   {
+//     icon: Dumbbell,
+//     title: "Treino funcional",
+//     desc: "Movimentos que respeitam seu corpo e constroem força real para o dia a dia.",
+//   },
+//   {
+//     icon: Heart,
+//     title: "Saúde primeiro",
+//     desc: "Performance sem abrir mão do bem-estar e da qualidade de vida.",
+//   },
+//   {
+//     icon: Users,
+//     title: "Acompanhamento real",
+//     desc: "Cada plano é único, ajustado ao seu ritmo, seus objetivos e sua rotina.",
+//   },
+// ];
 
 export default function Sobre() {
   return (
@@ -64,7 +64,7 @@ export default function Sobre() {
           {stats.map((s) => (
             <div
               key={s.label}
-              className="bg-purple2 rounded-2xl border border-white/10 p-3 text-center backdrop-blur-sm"
+              className="bg-purple2 rounded-2xl border border-white/10 p-3 text-center"
             >
               <s.icon className="text-yellow3 mx-auto mb-2 h-5 w-5" />
               <div className="text-xl leading-none font-bold text-white">
@@ -82,7 +82,7 @@ export default function Sobre() {
 
         {/* Bio */}
         <div className="mb-10">
-          <div className="relative rounded-2xl border border-black/10 bg-black/3 p-5 backdrop-blur-sm">
+          <div className="relative rounded-2xl border border-black/10 bg-black/3 p-5">
             <Quote className="text-yellow3 absolute -top-3 left-5 h-6 w-6 fill-[#0f031f]" />
             <p className="text-purple4 text-[15px] leading-relaxed">
               Me chamo Bruno Levien, sou Bacharel em Educação Física pela
