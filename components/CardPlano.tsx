@@ -28,6 +28,9 @@ export default function CardPlano({
   periodo,
   principal,
 }: CardPlanoProps) {
+  if (periodo === "mensal") {
+    periodo = "Mês";
+  }
   return (
     <Card className="text-purple4 relative bg-white/15 p-6 text-base outline">
       {principal && (
@@ -62,7 +65,7 @@ export default function CardPlano({
       {/* Preço */}
       <div className="relative flex flex-col gap-2">
         <p className="text-4xl font-bold text-white">
-          {preco} <span className="text-lg font-normal text-gray-300">{periodo}</span>
+          {preco} <span className="text-lg font-normal text-gray-300">/{periodo}</span>
         </p>
       </div>
 
@@ -98,7 +101,9 @@ export default function CardPlano({
         ))}
       </div>
       <a href="#/">
-        <Button className="w-full">Assinar</Button>
+        <Button className="w-full outline outline-white bg-purple4/25">
+          Assinar
+        </Button>
       </a>
     </Card>
   );

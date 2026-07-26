@@ -16,18 +16,21 @@ export default function ImageBackground({
   children,
   svh = "130",
   centralizado = true,
-  intensidade = "70"
+  intensidade = "70",
 }: ImageBackgroundProps) {
-  const intensidadeClass = `bg-purple4/${intensidade}`;
   return (
     <div
-      className={`relative bg-cover bg-center flex flex-col ${centralizado ? 'justify-center' : ''}`}
+      className={`relative flex flex-col bg-cover bg-center ${centralizado ? "justify-center" : ""}`}
       style={{ backgroundImage: `url(${imageUrl})`, minHeight: svh + "svh" }}
     >
-      <div className={`absolute inset-0 ${intensidadeClass}`} />
+      <div
+        className="absolute inset-0 bg-purple4"
+        style={{
+          opacity: Number(intensidade) / 100,
+        }}
+      />
 
       <div className="relative z-10">{children}</div>
-      
     </div>
   );
 }
