@@ -3,8 +3,8 @@ import CardEtapas from "@/components/CardEtapas";
 
 export default function Funcionamento() {
   return (
-    <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="110">
-      <div className="flex flex-col mx-5 text-white">
+    <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="100">
+      <div className="flex flex-col mx-5 text-white py-10">
         <h2 className="titulo-darkmode text-center pb-2">
           O CAMINHO PARA SUA TRANSFORMAÇÃO
         </h2>
@@ -24,13 +24,13 @@ export default function Funcionamento() {
           />
           <CardEtapas
             numero="#3"
-            titulo="PLANILHA GOOGLE SHEETS"
-            descricao="Liberamos seu acesso à planilha inteligente (Google Sheets), onde todo o seu progresso será registrado e monitorado."
+            titulo="APP FUNCIONAL FLOW"
+            descricao="Tenha acesso ao seu programa de treinamento em uma plataforma exclusiva, onde você acompanha seus treinos, registra sua evolução e mantém todo o processo organizado em um só lugar."
           />
           <CardEtapas
             numero="#4"
-            titulo="ACOMPANHAMENTO SEMANAL/MENSAL"
-            descricao="Realizamos check-ins semanais ou mensais para analisar seu progresso, ajustar cargas, mudanças de exercícios, tudo para garantir que você nunca pare de evoluir."
+            titulo="ACOMPANHAMENTO PERIÓDICO"
+            descricao="Realizamos check-ins periódicos para analisar seu progresso, ajustar cargas, mudanças de exercícios, tudo para garantir que você nunca pare de evoluir."
           />
         </div>
       </div>

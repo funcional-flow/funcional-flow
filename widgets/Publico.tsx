@@ -11,7 +11,7 @@ import CardPublico from "@/components/CardPublico";
 
 export default function Publico() {
   return (
-    <ImageBackground imageUrl="/fundo.jpeg" svh="105">
+    <ImageBackground imageUrl="/fundo.jpeg" svh="100">
       {/* <LightRays
         color="var(--purple3)"
         blur={36}
@@ -19,11 +19,11 @@ export default function Publico() {
         count={7}
         className="z-10 h-full w-full"
       /> */}
-      <div className="relative mx-10 flex flex-col py-15">
-        <h2 className="titulo-darkmode text-yellow3 z-20 pb-10 text-center">
-          Pra quem é a Mentoria?
+      <div className="relative flex flex-col py-10">
+        <h2 className="pb-7 mx-9 text-center text-4xl font-bold">
+          <span>PRA QUEM É A CONSULTORIA?</span>
         </h2>
-        <div className="z-20 flex flex-col gap-7">
+        <div className="z-20 flex flex-col gap-5 mx-10">
           <CardPublico
             titulo="CORPO ATLÉTICO E PREPARADO"
             descricao="Quer desenvolver um corpo atlético e preparado para qualquer desafio."

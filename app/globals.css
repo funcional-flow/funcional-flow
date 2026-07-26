@@ -78,7 +78,15 @@ oklch(0.4792 0.1019 305.18)
       background-position: bottom center;
     }
   }
-}
+  --animate-shine: shine var(--duration) infinite linear
+;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;}
+  50% {
+    background-position: 100% 100%;}
+  to {
+    background-position: 0% 0%;}}}
 
 :root {
   --background: oklch(0.9584 0.017 76.11);
