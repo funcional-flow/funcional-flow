@@ -1,4 +1,4 @@
-import { Check, X, Sparkles, Star, Crown } from "lucide-react";
+import { Check, X, Crown, Rocket, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Accordion,
@@ -31,11 +31,18 @@ export default function CardPlano({
   if (periodo === "mensal") {
     periodo = "Mês";
   }
+  let bordaCard = "outline";
+  if (principal === true) {
+    bordaCard = "outline outline-yellow3";
+  }
   return (
-    <Card className="text-purple4 relative bg-white/15 p-6 text-base outline">
+    <Card
+      className={`text-purple4 relative bg-white/15 p-6 text-base ${bordaCard}`}
+    >
       {principal && (
         <ShineBorder
           borderWidth={2}
+          duration={7}
           shineColor={[
             "var(--color-yellow3)",
             "var(--color-yellow2)",
@@ -52,7 +59,7 @@ export default function CardPlano({
               {principal ? (
                 <Crown className="text-yellow3 h-7 w-7" />
               ) : (
-                <Star className="h-7 w-7 text-white" />
+                <Rocket className="h-7 w-7 text-white" />
               )}
             </div>
           </h2>
@@ -65,7 +72,8 @@ export default function CardPlano({
       {/* Preço */}
       <div className="relative flex flex-col gap-2">
         <p className="text-4xl font-bold text-white">
-          {preco} <span className="text-lg font-normal text-gray-300">/{periodo}</span>
+          {preco}{" "}
+          <span className="text-lg font-normal text-gray-300">/{periodo}</span>
         </p>
       </div>
 
@@ -77,7 +85,7 @@ export default function CardPlano({
               <AccordionTrigger>
                 <div className="flex gap-1">
                   {principal ? (
-                    <Check className="h-5 w-5 text-yellow3" />
+                    <Check className="text-yellow3 bg-yellow3/20 mr-1 h-5 w-5 rounded-full stroke-5 p-1" />
                   ) : (
                     <Check className="h-4 w-4 text-green-600" />
                   )}
@@ -101,9 +109,25 @@ export default function CardPlano({
         ))}
       </div>
       <a href="#/">
-        <Button className="w-full outline outline-white bg-purple4/25">
-          Assinar
-        </Button>
+        {principal ? (
+          <Button className="bg-yellow3 w-full p-5">
+            <div className="flex items-center gap-1">
+              <span className="mt-1 text-xl text-shadow-lg">
+                ASSINAR O PREMIUM
+              </span>
+              <ArrowRight className="h-5 w-5" />
+            </div>
+          </Button>
+        ) : (
+          <Button className="bg-purple4 w-full p-5">
+            <div className="flex items-center gap-1">
+              <span className="mt-1 text-xl text-shadow-lg">
+                ASSINAR O STANDARD
+              </span>
+              <ArrowRight className="h-5 w-5" />
+            </div>
+          </Button>
+        )}
       </a>
     </Card>
   );

@@ -5,10 +5,11 @@ import ImageBackground from "@/components/ImageBackground";
 export default function Planos() {
   return (
     <ImageBackground
-      imageUrl="/planos/bg-planos.avif"
+      imageUrl="/planos/bg-planos2.jpg"
+    //   imageUrl="/planos/bg-planos.avif"
       centralizado={false}
       svh="100"
-      intensidade="90"
+      intensidade="95"
     >
       <div className="mx-10 my-10 flex flex-col gap-3">
         <div className="flex items-center justify-center gap-2 tracking-widest">
