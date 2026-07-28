@@ -87,8 +87,8 @@ export const listaPlanosTrimestral: Plano[] = [
   {
     id: "standard",
     tipo_plano: "PLANO STANDARD",
-    preco: "R$ 397,00",
-    duracao: "/ 3x de R$ 132,33",
+    preco: "R$ 132,33", // "R$ 397,00",
+    duracao: "/ por 3 meses",
     periodo: "trimestral",
     descricao_plano:
       "Para quem quer um acompanhamento estruturado para evoluir de forma consistente.",
@@ -115,8 +115,8 @@ export const listaPlanosTrimestral: Plano[] = [
   {
     id: "premium",
     tipo_plano: "PLANO PREMIUM",
-    preco: "R$ 547,00",
-    duracao: "/ 3x de R$ 182,33",
+    preco: "R$ 182,33", // "R$ 547,00",
+    duracao: "/ por 3 meses",
     periodo: "trimestral",
     descricao_plano:
       "Para quem quer um acompanhamento completo e mais próximo durante toda a evolução.",
@@ -142,8 +142,8 @@ export const listaPlanosSemestral: Plano[] = [
   {
     id: "standard",
     tipo_plano: "PLANO STANDARD",
-    preco: "R$ 717,00",
-    duracao: "/ 6x de R$ 119,50",
+    preco: "R$ 119,50", // "R$ 717,00",
+    duracao: "/ por 6 meses",
     periodo: "semestral",
     descricao_plano:
       "Para quem quer um acompanhamento estruturado para evoluir de forma consistente.",
@@ -170,8 +170,8 @@ export const listaPlanosSemestral: Plano[] = [
   {
     id: "premium",
     tipo_plano: "PLANO PREMIUM",
-    preco: "R$ 897,00",
-    duracao: "/ 6x de R$ 149,50",
+    preco: "R$ 149,50", // "R$ 897,00",
+    duracao: "/ por 6 meses",
     periodo: "semestral",
     descricao_plano:
       "Para quem quer um acompanhamento completo e mais próximo durante toda a evolução.",

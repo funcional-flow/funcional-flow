@@ -27,7 +27,6 @@ export default function CardPlano({
   duracao,
   features,
   noFeatures,
-  periodo,
   principal,
 }: CardPlanoProps) {
   let bordaCard = "outline";
@@ -50,11 +49,9 @@ export default function CardPlano({
         {principal && (
           <ShineBorder
             borderWidth={2}
-            duration={7}
+            duration={5}
             shineColor={[
               "var(--color-yellow3)",
-              "var(--color-yellow2)",
-              "var(--color-yellow-500)",
             ]}
           />
         )}
