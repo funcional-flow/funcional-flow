@@ -10,13 +10,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Planos() {
   return (
     <ImageBackground
-      imageUrl="/planos/bg-planos2.jpg"
-      //   imageUrl="/planos/bg-planos.avif"
+      imageUrl="/planos/bg-planos5.jpg"
       centralizado={false}
       svh="100"
       intensidade="95"
     >
-      <div className="mx-10 my-10 flex flex-col gap-3">
+      <div className="mx-10 flex flex-col gap-3 py-12">
         <div className="flex items-center justify-center gap-2 tracking-widest">
           <div className="bg-yellow3 h-px w-7" />
           <h3 className="text-yellow3 text-center text-lg font-semibold">
@@ -25,7 +24,8 @@ export default function Planos() {
           <div className="bg-yellow3 h-px w-7" />
         </div>
         <h1 className="text-center text-4xl">
-          ESCOLHA O SEU <span className="text-yellow3">PLANO</span>
+          ESCOLHA O SEU{" "}
+          <span className="text-yellow3 font-bold tracking-wider">PLANO</span>
         </h1>
         <p className="pb-6 text-center text-gray-300">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate

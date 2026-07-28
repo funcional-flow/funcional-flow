@@ -8,27 +8,9 @@ const stats = [
   { icon: Dumbbell, startValue: 0, value: 12, label: "Certificações" },
 ];
 
-// const values = [
-//   {
-//     icon: Dumbbell,
-//     title: "Treino funcional",
-//     desc: "Movimentos que respeitam seu corpo e constroem força real para o dia a dia.",
-//   },
-//   {
-//     icon: Heart,
-//     title: "Saúde primeiro",
-//     desc: "Performance sem abrir mão do bem-estar e da qualidade de vida.",
-//   },
-//   {
-//     icon: Users,
-//     title: "Acompanhamento real",
-//     desc: "Cada plano é único, ajustado ao seu ritmo, seus objetivos e sua rotina.",
-//   },
-// ];
-
 export default function Sobre() {
   return (
-    <section className="relative w-full overflow-hidden px-6 pt-5 pb-16">
+    <section className="relative w-full overflow-hidden px-6">
       <div className="relative z-10 mx-auto max-w-md">
         {/* Eyebrow */}
         <div className="mb-8 flex items-center gap-2">

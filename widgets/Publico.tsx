@@ -11,19 +11,18 @@ import CardPublico from "@/components/CardPublico";
 
 export default function Publico() {
   return (
-    <ImageBackground imageUrl="/fundo.jpeg" svh="100">
-      {/* <LightRays
-        color="var(--purple3)"
-        blur={36}
-        speed={14}
-        count={7}
-        className="z-10 h-full w-full"
-      /> */}
-      <div className="relative flex flex-col py-10">
-        <h2 className="pb-7 mx-9 text-center text-4xl font-bold">
+    <ImageBackground
+      imageUrl="/fundo.jpeg"
+      svh="50"
+      intensidade="80"
+      centralizado={false}
+    >
+      <div className="to-[#140922] pointer-events-none absolute bottom-0 h-100 w-full bg-linear-to-b from-transparent" />
+      <div className="relative flex flex-col py-12">
+        <h2 className="mx-9 pb-7 text-center text-4xl font-bold">
           <span>PRA QUEM É A CONSULTORIA?</span>
         </h2>
-        <div className="z-20 flex flex-col gap-5 mx-10">
+        <div className="z-20 mx-10 flex flex-col gap-5">
           <CardPublico
             titulo="CORPO ATLÉTICO E PREPARADO"
             descricao="Quer desenvolver um corpo atlético e preparado para qualquer desafio."

@@ -14,37 +14,40 @@ export default function Home() {
   return (
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
-      <main className="container mx-auto flex flex-col gap-10">
+      <main className="container mx-auto flex flex-col">
         <section id="hero" className="">
           <ImageGradient imageUrl="/hero/hero1.png" minHeight="min-h-[100svh]">
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative">
+        <section id="beneficios" className="relative py-12">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative">
+        <section id="funcionamento" className="bg-purple4 relative py-12">
           <Funcionamento />
         </section>
-        <section id="diferenciais" className="relative">
+        <section id="diferenciais" className="relative py-12">
           <Diferenciais />
         </section>
-        <section id="resultados" className="relative">
+        <section
+          id="resultados"
+          className="bg-purple4 relative py-12 text-white"
+        >
           <Resultados />
         </section>
-        <section id="publico" className="relative bg-purple4 text-white">
-          <Publico />
-        </section>
-        <section id="sobre" className="relative">
+        <section id="sobre" className="relative py-12">
           <Sobre />
         </section>
-        <section id="planos" className="relative bg-purple4 text-white">
+        <section id="publico" className="bg-purple4 relative text-white">
+          <Publico />
+        </section>
+        <section id="planos" className="bg-purple4 relative text-white">
           <Planos />
         </section>
-        <section id="faq" className="relative">
+        <section id="faq" className="relative py-12">
           <Faq />
         </section>
-        <section id="cta" className="relative bg-purple4 text-white py-10">
+        <section id="cta" className="bg-purple4 relative py-12 text-white">
           <Cta />
         </section>
       </main>
