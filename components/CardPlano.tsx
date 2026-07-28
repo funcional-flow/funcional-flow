@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Card } from "./ui/card";
 import { ShineBorder } from "./ui/shine-border";
+import { BorderBeam } from "./ui/border-beam";
 
 interface CardPlanoProps {
   tipo_plano: string;
@@ -36,25 +37,27 @@ export default function CardPlano({
   return (
     <div className="relative">
       {principal && (
-        <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-100">
-          <div className="relative bg-yellow3 gap-1 flex rounded-full px-3 items-center shadow-yellow3/30 shadow-md">
-            <Star className="h-3 w-3 fill-black text-black mb-1" />
-            <span className="text-base font-bold text-black">Melhor escolha</span>
+        <div className="absolute -top-3 left-1/2 z-100 -translate-x-1/2">
+          <div className="bg-yellow3 shadow-yellow3/30 relative flex items-center gap-1 rounded-full px-3 shadow-md">
+            <Star className="mb-1 h-3 w-3 fill-black text-black" />
+            <span className="text-base font-bold text-black">
+              Melhor escolha
+            </span>
           </div>
         </div>
       )}
       <Card
-        className={`text-purple4 relative bg-white/15 p-6 text-base ${bordaCard}`}
+        className={`text-purple4 relative bg-white/15 p-6 text-base ${bordaCard} ${principal ? "" : ""}`}
       >
-        {principal && (
-          <ShineBorder
-            borderWidth={2}
-            duration={5}
-            shineColor={[
-              "var(--color-yellow3)",
-            ]}
-          />
-        )}
+        {/* {principal && (
+            <ShineBorder
+              borderWidth={2}
+              duration={5}
+              shineColor={[
+                "var(--color-yellow3)",
+              ]}
+            />
+        )} */}
         {/* Header */}
         <div className="relative flex gap-5">
           <div className="flex flex-col gap-2">
@@ -78,9 +81,7 @@ export default function CardPlano({
         <div className="relative flex flex-col gap-2">
           <p className="text-4xl font-bold text-white">
             {preco}{" "}
-            <span className="text-lg font-normal text-gray-300">
-              {duracao}
-            </span>
+            <span className="text-lg font-normal text-gray-300">{duracao}</span>
           </p>
         </div>
 
@@ -138,6 +139,23 @@ export default function CardPlano({
             </Button>
           )}
         </a>
+        {principal && (
+          <>
+            <BorderBeam
+              duration={6}
+              size={300}
+              borderWidth={3}
+              className="via-yellow3 from-transparent to-transparent"
+            />
+            <BorderBeam
+              duration={6}
+              delay={3}
+              size={300}
+              borderWidth={3}
+              className="via-yellow3 from-transparent to-transparent"
+            />
+          </>
+        )}
       </Card>
     </div>
   );
