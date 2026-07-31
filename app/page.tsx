@@ -9,6 +9,7 @@ import Publico from "@/widgets/Publico";
 import Diferenciais from "@/widgets/Diferenciais";
 import Cta from "@/widgets/Cta";
 import ImageGradient from "@/components/ImageGradient";
+// import Niveis from "@/widgets/Niveis";
 
 export default function Home() {
   return (
@@ -20,13 +21,13 @@ export default function Home() {
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative py-12">
+        <section id="beneficios" className="relative px-6 py-12">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative py-12">
+        <section id="funcionamento" className="bg-purple4 relative py-12 px-6" >
           <Funcionamento />
         </section>
-        <section id="diferenciais" className="relative py-12">
+        <section id="diferenciais" className="relative px-6 py-12">
           <Diferenciais />
         </section>
         <section
@@ -35,11 +36,15 @@ export default function Home() {
         >
           <Resultados />
         </section>
-        <section id="sobre" className="relative py-12">
+        <section id="sobre" className="relative px-6 py-12">
           <Sobre />
         </section>
         <section id="publico" className="bg-purple4 relative text-white">
           <Publico />
+        </section>
+        <section id="niveis" className="relative px-6 py-12">
+          {/* <Niveis /> */}
+          Niveis
         </section>
         <section id="planos" className="bg-purple4 relative text-white">
           <Planos />
@@ -47,13 +52,24 @@ export default function Home() {
         <section id="faq" className="relative py-12">
           <Faq />
         </section>
-        <section id="cta" className="bg-purple4 relative py-12 text-white">
+        <section id="cta" className="bg-purple4 relative py-12 text-white px-6">
           <Cta />
         </section>
       </main>
       <footer className="container mx-auto">
         <div className="z-1000 text-3xl font-bold text-black">Footer</div>
         <p>Contatos</p>
+        <p>
+          Desenvolvido por{" "}
+          <a
+            href="https://portfolio-rm-one.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            Renato Monteiro
+          </a>
+        </p>
       </footer>
     </>
   );

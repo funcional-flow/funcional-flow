@@ -18,7 +18,7 @@ export default function Resultados() {
       {/* Eyebrow + heading */}
       <div className="mx-auto mb-8 max-w-md px-6">
         <div className="mb-4 flex items-center gap-2">
-          <span className="bg-yellow3 h-px w-8" />
+          <span className="bg-yellow3 h-px w-8 mb-1" />
           <span className="text-yellow3 text-xs font-semibold tracking-[0.25em] uppercase">
             Resultados
           </span>

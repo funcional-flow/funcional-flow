@@ -15,7 +15,7 @@ export default function Planos() {
       svh="100"
       intensidade="95"
     >
-      <div className="mx-10 flex flex-col gap-3 py-12">
+      <div className="mx-6 flex flex-col gap-3 py-12">
         <div className="flex items-center justify-center gap-2 tracking-widest">
           <div className="bg-yellow3 h-px w-7" />
           <h3 className="text-yellow3 text-center text-lg font-semibold">

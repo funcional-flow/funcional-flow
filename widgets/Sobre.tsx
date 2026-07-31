@@ -10,7 +10,7 @@ const stats = [
 
 export default function Sobre() {
   return (
-    <section className="relative w-full overflow-hidden px-6">
+    <section className="relative w-full overflow-hidden">
       <div className="relative z-10 mx-auto max-w-md">
         {/* Eyebrow */}
         <div className="mb-8 flex items-center gap-2">

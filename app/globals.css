@@ -8,7 +8,7 @@
 
 /* Paleta 
 Branco: 
-oklch(0.9584 0.017 76.11) #f8f0e5
+#f9f6ed - Antigo: oklch(0.9584 0.017 76.11) #f8f0e5
 Amarelo 1:
 oklch(0.7659 0.1132 80.72)
 Amarelo 2:
@@ -89,11 +89,11 @@ oklch(0.4792 0.1019 305.18)
     background-position: 0% 0%;}}}
 
 :root {
-  --background: oklch(0.9584 0.017 76.11);
+  --background: #f9f6ed; /*antigo: oklch(0.9584 0.017 76.11);*/
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: #f9f6ed;
   --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
+  --popover: #f9f6ed;
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);

@@ -4,7 +4,7 @@ import CardFlow from "../components/CardFlow";
 
 export default function Beneficios() {
   return (
-    <div className="mx-5">
+    <div className="">
       <h2 className="mb-4 titulo-lightmode text-center">BENEFÍCIOS</h2>
       <div className="flex flex-col gap-5">
         <CardFlow

@@ -68,7 +68,11 @@ export default function Hero() {
               key={level}
               className="bg-purple3/10 rounded-full border border-white/15 px-3.5 pt-1.5 pb-1 text-xs font-medium backdrop-blur-sm"
             >
-              {level}
+              <button
+                onClick={() => (window.location.href = "#niveis")}
+              >
+                {level}
+              </button>
             </span>
           ))}
         </div>
