@@ -9,7 +9,7 @@ import Publico from "@/widgets/Publico";
 import Diferenciais from "@/widgets/Diferenciais";
 import Cta from "@/widgets/Cta";
 import ImageGradient from "@/components/ImageGradient";
-// import Niveis from "@/widgets/Niveis";
+import Niveis from "@/widgets/Niveis";
 
 export default function Home() {
   return (
@@ -42,9 +42,8 @@ export default function Home() {
         <section id="publico" className="bg-purple4 relative text-white">
           <Publico />
         </section>
-        <section id="niveis" className="relative px-6 py-12">
-          {/* <Niveis /> */}
-          Niveis
+        <section id="niveis" className="relative py-12">
+          <Niveis />
         </section>
         <section id="planos" className="bg-purple4 relative text-white">
           <Planos />

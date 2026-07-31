@@ -89,7 +89,7 @@ oklch(0.4792 0.1019 305.18)
     background-position: 0% 0%;}}}
 
 :root {
-  --background: #f9f6ed; /*antigo: oklch(0.9584 0.017 76.11);*/
+  --background: #fef7ec; /*antigo: oklch(0.9584 0.017 76.11);*/
   --foreground: oklch(0.145 0 0);
   --card: #f9f6ed;
   --card-foreground: oklch(0.145 0 0);
