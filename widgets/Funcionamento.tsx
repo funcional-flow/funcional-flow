@@ -1,17 +1,24 @@
 import ImageBackground from "@/components/ImageBackground";
 import CardEtapas from "@/components/CardEtapas";
+import TituloSessao from "@/components/TituloSessao";
 
 export default function Funcionamento() {
   return (
     <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="100">
-      <div className="flex flex-col text-white">
-        <h2 className="titulo-darkmode text-center pb-2">
-          O CAMINHO PARA SUA TRANSFORMAÇÃO
+      <div className="flex flex-col text-white px-6 gap-3">
+        {/* Título principal */}
+        <TituloSessao escuro={false}>Funcionamento</TituloSessao>
+        {/* Subtítulo */}
+        <h2 className="text-4xl text-center">
+          O CAMINHO PARA SUA{" "}
+          <span className="text-yellow3 font-bold">TRANSFORMAÇÃO</span>
         </h2>
-        <p className="text-lg text-gray-300 text-center">
+        {/* Descrição */}
+        <p className="text-center text-lg text-gray-300 pb-5">
           ENTENDA COMO FUNCIONA O PROCESSO DA CONSULTORIA
         </p>
-        <div className="flex flex-col gap-10 pt-10">
+        {/* Etapas */}
+        <div className="flex flex-col gap-10">
           <CardEtapas
             numero="#1"
             titulo="PDF COM DETALHES"

@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Star, TrendingUp, ArrowRight, Quote } from "lucide-react";
 import { results } from "@/data/list_results";
 import Image from "next/image";
+import TituloSessao from "@/components/TituloSessao";
 
 export default function Resultados() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -16,14 +17,9 @@ export default function Resultados() {
   return (
     <div className="relative z-10">
       {/* Eyebrow + heading */}
-      <div className="mx-auto mb-8 max-w-md px-6">
-        <div className="mb-4 flex items-center gap-2">
-          <span className="bg-yellow3 h-px w-8 mb-1" />
-          <span className="text-yellow3 text-xs font-semibold tracking-[0.25em] uppercase">
-            Resultados
-          </span>
-        </div>
-        <h2 className="mb-3 text-3xl font-bold tracking-normal">
+      <div className="flex flex-col gap-3 mx-auto mb-8 max-w-md px-6">
+        <TituloSessao centralizado={false} escuro={false}>Resultados</TituloSessao>
+        <h2 className="text-3xl font-bold tracking-normal">
           HISTÓRIAS DE{" "}
           <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-transparent">
             TRANSFORMAÇÃO

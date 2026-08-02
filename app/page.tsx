@@ -24,7 +24,7 @@ export default function Home() {
         <section id="beneficios" className="relative px-6 py-12">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative py-12 px-6" >
+        <section id="funcionamento" className="bg-purple4 relative py-12" >
           <Funcionamento />
         </section>
         <section id="diferenciais" className="relative px-6 py-12">

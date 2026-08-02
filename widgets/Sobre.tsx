@@ -1,3 +1,4 @@
+import TituloSessao from "@/components/TituloSessao";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { Award, Users, Dumbbell, Quote, ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -13,12 +14,9 @@ export default function Sobre() {
     <section className="relative w-full overflow-hidden">
       <div className="relative z-10 mx-auto max-w-md">
         {/* Eyebrow */}
-        <div className="mb-8 flex items-center gap-2">
-          <span className="bg-purple3 h-px w-8" />
-          <span className="text-purple3 text-sm font-semibold tracking-[0.25em] uppercase">
-            Sobre mim
-          </span>
-        </div>
+        <TituloSessao centralizado={false} className="mb-6">
+          Sobre mim
+        </TituloSessao>
 
         {/* Portrait + name */}
         <div className="mb-10 flex flex-col items-center text-center">

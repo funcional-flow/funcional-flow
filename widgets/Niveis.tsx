@@ -5,17 +5,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import Image from "next/image";
+import TituloSessao from "@/components/TituloSessao";
 
 export default function Niveis() {
   return (
     <div className="relative flex flex-col">
       {/* Eyebrow */}
-      <div className="mb-1 flex items-center gap-2 px-6">
-        <span className="bg-purple3 h-px w-8" />
-        <span className="text-purple3 text-sm font-semibold tracking-widest uppercase">
-          DESCUBRA O SEU NÍVEL
+      <TituloSessao centralizado={false} className="pb-3 pl-6">
+        descubra seu nivel
+      </TituloSessao>
+      <h2 className="text-purple3 mx-9 pb-6 text-center text-3xl font-bold">
+        <span className="uppercase">
+          Basta deslizar o fluxograma para qualquer lado
         </span>
-      </div>
+      </h2>
       <div className="overflow-hidden">
         <Swiper
           spaceBetween={50}
@@ -27,7 +30,7 @@ export default function Niveis() {
           <SwiperSlide>
             <div className="relative">
               <Image
-                src="/niveis/iniciante.png"
+                src="/niveis/inici1.png"
                 alt="Iniciante"
                 width={864}
                 height={1821}
@@ -49,7 +52,7 @@ export default function Niveis() {
           <SwiperSlide>
             <div className="relative">
               <Image
-                src="/niveis/avancado.png"
+                src="/niveis/avanc1.png"
                 alt="Avançado"
                 width={864}
                 height={1821}

@@ -8,6 +8,7 @@ import {
   Medal,
 } from "lucide-react";
 import CardPublico from "@/components/CardPublico";
+import TituloSessao from "@/components/TituloSessao";
 
 export default function Publico() {
   return (
@@ -19,8 +20,9 @@ export default function Publico() {
     >
       <div className="to-[#140922] pointer-events-none absolute bottom-0 h-100 w-full bg-linear-to-b from-transparent" />
       <div className="relative flex flex-col py-12">
-        <h2 className="mx-9 pb-7 text-center text-4xl font-bold">
-          <span>PRA QUEM É A CONSULTORIA?</span>
+        <TituloSessao escuro={false} className="mb-3">pra quem é a consultoria</TituloSessao>
+        <h2 className="mx-9 pb-6 text-center text-3xl font-bold">
+          <span className="uppercase">do iniciante ao avançado, você pode desenvolver:</span>
         </h2>
         <div className="z-20 mx-10 flex flex-col gap-5">
           <CardPublico
