@@ -1,3 +1,7 @@
+import * as motion from "motion/react-client";
+import SectionDropIn from "./motion_custom/SectionDropIn";
+import MaskRevealUp from "./ui/smoothui/mask-reveal-up";
+
 interface CardDifProps {
   titulo: string;
   descricao: string;
@@ -6,11 +10,21 @@ interface CardDifProps {
 export default function CardDif({ titulo, descricao }: CardDifProps) {
   return (
     <div className="relative">
-      <div className="bg-purple2 absolute top-1 animate-stripe-back left-1 px-10 py-1" />
-      <div className="bg-yellow3 absolute top-0 animate-stripe-front left-0 px-10 py-1" />
-      <div className="relative flex flex-col top-8">
-        <h3 className="text-xl font-bold text-purple3">{titulo}</h3>
-        <p>{descricao}</p>
+      <SectionDropIn initialNum={80}>
+        <motion.div className="bg-purple2 animate-stripe-back absolute top-1 left-1 px-10 py-1" />
+        <motion.div className="bg-yellow3 animate-stripe-front absolute top-0 left-0 px-10 py-1" />
+      </SectionDropIn>
+      <div className="relative top-8 flex flex-col">
+        <h3 className="text-purple3 text-xl font-bold">
+          <MaskRevealUp triggerOnView={true} delay={500}>
+            {titulo}
+          </MaskRevealUp>
+        </h3>
+        <p>
+          <MaskRevealUp triggerOnView={true} delay={500}>
+            {descricao}
+          </MaskRevealUp>
+        </p>
       </div>
     </div>
   );

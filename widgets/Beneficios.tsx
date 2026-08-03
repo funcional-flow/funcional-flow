@@ -34,35 +34,35 @@ export default function Beneficios() {
         </BlurOutUp>
       </h1>
       <div className="flex flex-col gap-5">
-        <SectionDropIn>
+        <SectionDropIn initialNum={180}>
           <CardFlow
             icone="treino_personalizado.png"
             titulo="TREINO PERSONALIZADO"
             descricao="Treinos criados de acordo com o seu nível atual. Garantindo que cada exercício seja eficiente para você naquele momento."
           />
         </SectionDropIn>
-        <SectionDropIn>
+        <SectionDropIn initialNum={180}>
           <CardFlow
             icone="suporte_continuo.png"
             titulo="SUPORTE CONTÍNUO DIRETO"
             descricao="Você não caminha sozinho. Tenha suporte próximo da equipe  para manter a consistência, ajustar a rota quando necessário e continuar evoluindo semana após semana."
           />
         </SectionDropIn>
-        <SectionDropIn>
+        <SectionDropIn initialNum={180}>
           <CardFlow
             icone="ajustes_constantes.png"
             titulo="AJUSTES CONSTANTES"
             descricao="Seu corpo está em constante adaptação, e seu treinamento também. Cada ajuste é feito para desenvolver suas capacidades no momento certo e manter sua evolução contínua."
           />
         </SectionDropIn>
-        <SectionDropIn>
+        <SectionDropIn initialNum={180}>
           <CardFlow
             icone="feedback_tecnico.png"
             titulo="FEEDBACK TÉCNICO EXCLUSIVO"
             descricao="Análises individuais da sua prática para corrigir detalhes, aperfeiçoar a execução dos exercícios e desenvolver suas capacidades com mais eficiência e prevenir possívels lesões."
           />
         </SectionDropIn>
-        <SectionDropIn>
+        <SectionDropIn initialNum={180}>
           <CardFlow
             icone="resultados_reais.png"
             titulo="RESULTADOS REAIS"

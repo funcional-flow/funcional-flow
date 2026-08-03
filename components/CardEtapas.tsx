@@ -1,6 +1,5 @@
 import SectionTween from "./motion_custom/SectionTween";
 import * as motion from "motion/react-client";
-import BottomUpLetters from "./ui/smoothui/bottom-up-letters";
 import MaskRevealUp from "./ui/smoothui/mask-reveal-up";
 
 interface CardEtapasProps {
@@ -26,7 +25,7 @@ export default function CardEtapas({
       </SectionTween>
       <div className="flex flex-col pl-3">
         <h3 className="pb-2 text-xl font-bold">
-          <SectionTween horizontal={true} initialNum={-100} delay={0.5}>
+          <SectionTween horizontal={true} initialNum={-25} delay={0.75}>
             {titulo}
           </SectionTween>
         </h3>
