@@ -18,48 +18,51 @@ export default function Publico() {
       intensidade="80"
       centralizado={false}
     >
-      <div className="to-[#140922] pointer-events-none absolute bottom-0 h-100 w-full bg-linear-to-b from-transparent" />
+      <div className="pointer-events-none absolute bottom-0 h-100 w-full bg-linear-to-b from-transparent to-[#140922]" />
       <div className="relative flex flex-col py-12">
-        <TituloSessao escuro={false} className="mb-3">pra quem é a consultoria</TituloSessao>
+        <TituloSessao escuro={false} className="mb-3">
+          pra quem é a consultoria
+        </TituloSessao>
         <h2 className="mx-9 pb-6 text-center text-3xl font-bold">
-          <span className="uppercase">do iniciante ao avançado, você pode desenvolver:</span>
+          <span className="uppercase">
+            do iniciante ao avançado, você pode desenvolver:
+          </span>
         </h2>
         <div className="z-20 mx-10 flex flex-col gap-5">
           <CardPublico
             titulo="CORPO ATLÉTICO E PREPARADO"
-            descricao="Quer desenvolver um corpo atlético e preparado para qualquer desafio."
+            descricao="Desenvolva capacidades físicas que permitam correr, saltar, levantar peso, explorar novos desafios e se sentir capaz em qualquer situação."
             icone={
               <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
             titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
-            descricao="Busca mais mobilidade, força, controle e condicionamento."
+            descricao="Construa um corpo que se move com mais liberdade, gera força com eficiência e responde melhor às demandas do dia a dia."
             icone={
               <BicepsFlexed className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
             titulo="PERFORMANCE SEM ATALHOS"
-            descricao="Melhorar sua performance física sem depender de métodos
-            extremos."
+            descricao="Evolua através de um processo estruturado, focado em progresso consistente e desenvolvimento real de capacidades."
             icone={
               <ChartNoAxesCombined className="h-10 w-10 shrink-0 text-purple-700" />
             }
           />
           <CardPublico
             titulo="TREINAR COM PROPÓSITO"
-            descricao="Quer treinar com propósito e entender o porquê de cada exercício."
+            descricao="Entenda o objetivo de cada etapa do treinamento e saiba exatamente o que está desenvolvendo em cada sessão."
             icone={<Target className="h-10 w-10 shrink-0 text-purple-700" />}
           />
           <CardPublico
             titulo="RESULTADOS DURADOUROS"
-            descricao="Procura resultados duradouros e sustentáveis."
+            descricao="Construa hábitos, capacidades e resultados que continuam evoluindo no longo prazo."
             icone={<Trophy className="h-10 w-10 shrink-0 text-purple-700" />}
           />
           <CardPublico
             titulo="QUALIDADE DE MOVIMENTO"
-            descricao="Valoriza qualidade de movimento tanto quanto resultados estéticos."
+            descricao="Aprenda a controlar melhor o próprio corpo, aprimorar padrões de movimento e se movimentar com mais confiança."
             icone={<Medal className="h-10 w-10 shrink-0 text-purple-700" />}
           />
         </div>

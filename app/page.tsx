@@ -18,13 +18,13 @@ export default function Home() {
       <main className="container mx-auto flex flex-col">
         <section id="hero" className="">
           <ImageGradient imageUrl="/hero/hero1.png" minHeight="min-h-[100svh]">
-            <Hero />
+              <Hero />
           </ImageGradient>
         </section>
         <section id="beneficios" className="relative px-6 py-12">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative py-12" >
+        <section id="funcionamento" className="bg-purple4 relative py-12">
           <Funcionamento />
         </section>
         <section id="diferenciais" className="relative px-6 py-12">
@@ -51,7 +51,7 @@ export default function Home() {
         <section id="faq" className="relative py-12">
           <Faq />
         </section>
-        <section id="cta" className="bg-purple4 relative py-12 text-white px-6">
+        <section id="cta" className="bg-purple4 relative px-6 py-12 text-white">
           <Cta />
         </section>
       </main>
