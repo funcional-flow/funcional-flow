@@ -59,7 +59,7 @@ export default function Hero() {
         </h1>
 
         {/* Subheading */}
-        <SectionTween horizontal={true} initialNum={-100} delay={4.5}>
+        <SectionTween horizontal={true} initialNum={-100} delay={5}>
           <p className="mb-8 text-base text-white/75">
             Acompanhamento personalizado para desenvolver capacidades físicas e
             construir um corpo atlético, seja qual for o seu nível de
@@ -71,7 +71,7 @@ export default function Hero() {
         </SectionTween>
 
         {/* CTAs */}
-        <SpringCustom delayNum={5}>
+        <SpringCustom delayNum={5.5}>
           <div className="flex flex-col gap-3 pt-18">
             <button
               onClick={() => (window.location.href = "#planos")}
