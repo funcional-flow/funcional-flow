@@ -7,6 +7,7 @@ interface SectionDropInProps {
   delayNum?: number;
   cimaBaixo?: boolean;
   balanco?: number;
+  horizontal?: boolean;
 }
 
 export default function SectionDropIn({
@@ -15,14 +16,22 @@ export default function SectionDropIn({
   delayNum = 0,
   cimaBaixo = false,
   balanco = 22,
+  horizontal = false,
 }: SectionDropInProps) {
   if (cimaBaixo) {
     initialNum = -initialNum;
   }
+
+  let inicial;
+  if (horizontal) {
+    inicial = { opacity: 0, x: initialNum, y: 0 };
+  } else {
+    inicial = { opacity: 0, x: 0, y: initialNum };
+  }
   return (
     <motion.div
-      initial={{ opacity: 0, y: initialNum }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={inicial}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, amount: 0 }}
       transition={{
         duration: 0.8,

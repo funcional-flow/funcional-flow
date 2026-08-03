@@ -1,21 +1,33 @@
 import ImageBackground from "@/components/ImageBackground";
 import CardEtapas from "@/components/CardEtapas";
 import TituloSessao from "@/components/TituloSessao";
+import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
+import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
 
 export default function Funcionamento() {
   return (
     <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="100">
-      <div className="flex flex-col text-white px-6 gap-3">
+      <div className="flex flex-col gap-3 px-6 text-white">
         {/* Título principal */}
-        <TituloSessao escuro={false}>Funcionamento</TituloSessao>
+        <TituloSessao escuro={false}>
+          <BottomUpLetters triggerOnView={true}>Funcionamento</BottomUpLetters>
+        </TituloSessao>
         {/* Subtítulo */}
-        <h2 className="text-4xl text-center">
-          O CAMINHO PARA SUA{" "}
-          <span className="text-yellow3 font-bold">TRANSFORMAÇÃO</span>
+        <h2 className="text-center text-4xl">
+          <BlurOutUp delay={600} triggerOnView={true}>
+            O CAMINHO PARA SUA
+          </BlurOutUp>{" "}
+          <span className="text-yellow3 font-bold">
+            <BlurOutUp delay={600} triggerOnView={true}>
+              TRANSFORMAÇÃO
+            </BlurOutUp>
+          </span>
         </h2>
         {/* Descrição */}
-        <p className="text-center text-lg text-gray-300 pb-5">
-          ENTENDA COMO FUNCIONA O PROCESSO DA CONSULTORIA
+        <p className="pb-5 text-center text-lg text-gray-300">
+          <BlurOutUp delay={600} triggerOnView={true}>
+            ENTENDA COMO FUNCIONA O PROCESSO DA CONSULTORIA
+          </BlurOutUp>
         </p>
         {/* Etapas */}
         <div className="flex flex-col gap-10">
