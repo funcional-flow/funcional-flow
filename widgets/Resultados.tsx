@@ -4,6 +4,7 @@ import { Star, TrendingUp, ArrowRight, Quote } from "lucide-react";
 import { results } from "@/data/list_results";
 import Image from "next/image";
 import TituloSessao from "@/components/TituloSessao";
+import { NumberTicker } from "@/components/ui/number-ticker";
 
 export default function Resultados() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -17,8 +18,10 @@ export default function Resultados() {
   return (
     <div className="relative z-10">
       {/* Eyebrow + heading */}
-      <div className="flex flex-col gap-3 mx-auto mb-8 max-w-md px-6">
-        <TituloSessao centralizado={false} escuro={false}>Resultados</TituloSessao>
+      <div className="mx-auto mb-8 flex max-w-md flex-col gap-3 px-6">
+        <TituloSessao centralizado={false} escuro={false}>
+          Resultados
+        </TituloSessao>
         <h2 className="text-3xl font-bold tracking-normal">
           HISTÓRIAS DE{" "}
           <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-transparent">
@@ -117,23 +120,55 @@ export default function Resultados() {
 
       {/* Stats strip */}
       <div className="mx-auto mt-10 flex justify-center gap-3">
-        {[
-          { value: "12+", label: "Cidades diferentes" },
+        {/* { value: "12+", label: "Cidades diferentes" },
           { value: "4.9", label: "Avaliação média" },
-          { value: "8%", label: "Taxa de desistência" },
-        ].map((s) => (
-          <div
-            key={s.label}
-            className="min-w-24 rounded-2xl border border-white/10 bg-white/3 p-3 text-center"
-          >
-            <div className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent">
-              {s.value}
-            </div>
-            <div className="mt-1.5 text-[10px] leading-tight text-white/50">
-              {s.label}
-            </div>
+          { value: "8%", label: "Taxa de desistência" }, */}
+        <div className="min-w-24 rounded-2xl border border-white/10 bg-white/3 p-3 text-center">
+          <NumberTicker
+            value={12}
+            startValue={0}
+            className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent"
+          />
+          <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent">
+            +
+          </span>
+          <div className="mt-1.5 text-[10px] leading-tight text-white/50">
+            Cidades diferentes
           </div>
-        ))}
+        </div>
+
+        <div className="min-w-24 rounded-2xl border border-white/10 bg-white/3 p-3 text-center">
+          <NumberTicker
+            value={4}
+            startValue={0}
+            className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent"
+          />
+          <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent">
+            .
+          </span>
+          <NumberTicker
+            value={9}
+            startValue={0}
+            className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent"
+          />
+          <div className="mt-1.5 text-[10px] leading-tight text-white/50">
+            Avaliação média
+          </div>
+        </div>
+
+        <div className="min-w-24 rounded-2xl border border-white/10 bg-white/3 p-3 text-center">
+          <NumberTicker
+            value={8}
+            startValue={0}
+            className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent"
+          />
+          <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent">
+            %
+          </span>
+          <div className="mt-1.5 text-[10px] leading-tight text-white/50">
+            Taxa de desistência
+          </div>
+        </div>
       </div>
 
       {/* CTA */}
