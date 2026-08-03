@@ -31,7 +31,7 @@ export default function CardEtapas({
           </SectionTween>
         </h3>
         <p className="">
-          <MaskRevealUp triggerOnView={true}>{descricao}</MaskRevealUp>
+          <MaskRevealUp triggerOnView={true} delay={1000}>{descricao}</MaskRevealUp>
         </p>
       </div>
     </div>
