@@ -11,7 +11,8 @@ export default function SpringCustom({ children, delayNum=0 }: SpringCustomProps
     <div>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, amount: 0 }}
         transition={{
           duration: 0.8,
           scale: {

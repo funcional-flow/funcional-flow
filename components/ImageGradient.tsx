@@ -25,7 +25,7 @@ export default function ImageGradient({
 
       <div className="relative z-10">{children}</div>
 
-      <div className="pointer-events-none absolute bottom-0 h-100 w-full bg-linear-to-b from-transparent to-background" />
+      <div className="pointer-events-none absolute -bottom-px h-100 w-full bg-linear-to-b from-transparent to-background" />
     </div>
   );
 }
