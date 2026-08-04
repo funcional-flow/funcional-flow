@@ -46,7 +46,7 @@ export default function Resultados() {
       </div>
 
       {/* Horizontal swipe feed */}
-      <SectionTween upToDown={false} initialNum={60}>
+      <SectionTween upToDown={false} initialNum={60} amountCustom={0.2}>
         <div
           ref={scrollRef}
           className="scrollbar-hide flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2"

@@ -1,5 +1,8 @@
+import SectionTween from "@/components/motion_custom/SectionTween";
+import SpringCustom from "@/components/motion_custom/SpringCustom";
 import TituloSessao from "@/components/TituloSessao";
 import { NumberTicker } from "@/components/ui/number-ticker";
+import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
 import { Award, Users, Dumbbell, Quote, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
@@ -15,28 +18,34 @@ export default function Sobre() {
       <div className="relative z-10 mx-auto max-w-md">
         {/* Eyebrow */}
         <TituloSessao centralizado={false} className="mb-6">
-          Sobre mim
+          <BottomUpLetters triggerOnView={true}>Sobre mim</BottomUpLetters>
         </TituloSessao>
 
         {/* Portrait + name */}
         <div className="mb-10 flex flex-col items-center text-center">
-          <div className="relative mb-5">
-            <div className="from-yellow3 absolute -inset-1 rounded-3xl bg-linear-to-tr to-[#2e0a4d] opacity-60 blur-sm" />
-            <Image
-              src="/sobre/bruno1.png"
-              alt="Personal trainer"
-              className="relative h-44 w-44 rounded-3xl border border-white/10 object-cover"
-              width={176}
-              height={176}
-            />
-            <span className="bg-purple2 shadow-yellow3/30 absolute -right-2 -bottom-2 flex h-9 w-9 items-center justify-center rounded-full text-white shadow-lg">
-              <Dumbbell className="h-4 w-4" strokeWidth={2.5} />
-            </span>
-          </div>
+          <SectionTween upToDown={false} initialNum={60}>
+            <div className="relative mb-5">
+              <div className="from-yellow3 absolute -inset-1 rounded-3xl bg-linear-to-tr to-[#2e0a4d] opacity-60 blur-sm" />
+              <Image
+                src="/sobre/bruno1.png"
+                alt="Personal trainer"
+                className="relative h-44 w-44 rounded-3xl border border-white/10 object-cover"
+                width={176}
+                height={176}
+              />
+              <span className="bg-purple2 shadow-yellow3/30 absolute -right-2 -bottom-2 flex h-9 w-9 items-center justify-center rounded-full text-white shadow-lg">
+                <Dumbbell className="h-4 w-4" strokeWidth={2.5} />
+              </span>
+            </div>
+          </SectionTween>
           <h2 className="text-purple3 text-2xl font-bold tracking-tight">
-            Bruno Levien
+            <BottomUpLetters triggerOnView={true}>Bruno Levien</BottomUpLetters>
           </h2>
-          <p className="mt-1 text-sm">Personal Trainer • CREF 012345-G/PR</p>
+          <p className="mt-1 text-sm">
+            <BottomUpLetters triggerOnView={true}>
+              Personal Trainer • CREF 012345-G/PR
+            </BottomUpLetters>
+          </p>
         </div>
 
         {/* Stats */}
@@ -55,55 +64,63 @@ export default function Sobre() {
                 />
                 <span>+</span>
               </div>
-              <div className="mt-1.5 text-xs leading-tight text-white">{s.label}</div>
+              <div className="mt-1.5 text-xs leading-tight text-white">
+                {s.label}
+              </div>
             </div>
           ))}
         </div>
 
         {/* Bio */}
         <div className="mb-10">
-          <div className="relative rounded-2xl border border-black/10 bg-black/3 p-5">
-            <Quote className="text-yellow3 absolute -top-3 left-5 h-6 w-6 fill-[#0f031f]" />
-            <p className="text-purple4 text-[15px] leading-relaxed">
-              Me chamo Bruno Levien, sou Bacharel em Educação Física pela
-              Universidade Federal de Pelotas (UFPEL), formado no ano de 2023.
-              Ao longo da minha trajetória, passei por diferentes modalidades e
-              metodologias de treinamento, o que me permitiu construir uma visão
-              mais ampla sobre o movimento humano e a preparação física.
-            </p>
-            <p className="text-purple4 mt-4 text-[15px] leading-relaxed">
-              Minha jornada começou na musculação, ela teve seu papel. Me deu
-              <span className="text-yellow3">
-                {" "}
-                base, disciplina e constância
-              </span>
-              . Mas chegou um momento em que aquilo já não me saciava mais. Os
-              treinos começaram a parecer monótonos, repetitivos, sem o tipo de
-              desafio que eu procurava. Mas foi o estudo das capacidades físicas
-              e do movimento que transformou minha forma de enxergar o
-              treinamento. Foi nesse processo que nasceu o Funcional Flow, uma
-              metodologia baseada na integração entre mobilidade, controle,
-              força e condicionamento para desenvolver um corpo mais atlético,
-              capaz e adaptável.
-            </p>
-            <p className="text-purple4 mt-4 text-[15px] leading-relaxed">
-              Dessa forma, minha missão é mostrar que o treinamento vai muito
-              além da estética. Quero ajudar cada aluno a desenvolver um corpo
-              atlético, ou seja: que se mova com qualidade, produza força com
-              eficiência e esteja preparado para as demandas da vida. Porque
-              acredito que a verdadeira transformação acontece quando você
-              percebe tudo aquilo que seu corpo é capaz de fazer. A estética, a
-              confiança e a performance surgem como consequência de um corpo
-              mais forte, mais resistente e mais preparado.
-            </p>
-          </div>
+          <SectionTween upToDown={false} initialNum={60}>
+            <div className="relative rounded-2xl border border-black/10 bg-black/3 p-5">
+              <Quote className="text-yellow3 absolute -top-3 left-5 h-6 w-6 fill-[#0f031f]" />
+              <p className="text-purple4 text-[15px] leading-relaxed">
+                Me chamo Bruno Levien, sou Bacharel em Educação Física pela
+                Universidade Federal de Pelotas (UFPEL), formado no ano de 2023.
+                Ao longo da minha trajetória, passei por diferentes modalidades
+                e metodologias de treinamento, o que me permitiu construir uma
+                visão mais ampla sobre o movimento humano e a preparação física.
+              </p>
+              <p className="text-purple4 mt-4 text-[15px] leading-relaxed">
+                Minha jornada começou na musculação, ela teve seu papel. Me deu
+                <span className="text-yellow3">
+                  {" "}
+                  base, disciplina e constância
+                </span>
+                . Mas chegou um momento em que aquilo já não me saciava mais. Os
+                treinos começaram a parecer monótonos, repetitivos, sem o tipo
+                de desafio que eu procurava. Mas foi o estudo das capacidades
+                físicas e do movimento que transformou minha forma de enxergar o
+                treinamento. Foi nesse processo que nasceu o Funcional Flow, uma
+                metodologia baseada na integração entre mobilidade, controle,
+                força e condicionamento para desenvolver um corpo mais atlético,
+                capaz e adaptável.
+              </p>
+              <p className="text-purple4 mt-4 text-[15px] leading-relaxed">
+                Dessa forma, minha missão é mostrar que o treinamento vai muito
+                além da estética. Quero ajudar cada aluno a desenvolver um corpo
+                atlético, ou seja: que se mova com qualidade, produza força com
+                eficiência e esteja preparado para as demandas da vida. Porque
+                acredito que a verdadeira transformação acontece quando você
+                percebe tudo aquilo que seu corpo é capaz de fazer. A estética,
+                a confiança e a performance surgem como consequência de um corpo
+                mais forte, mais resistente e mais preparado.
+              </p>
+            </div>
+          </SectionTween>
         </div>
 
         {/* CTA */}
-        <button className="group from-yellow3 shadow-yellow3/30 hover:shadow-yellow3/50 flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r to-yellow3 px-6 py-4 text-[15px] font-bold text-[#0f031f] shadow-xl transition active:scale-[0.98]">
-          QUERO MELHORAR MEU CORPO
-          <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-        </button>
+        <SpringCustom delayNum={0.5}>
+          <div className="mx-auto mt-8 max-w-md px-6">
+            <button className="group from-yellow3 text-purple4 shadow-yellow3/20 hover:shadow-yellow3/50 flex w-full items-center justify-center gap-2 rounded-xl bg-linear-to-r to-yellow3 px-6 py-4 text-[15px] font-bold shadow-xl transition active:scale-[0.98]">
+              QUERO MELHORAR MEU CORPO
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            </button>
+          </div>
+        </SpringCustom>
       </div>
     </section>
   );

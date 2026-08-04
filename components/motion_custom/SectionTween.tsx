@@ -17,7 +17,7 @@ export default function SectionTween({
   delay = 0,
   upToDown = true,
   horizontal = false,
-  amountCustom = 0.6
+  amountCustom = 0
 }: SectionTweenProps) {
   let valorX = 0;
   let valorY = 0;
