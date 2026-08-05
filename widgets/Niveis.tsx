@@ -6,13 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import TituloSessao from "@/components/TituloSessao";
+import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
 
 export default function Niveis() {
   return (
     <div className="relative flex flex-col">
       {/* Eyebrow */}
       <TituloSessao centralizado={false} className="pb-3 pl-6">
-        descubra seu nivel
+        <BottomUpLetters triggerOnView={true}>descubra seu nivel</BottomUpLetters>
       </TituloSessao>
       <h2 className="text-purple3 mx-9 pb-6 text-center text-3xl font-bold">
         <span className="uppercase">

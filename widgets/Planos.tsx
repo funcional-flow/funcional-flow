@@ -6,6 +6,8 @@ import {
 import CardPlano from "@/components/CardPlano";
 import ImageBackground from "@/components/ImageBackground";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
+import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
 
 export default function Planos() {
   return (
@@ -19,21 +21,27 @@ export default function Planos() {
         <div className="flex items-center justify-center gap-2 tracking-widest">
           <div className="bg-yellow3 h-px w-7" />
           <h3 className="text-yellow3 text-center text-lg font-semibold">
-            PLANOS
+            <BottomUpLetters triggerOnView={true}>PLANOS</BottomUpLetters>
           </h3>
           <div className="bg-yellow3 h-px w-7" />
         </div>
         <h1 className="text-center text-4xl">
-          ESCOLHA O SEU{" "}
-          <span className="text-yellow3 font-bold tracking-wider">PLANO</span>
+          <BlurOutUp delay={500} triggerOnView={true}>
+            ESCOLHA O SEU
+          </BlurOutUp>{" "}
+          <span className="text-yellow3 font-bold tracking-wider">
+            <BottomUpLetters triggerOnView={true}>PLANO</BottomUpLetters>
+          </span>
         </h1>
         <p className="pb-6 text-center text-gray-300">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
-          quia cumque suscipit ipsa repellendus.
+          <BlurOutUp delay={500} triggerOnView={true}>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            quia cumque suscipit ipsa repellendus.
+          </BlurOutUp>
         </p>
-        <Tabs defaultValue="trimestral">
+        <Tabs defaultValue="semestral">
           <div className="relative flex flex-col">
-            <TabsList className="mx-auto mb-1 rounded-sm bg-purple-100/20 px-2 outline">
+            <TabsList className="mx-auto mb-7 rounded-sm bg-purple-100/20 px-2 outline">
               <TabsTrigger value="mensal" className={"text-white"}>
                 Mensal
               </TabsTrigger>

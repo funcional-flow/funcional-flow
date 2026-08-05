@@ -36,7 +36,7 @@ export default function Home() {
         >
           <Resultados />
         </section>
-        <section id="sobre" className="relative py-12">
+        <section id="sobre" className="relative px-6 py-12">
           <Sobre />
         </section>
         <section id="publico" className="bg-purple4 relative text-white">

@@ -1,10 +1,11 @@
+import TituloSessao from "@/components/TituloSessao";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { listaFaq } from "@/data/lista_faq";
 
 export default function Faq() {
   return (
     <div>
-      <h2 className="font-semibold text-2xl text-center mb-4">FAQ</h2>
+      <TituloSessao className="pb-5">FAQ</TituloSessao>
       <Accordion className="px-10">
           {listaFaq.map((faq, index) => (
             <AccordionItem key={index} value={index.toString()}>
