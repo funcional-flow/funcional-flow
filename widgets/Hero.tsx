@@ -11,9 +11,9 @@ import SectionTween from "@/components/motion_custom/SectionTween";
 
 export default function Hero() {
   return (
-    <div className="relative flex w-full flex-col min-h-svh justify-between overflow-hidden px-6 pb-12">
+    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12">
       {/* Top brand bar */}
-      <div className="flex items-center justify-between pt-6 pb-22">
+      <div className="flex items-center justify-between pt-6">
         <span className="text-sm font-bold tracking-[0.25em] text-white">
           <BottomUpLetters delay={500}>FUNCIONAL</BottomUpLetters>
           <span className="text-yellow3">
@@ -57,22 +57,24 @@ export default function Hero() {
             sua estética.
           </SectionTween>
         </h1>
-
+      </div>
+      <div className="relative z-10 mx-auto w-full">
         {/* Subheading */}
         <SectionTween horizontal={true} initialNum={-100} delay={5}>
-          <p className="mb-8 text-base text-white/75">
+          <p className="mb-8 text-lg text-white/75">
             Acompanhamento personalizado para desenvolver capacidades físicas e
             construir um corpo atlético, seja qual for o seu nível de
             treinamento:{" "}
-            <span className="font-semibold text-white">iniciante</span>,{" "}
-            <span className="font-semibold text-white">intermediário</span> ou{" "}
-            <span className="font-semibold text-white">avançado</span>.
+            <span className="font-semibold text-white tracking-wider">iniciante</span>,{" "}
+            <span className="font-semibold text-white tracking-wider">intermediário</span> ou{" "}
+            <span className="font-semibold text-white tracking-wider">avançado</span>.
           </p>
         </SectionTween>
-
+      </div>
+      <div className="relative z-10 mx-auto w-full">
         {/* CTAs */}
         <SpringCustom delayNum={5.5}>
-          <div className="flex flex-col gap-3 pt-18">
+          <div className="flex flex-col gap-3 pb-5">
             <button
               onClick={() => (window.location.href = "#planos")}
               className="group from-yellow3 text-purple4 shadow-yellow3/30 hover:shadow-yellow3/50 flex items-center justify-center gap-2 rounded-xl bg-linear-to-r to-yellow-500 px-6 py-4 text-[15px] font-bold shadow-xl transition active:scale-[0.98]"
@@ -91,7 +93,7 @@ export default function Hero() {
         </SpringCustom>
 
         {/* Level pills */}
-        <div className="mt-8 flex justify-center gap-2">
+        <div className="flex justify-center gap-2">
           <SpringCustom delayNum={5.5}>
             <span className="bg-purple3/10 rounded-full border border-white/15 px-3.5 pt-1.5 pb-1 text-xs font-medium backdrop-blur-sm">
               <button onClick={() => (window.location.href = "#niveis")}>
