@@ -76,31 +76,30 @@ export default function Resultados() {
 
               {/* Content at bottom */}
               <div className="absolute right-0 bottom-0 left-0 p-5">
-                {/* Rating */}
-                <div className="mb-3 flex gap-0.5">
-                  {Array.from({ length: r.rating }).map((_, si) => (
-                    <Star
-                      key={si}
-                      className="fill-yellow3 text-yellow3 h-3.5 w-3.5"
-                    />
-                  ))}
-                </div>
-
                 {/* Quote */}
-                <Quote className="text-yellow3 mb-2 h-5 w-5" />
+                {/* <Quote className="text-yellow3 mb-2 h-5 w-5" />
                 <p className="mb-4 line-clamp-4 text-[13.5px] leading-relaxed text-white/85">
                   {r.quote}
-                </p>
+                </p> */}
 
                 {/* Identity */}
-                <div className="flex items-center justify-between border-t border-white/15 pt-3">
-                  <div>
-                    <div className="text-[15px] leading-tight font-bold">
+                <div className="flex flex-col justify-between border-t border-white/15 pt-3">
+                  <div className="flex w-full justify-between text-[15px] leading-tight font-bold">
+                    <span>
                       {r.name}, {r.age}
+                    </span>
+                    {/* Rating */}
+                    <div className="flex gap-0.5">
+                      {Array.from({ length: r.rating }).map((_, si) => (
+                        <Star
+                          key={si}
+                          className="fill-yellow3 text-yellow3 h-3.5 w-3.5"
+                        />
+                      ))}
                     </div>
-                    <div className="mt-0.5 text-[11px] text-white/50">
-                      {r.level} • {r.duration} de treino
-                    </div>
+                  </div>
+                  <div className="mt-0.5 text-[11px] text-white/50">
+                    {r.level} • {r.duration} de treino
                   </div>
                 </div>
               </div>
