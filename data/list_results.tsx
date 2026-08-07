@@ -26,7 +26,7 @@ export const results: Result[] = [
     age: 41,
     level: 'Avançada',
     duration: '1 ano',
-    photo: '/resultados/resultado_1.jpg',
+    photo: '/resultados/result1.jpeg',
     rating: 5,
     quote:
       'Já treinava há anos, mas estava estagnado. O Rafael ajustou detalhes que eu nem percebia. Bati recordes pessoais que estavam parados há mais de dois anos.',

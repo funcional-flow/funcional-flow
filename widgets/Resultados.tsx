@@ -55,7 +55,7 @@ export default function Resultados() {
           {results.map((r, i) => (
             <article
               key={r.name}
-              className="group relative h-100 w-full shrink-0 snap-center overflow-hidden rounded-3xl border border-white/10"
+              className="group relative h-75 w-full shrink-0 snap-center overflow-hidden rounded-3xl border border-white/10"
             >
               {/* Photo */}
               <Image src={r.photo} alt={r.name} fill className="object-cover" />
@@ -64,9 +64,9 @@ export default function Resultados() {
               {/* <div className="absolute inset-0 bg-linear-to-r from-purple3/30 to-transparent" /> */}
 
               {/* Index number */}
-              <span className="absolute top-5 right-5 text-5xl leading-none font-bold text-white/10">
+              {/* <span className="absolute top-5 right-5 text-5xl leading-none font-bold text-white/10">
                 {String(i + 1).padStart(2, "0")}
-              </span>
+              </span> */}
 
               {/* Highlight pill */}
               <div className="bg-yellow3 text-purple4 shadow-yellow3/30 absolute top-5 left-5 flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[11px] font-bold shadow-lg">
