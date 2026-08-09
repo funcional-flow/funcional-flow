@@ -29,11 +29,11 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full">
         {/* Eyebrow */}
         <div className="mb-6 flex items-center gap-2">
-          <SectionTween horizontal={true} initialNum={-100} delay={1}>
+          <SectionTween horizontal={true} initialNum={-100} delay={0.25}>
             <motion.div className="bg-yellow3 mb-1 h-px w-8" />
           </SectionTween>
           <span className="text-yellow3 text-xs font-semibold tracking-[0.25em] uppercase">
-            <SectionTween horizontal={true} initialNum={-100} delay={1.5}>
+            <SectionTween horizontal={true} initialNum={-100} delay={0.5}>
               Treino de alta performance
             </SectionTween>
           </span>
@@ -41,26 +41,26 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="mb-6 flex flex-col text-4xl font-bold tracking-normal text-white">
-          <SectionTween horizontal={false} initialNum={-100} delay={2}>
+          <SectionTween horizontal={false} initialNum={-100} delay={0.75}>
             Reconstrua
           </SectionTween>
-          <SectionTween horizontal={false} initialNum={-100} delay={2}>
+          <SectionTween horizontal={false} initialNum={-100} delay={0.75}>
             seu movimento.
           </SectionTween>
-          <SectionTween horizontal={false} initialNum={-100} delay={3}>
+          <SectionTween horizontal={false} initialNum={-100} delay={1}>
             <span className="text-yellow3">Domine sua performance.</span>
           </SectionTween>
-          <SectionTween horizontal={false} initialNum={-100} delay={4}>
+          <SectionTween horizontal={false} initialNum={-100} delay={1.25}>
             Transforme
           </SectionTween>
-          <SectionTween horizontal={false} initialNum={-100} delay={4}>
+          <SectionTween horizontal={false} initialNum={-100} delay={1.25}>
             sua estética.
           </SectionTween>
         </h1>
       </div>
       <div className="relative z-10 mx-auto w-full">
         {/* Subheading */}
-        <SectionTween horizontal={true} initialNum={-100} delay={5}>
+        <SectionTween horizontal={true} initialNum={-100} delay={1.5}>
           <p className="mb-8 text-lg text-white/75">
             Acompanhamento personalizado para desenvolver capacidades físicas e
             construir um corpo atlético, seja qual for o seu nível de
@@ -73,7 +73,7 @@ export default function Hero() {
       </div>
       <div className="relative z-10 mx-auto w-full">
         {/* CTAs */}
-        <SpringCustom delayNum={5.5}>
+        <SpringCustom delayNum={1.75}>
           <div className="flex flex-col gap-3 pb-5">
             <button
               onClick={() => (window.location.href = "#planos")}
@@ -94,21 +94,21 @@ export default function Hero() {
 
         {/* Level pills */}
         <div className="flex justify-center gap-2">
-          <SpringCustom delayNum={5.5}>
+          <SpringCustom delayNum={2}>
             <span className="bg-purple3/10 rounded-full border border-white/15 px-3.5 pt-1.5 pb-1 text-xs font-medium backdrop-blur-sm">
               <button onClick={() => (window.location.href = "#niveis")}>
                 Iniciante
               </button>
             </span>
           </SpringCustom>
-          <SpringCustom delayNum={5.7}>
+          <SpringCustom delayNum={2.25}>
             <span className="bg-purple3/10 rounded-full border border-white/15 px-3.5 pt-1.5 pb-1 text-xs font-medium backdrop-blur-sm">
               <button onClick={() => (window.location.href = "#niveis")}>
                 Intermediário
               </button>
             </span>
           </SpringCustom>
-          <SpringCustom delayNum={5.9}>
+          <SpringCustom delayNum={2.5}>
             <span className="bg-purple3/10 rounded-full border border-white/15 px-3.5 pt-1.5 pb-1 text-xs font-medium backdrop-blur-sm">
               <button onClick={() => (window.location.href = "#niveis")}>
                 Avançado

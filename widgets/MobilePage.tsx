@@ -10,12 +10,13 @@ import Diferenciais from "@/widgets/Diferenciais";
 import Cta from "@/widgets/Cta";
 import ImageGradient from "@/components/ImageGradient";
 import Niveis from "@/widgets/Niveis";
+import Footer from "./Footer";
 
 export default function MobilePage() {
   return (
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
-      <main className="container mx-auto flex flex-col lg:hidden">
+      <main className="mx-auto flex flex-col overflow-hidden">
         <section id="hero" className="">
           <ImageGradient
             imageUrl="/hero/hero.png"
@@ -59,7 +60,8 @@ export default function MobilePage() {
           <Cta />
         </section>
       </main>
-      <footer className="container mx-auto">
+      <footer className="relative overflow-hidden bg-gray-900 text-white">
+        {/* <Footer /> */}
         <div className="z-1000 text-3xl font-bold text-black">Footer</div>
         <p>Contatos</p>
         <p>

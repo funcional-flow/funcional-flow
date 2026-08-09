@@ -33,10 +33,11 @@ export default function Planos() {
             <BottomUpLetters triggerOnView={true}>PLANO</BottomUpLetters>
           </span>
         </h1>
-        <p className="pb-6 text-center text-gray-300">
+        <p className="pb-4 text-sm text-gray-300">
           <BlurOutUp delay={500} triggerOnView={true}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
-            quia cumque suscipit ipsa repellendus.
+            Decida o plano que melhor se adapta à sua rotina e comece a
+            desenvolver um corpo mais forte e atlético através do método
+            Funcional Flow.
           </BlurOutUp>
         </p>
         <Tabs defaultValue="semestral">

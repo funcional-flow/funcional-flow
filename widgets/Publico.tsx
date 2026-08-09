@@ -72,16 +72,16 @@ export default function Publico() {
           </SectionDropIn>
           <SectionDropIn initialNum={180}>
             <CardPublico
-              titulo="RESULTADOS DURADOUROS"
-              descricao="Construa hábitos, capacidades e resultados que continuam evoluindo no longo prazo."
-              icone={<Trophy className="h-10 w-10 shrink-0 text-purple-700" />}
+              titulo="QUALIDADE DE MOVIMENTO"
+              descricao="Aprenda a controlar melhor o próprio corpo, aprimorar padrões de movimento e se movimentar com mais confiança."
+              icone={<Medal className="h-10 w-10 shrink-0 text-purple-700" />}
             />
           </SectionDropIn>
           <SectionDropIn initialNum={180}>
             <CardPublico
-              titulo="QUALIDADE DE MOVIMENTO"
-              descricao="Aprenda a controlar melhor o próprio corpo, aprimorar padrões de movimento e se movimentar com mais confiança."
-              icone={<Medal className="h-10 w-10 shrink-0 text-purple-700" />}
+              titulo="RESULTADOS DURADOUROS"
+              descricao="Construa hábitos, capacidades e resultados que continuam evoluindo no longo prazo."
+              icone={<Trophy className="h-10 w-10 shrink-0 text-purple-700" />}
             />
           </SectionDropIn>
         </div>

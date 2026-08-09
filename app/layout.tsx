@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${teko.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col font-teko text-lg tracking-wide">{children}</body>
+      <body className="flex flex-col font-teko text-lg tracking-wide">{children}</body>
     </html>
   );
 }
