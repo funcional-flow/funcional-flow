@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { Star, TrendingUp, ArrowRight, Quote } from "lucide-react";
+import { Star, TrendingUp, ArrowRight } from "lucide-react";
 import { results } from "@/data/list_results";
 import Image from "next/image";
 import TituloSessao from "@/components/TituloSessao";
@@ -52,7 +52,7 @@ export default function Resultados() {
           className="scrollbar-hide flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2"
           style={{ scrollbarWidth: "none" }}
         >
-          {results.map((r, i) => (
+          {results.map((r) => (
             <article
               key={r.name}
               className="group relative h-75 w-full shrink-0 snap-center overflow-hidden rounded-3xl border border-white/10"
@@ -60,7 +60,7 @@ export default function Resultados() {
               {/* Photo */}
               <Image src={r.photo} alt={r.name} fill className="object-cover" />
               {/* Gradient overlay */}
-              <div className="from-purple4 via-purple4/70 absolute inset-0 bg-linear-to-t to-transparent" />
+              <div className="from-purple4 via-purple4/15 absolute inset-0 bg-linear-to-t to-transparent" />
               {/* <div className="absolute inset-0 bg-linear-to-r from-purple3/30 to-transparent" /> */}
 
               {/* Index number */}

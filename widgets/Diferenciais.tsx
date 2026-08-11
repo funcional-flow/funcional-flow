@@ -3,8 +3,8 @@ import { DiaTextReveal } from "@/components/ui/dia-text-reveal";
 
 export default function Diferenciais() {
   return (
-    <div className="">
-      <h2 className="titulo-lightmode text-center">
+    <>
+      <h2 className="text-4xl font-bold text-purple3 text-center">
         O QUE TORNA NOSSO{" "}
         <DiaTextReveal
           repeat
@@ -18,7 +18,7 @@ export default function Diferenciais() {
           text={["RESULTADO REAL", "ACOMPANHAMENTO DIFERENTE", "MÉTODO ÚNICO"]}
         />
       </h2>
-      <div className="mt-10 flex flex-col gap-20">
+      <div className="py-10 flex flex-col gap-20">
         <CardDif
           titulo="ATENDIMENTO TOTALMENTE INDIVIDUAL"
           descricao="Aqui, cada exercício é escolhido pensando no seu nível atual."
@@ -36,12 +36,6 @@ export default function Diferenciais() {
           descricao="À medida que você desenvolve novas capacidades, supera desafios e percebe sua própria evolução, quando você percebe seu corpo mais forte, mais preparado, a confiança deixa de vir apenas da aparência e passa a ser construída por aquilo que seu corpo é capaz de fazer."
         />
       </div>
-      <hr className="mt-15 mb-5" />
-      <p className="italic">
-        “À medida que você evolui e supera desafios, a confiança deixa de
-        depender apenas da aparência e passa a vir do que seu corpo é capaz de
-        fazer.”
-      </p>
-    </div>
+    </>
   );
 }

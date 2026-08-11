@@ -29,7 +29,7 @@ export default function MobilePage() {
         <section id="beneficios" className="relative px-6 py-12">
           <Beneficios />
         </section>
-        <section id="funcionamento" className="bg-purple4 relative py-12">
+        <section id="funcionamento" className="relative">
           <Funcionamento />
         </section>
         <section id="diferenciais" className="relative px-6 py-12">
@@ -60,9 +60,10 @@ export default function MobilePage() {
           <Cta />
         </section>
       </main>
-      <footer className="relative overflow-hidden bg-gray-900 text-white">
-        {/* <Footer /> */}
-        <div className="z-1000 text-3xl font-bold text-black">Footer</div>
+      <footer className="relative overflow-hidden bg-gray-500 text-white">
+        <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
+        <Footer />
+        {/* <div className="z-1000 text-3xl font-bold text-black">Footer</div>
         <p>Contatos</p>
         <p>
           Desenvolvido por{" "}
@@ -74,7 +75,7 @@ export default function MobilePage() {
           >
             Renato Monteiro
           </a>
-        </p>
+        </p> */}
       </footer>
     </>
   );

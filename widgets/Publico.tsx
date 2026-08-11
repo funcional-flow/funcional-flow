@@ -21,7 +21,7 @@ export default function Publico() {
       intensidade="80"
       centralizado={false}
     >
-      <div className="pointer-events-none absolute bottom-0 h-100 w-full bg-linear-to-b from-transparent to-[#140922]" />
+      {/* <div className="pointer-events-none absolute bottom-0 h-10 w-full bg-linear-to-b from-transparent to-background" /> */}
       <div className="relative flex flex-col py-12">
         <TituloSessao escuro={false} className="mb-3">
           <BottomUpLetters triggerOnView={true}>
