@@ -147,13 +147,13 @@ export default function Footer() {
       </div>
 
       {/* Botão voltar ao topo */}
-      {/* <a
-        href="#inicio"
+      <a
+        href="#hero"
         aria-label="Voltar ao topo"
         className="border-yellow3/30 bg-yellow3/10 text-yellow3 hover:bg-yellow3/20 absolute right-5 bottom-7 flex h-10 w-10 items-center justify-center rounded-full border transition"
       >
         <ArrowUp className="h-4 w-4" />
-      </a> */}
+      </a>
     </div>
   );
 }

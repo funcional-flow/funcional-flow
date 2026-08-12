@@ -26,7 +26,7 @@ export default function MobilePage() {
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative px-6 py-12">
+        <section id="beneficios" className="relative px-6 py-12 md:py-20">
           <Beneficios />
         </section>
         <section id="funcionamento" className="relative">

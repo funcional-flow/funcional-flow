@@ -23,7 +23,7 @@ export default function TituloSessao({
     >
       <div className={`h-px w-7 ${escuro ? "bg-purple3" : "bg-yellow3"}`} />
       <h3
-        className={`text-center text-xs font-semibold uppercase ${escuro ? "text-purple3" : "text-yellow3"} ${centralizado ? "text-center" : "text-start"}`}
+        className={`text-center md:text-2xl text-xs font-semibold uppercase ${escuro ? "text-purple3" : "text-yellow3"} ${centralizado ? "text-center" : "text-start"}`}
       >
         {children}
       </h3>

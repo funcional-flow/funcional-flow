@@ -8,11 +8,11 @@ import SectionDropIn from "@/components/motion_custom/SectionDropIn";
 
 export default function Beneficios() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 md:gap-6">
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>
       </TituloSessao>
-      <h1 className="text-purple3 text-center text-xl font-bold uppercase">
+      <h1 className="text-purple3 pb-5 text-center text-2xl font-bold uppercase md:text-5xl">
         <BlurOutUp delay={500} triggerOnView={true}>
           Tudo o que você precisa para evoluir com
         </BlurOutUp>{" "}
@@ -33,7 +33,7 @@ export default function Beneficios() {
           {"."}
         </BlurOutUp>
       </h1>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 md:gap-10 md:mx-auto md:w-xl md:items-center md:justify-center">
         <SectionDropIn initialNum={180}>
           <CardFlow
             icone="treino_personalizado.png"

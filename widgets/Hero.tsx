@@ -11,7 +11,7 @@ import SectionTween from "@/components/motion_custom/SectionTween";
 
 export default function Hero() {
   return (
-    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 md:px-12">
+    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12">
       {/* Top brand bar */}
       <div className="flex items-center justify-between pt-6">
         <span className="text-sm font-bold tracking-[0.25em] text-white md:text-xl">
