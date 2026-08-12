@@ -46,7 +46,7 @@ export default function Resultados() {
       <SectionTween upToDown={false} initialNum={60} amountCustom={0.2}>
         <Swiper
           slidesPerView={"auto"}
-          spaceBetween={10}
+          spaceBetween={1}
           loop={true}
           pagination={{
             clickable: true,
