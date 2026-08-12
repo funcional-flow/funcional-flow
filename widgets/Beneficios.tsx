@@ -33,7 +33,7 @@ export default function Beneficios() {
           {"."}
         </BlurOutUp>
       </h1>
-      <div className="flex flex-col gap-5 md:gap-10 md:mx-auto md:w-xl md:items-center md:justify-center">
+      <div className="flex flex-col gap-5 md:mx-auto md:w-xl md:items-center md:justify-center md:gap-12">
         <SectionDropIn initialNum={180}>
           <CardFlow
             icone="treino_personalizado.png"
