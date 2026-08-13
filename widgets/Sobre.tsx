@@ -43,7 +43,7 @@ export default function Sobre() {
           </h2>
           <p className="mt-1 text-sm">
             <BottomUpLetters triggerOnView={true}>
-              Personal Trainer • CREF 012345-G/PR
+              Personal Trainer • CREF 036237-G/RS
             </BottomUpLetters>
           </p>
         </div>
