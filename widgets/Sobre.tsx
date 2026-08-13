@@ -17,7 +17,7 @@ export default function Sobre() {
     <section className="relative w-full overflow-hidden">
       <div className="relative z-10 mx-auto max-w-md">
         {/* Eyebrow */}
-        <TituloSessao centralizado={false} className="mb-6">
+        <TituloSessao centralizado={true} className="mb-6">
           <BottomUpLetters triggerOnView={true}>Sobre mim</BottomUpLetters>
         </TituloSessao>
 

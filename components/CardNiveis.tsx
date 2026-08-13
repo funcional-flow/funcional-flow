@@ -31,7 +31,7 @@ export default function CardNiveis({
             >
               {numero}
             </div>
-            <span className="text-base italic">{titulo}</span>
+            <span className="text-base md:text-lg italic">{titulo}</span>
           </h2>
           <ul className="flex flex-col gap-2 pl-6">
             {descricao.map((desc, index) => (
@@ -41,7 +41,7 @@ export default function CardNiveis({
                     className={`${inicio ? "text-yellow-500" : "text-purple-500"} h-4 w-4 stroke-5 p-1`}
                   />
                 </div>
-                <span className="text-xs text-white/85">{desc}</span>
+                <span className="text-xs md:text-base text-white/85">{desc}</span>
               </li>
             ))}
           </ul>

@@ -1,5 +1,4 @@
 "use client";
-import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import TituloSessao from "@/components/TituloSessao";
 import { NumberTicker } from "@/components/ui/number-ticker";
@@ -20,10 +19,10 @@ export default function Resultados() {
     <div className="relative z-10">
       {/* Eyebrow + heading */}
       <div className="mx-auto mb-8 flex flex-col gap-3 px-6 md:w-full">
-        <TituloSessao centralizado={false} escuro={false}>
+        <TituloSessao centralizado={true} escuro={false}>
           <BottomUpLetters triggerOnView={true}>Resultados</BottomUpLetters>
         </TituloSessao>
-        <h2 className="text-3xl font-bold tracking-normal">
+        <h2 className="text-3xl font-bold text-center tracking-normal">
           <BlurOutUp delay={500} triggerOnView={true}>
             HISTÓRIAS DE
           </BlurOutUp>{" "}
@@ -33,7 +32,7 @@ export default function Resultados() {
             </BlurOutUp>
           </span>
         </h2>
-        <p className="text-sm text-white/65">
+        <p className="text-sm md:text-center text-white/65">
           <BlurOutUp delay={500} triggerOnView={true}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis
             impedit sint odit officiis rem, aliquid voluptatibus, praesentium

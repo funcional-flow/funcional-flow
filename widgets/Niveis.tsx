@@ -13,7 +13,7 @@ export default function Niveis() {
   return (
     <div className="relative flex flex-col px-6">
       {/* Eyebrow */}
-      <TituloSessao centralizado={false} className="pb-3">
+      <TituloSessao centralizado={true} className="pb-3">
         <BottomUpLetters triggerOnView={true}>
           descubra seu nivel
         </BottomUpLetters>
@@ -23,7 +23,7 @@ export default function Niveis() {
           A evolução começa quando você entende o seu ponto de partida
         </span>
       </h2>
-      <p className="max-w-sm pb-6 text-sm text-black/65">
+      <p className="pb-6 text-sm md:text-lg text-black/65">
         <BlurOutUp delay={500} triggerOnView={true}>
           Cada fase possui desafios específicos, prioridades diferentes e
           capacidades que precisam ser desenvolvidas antes do próximo passo.
@@ -33,8 +33,8 @@ export default function Niveis() {
       </p>
 
       <Tabs defaultValue="iniciante">
-        <div className="relative flex flex-col">
-          <TabsList className="mx-auto mb-7 rounded-full bg-purple3">
+        <div className="relative mx-auto flex w-full flex-col md:max-w-md">
+          <TabsList className="bg-purple3 mx-auto mb-7 rounded-lg">
             <TabsTrigger value="iniciante" className={"text-white"}>
               Iniciante
             </TabsTrigger>
