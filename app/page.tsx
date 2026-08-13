@@ -17,11 +17,11 @@ export default function MobilePage() {
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
       <main className="flex flex-col overflow-hidden">
-        <section id="hero" className="">
+        <section id="hero" className="relative">
           <ImageGradient
             imageUrl="/hero/hero.png"
             desktopImageUrl="/hero/hero_desktop.png"
-            minHeight="min-h-[100svh]"
+            minHeight="min-h-svh"
             posicao="bg-[right_top]"
           >
             <Hero />
