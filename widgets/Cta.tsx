@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Cta() {
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 mx-auto md:max-w-md">
       <div className="flex flex-col text-center">
         <h1 className="text-3xl font-bold">EXPERIMENTE O FUNCIONAL FLOW</h1>
         <h1 className="text-yellow3 text-3xl font-bold">
