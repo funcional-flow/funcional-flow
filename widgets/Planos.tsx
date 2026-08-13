@@ -8,6 +8,7 @@ import ImageBackground from "@/components/ImageBackground";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
 import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
+import TituloSessao from "@/components/TituloSessao";
 
 export default function Planos() {
   return (
@@ -18,13 +19,9 @@ export default function Planos() {
       intensidade="95"
     >
       <div className="mx-6 flex flex-col gap-3 py-12">
-        <div className="flex items-center justify-center gap-2 tracking-widest">
-          <div className="bg-yellow3 h-px w-7" />
-          <h3 className="text-yellow3 text-center text-lg font-semibold">
-            <BottomUpLetters triggerOnView={true}>PLANOS</BottomUpLetters>
-          </h3>
-          <div className="bg-yellow3 h-px w-7" />
-        </div>
+        <TituloSessao escuro={false} centralizado={true} className="">
+          <BottomUpLetters triggerOnView={true}>PLANOS</BottomUpLetters>
+        </TituloSessao>
         <h1 className="text-center text-4xl">
           <BlurOutUp delay={500} triggerOnView={true}>
             ESCOLHA O SEU
@@ -33,7 +30,7 @@ export default function Planos() {
             <BottomUpLetters triggerOnView={true}>PLANO</BottomUpLetters>
           </span>
         </h1>
-        <p className="pb-4 text-sm text-gray-300">
+        <p className="pb-4 text-sm md:text-base md:text-center text-gray-300">
           <BlurOutUp delay={500} triggerOnView={true}>
             Decida o plano que melhor se adapta à sua rotina e comece a
             desenvolver um corpo mais forte e atlético através do método
