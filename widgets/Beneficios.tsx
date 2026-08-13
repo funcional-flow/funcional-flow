@@ -12,7 +12,7 @@ export default function Beneficios() {
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>
       </TituloSessao>
-      <h1 className="text-purple3 pb-5 text-center text-2xl font-bold uppercase md:text-5xl">
+      <h1 className="text-purple3 pb-5 text-center text-2xl font-bold uppercase">
         <BlurOutUp delay={500} triggerOnView={true}>
           Tudo o que você precisa para evoluir com
         </BlurOutUp>{" "}
@@ -33,7 +33,7 @@ export default function Beneficios() {
           {"."}
         </BlurOutUp>
       </h1>
-      <div className="flex flex-col gap-5 md:mx-auto md:w-xl md:items-center md:justify-center md:gap-12">
+      <div className="flex flex-col gap-5 mx-auto md:max-w-md">
         <SectionDropIn initialNum={180}>
           <CardFlow
             icone="treino_personalizado.png"

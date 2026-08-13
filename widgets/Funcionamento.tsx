@@ -7,13 +7,13 @@ import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
 export default function Funcionamento() {
   return (
     <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="100">
-      <div className="flex flex-col gap-3 px-6 py-12 md:py-20 text-white">
+      <div className="flex flex-col gap-3 px-6 py-12 text-white md:py-20">
         {/* Título principal */}
         <TituloSessao escuro={false} className="md:pb-3">
           <BottomUpLetters triggerOnView={true}>Funcionamento</BottomUpLetters>
         </TituloSessao>
         {/* Subtítulo */}
-        <h2 className="text-center text-4xl uppercase md:text-5xl">
+        <h2 className="text-center text-4xl uppercase">
           <BlurOutUp delay={600} triggerOnView={true}>
             O CAMINHO PARA SUA
           </BlurOutUp>{" "}
@@ -24,13 +24,13 @@ export default function Funcionamento() {
           </span>
         </h2>
         {/* Descrição */}
-        <p className="pb-5 md:pb-13 text-center text-lg text-gray-300 md:text-3xl">
+        <p className="pb-5 text-center text-lg text-gray-300 md:pb-13">
           <BlurOutUp delay={600} triggerOnView={true}>
             ENTENDA COMO FUNCIONA O PROCESSO DA CONSULTORIA
           </BlurOutUp>
         </p>
         {/* Etapas */}
-        <div className="flex flex-col gap-10 md:gap-16 md:mx-auto md:w-xl md:items-center md:justify-center">
+        <div className="mx-auto flex flex-col gap-10 md:max-w-lg">
           <CardEtapas
             numero="#1"
             titulo="PDF COM DETALHES"

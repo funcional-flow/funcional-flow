@@ -18,7 +18,7 @@ export default function Diferenciais() {
           text={["RESULTADO REAL", "ACOMPANHAMENTO DIFERENTE", "MÉTODO ÚNICO"]}
         />
       </h2>
-      <div className="py-10 flex flex-col gap-20">
+      <div className="py-10 flex flex-col gap-20 mx-auto md:max-w-lg">
         <CardDif
           titulo="ATENDIMENTO TOTALMENTE INDIVIDUAL"
           descricao="Aqui, cada exercício é escolhido pensando no seu nível atual."
