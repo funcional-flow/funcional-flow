@@ -32,7 +32,7 @@ export default function Resultados() {
             </BlurOutUp>
           </span>
         </h2>
-        <p className="text-sm md:text-center text-white/65">
+        <p className="text-base text-white/65">
           <BlurOutUp delay={500} triggerOnView={true}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis
             impedit sint odit officiis rem, aliquid voluptatibus, praesentium
