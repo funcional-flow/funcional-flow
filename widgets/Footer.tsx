@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="px-6">
+    <div className="px-6 mx-auto md:max-w-3xl">
       {/* Glow decorativo */}
       {/* <div className="bg-yellow3/10 pointer-events-none absolute -top-32 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full blur-3xl" /> */}
 
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="my-5 h-px bg-linear-to-r from-transparent via-white/15 to-transparent" />
 
         <div className="flex gap-2 md:gap-4">
-          <div className="relative flex-[0.5]">
+          <div className="relative md:flex-[0.32] flex-[0.5]">
             <Image
               src="/footer/perfil2.jpg"
               alt="Perfil"
