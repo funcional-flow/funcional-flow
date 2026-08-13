@@ -7,11 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Card } from "./ui/card";
-import { ShineBorder } from "./ui/shine-border";
 import { BorderBeam } from "./ui/border-beam";
-import SpringCustom from "./motion_custom/SpringCustom";
-import TweenCustom from "./motion_custom/TweenCustom";
-import SectionTween from "./motion_custom/SectionTween";
 
 interface CardPlanoProps {
   tipo_plano: string;

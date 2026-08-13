@@ -6,7 +6,7 @@ export default function Faq() {
   return (
     <div>
       <TituloSessao className="pb-5">FAQ</TituloSessao>
-      <Accordion className="px-10">
+      <Accordion className="px-10 flex flex-col mx-auto md:max-w-lg">
           {listaFaq.map((faq, index) => (
             <AccordionItem key={index} value={index.toString()}>
               <AccordionTrigger>
