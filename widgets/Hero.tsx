@@ -11,7 +11,7 @@ import SectionTween from "@/components/motion_custom/SectionTween";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-svh w-full overflow-hidden">
+    <div className="relative min-h-svh w-full overflow-hidden lg:px-6">
       {/* <LightRays
         // color="var(--purple4)"
         count={20}
@@ -21,7 +21,7 @@ export default function Hero() {
         className="hidden lg:block"
       /> */}
       {/* Top brand bar */}
-      <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:mx-auto lg:container">
+      <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:container lg:mx-auto">
         <div className="flex items-center justify-between pt-6">
           <span className="text-sm font-bold tracking-[0.25em] text-white">
             <BottomUpLetters delay={500}>FUNCIONAL</BottomUpLetters>

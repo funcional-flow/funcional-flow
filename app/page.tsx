@@ -11,6 +11,7 @@ import Cta from "@/widgets/Cta";
 import ImageGradient from "@/components/ImageGradient";
 import Niveis from "@/widgets/Niveis";
 import Footer from "@/widgets/Footer";
+import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
 
 export default function MobilePage() {
   return (
@@ -27,8 +28,13 @@ export default function MobilePage() {
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative px-6 py-12 md:py-20">
-          <Beneficios />
+        <section id="beneficios" className="relative px-6 py-12 md:py-12 lg:py-0">
+          <div className="relative lg:hidden">
+            <Beneficios />
+          </div>
+          <div className="relative hidden lg:block">
+            <BeneficiosDesk />
+          </div>
         </section>
         <section id="funcionamento" className="relative">
           <Funcionamento />
