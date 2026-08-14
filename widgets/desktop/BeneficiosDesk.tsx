@@ -9,7 +9,7 @@ import { Particles } from "@/components/ui/particles";
 
 export default function BeneficiosDesk() {
   return (
-    <div className="relative flex flex-col gap-3 md:gap-6 lg:py-12">
+    <div className="relative flex min-h-svh flex-col gap-3 md:gap-6 justify-center">
       <Particles className="absolute inset-0 z-0" color={"var(--purple4)"} />
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>

@@ -35,7 +35,7 @@ export default function Publico() {
             </BlurOutUp>
           </span>
         </h2>
-        <div className="z-20 mx-6 md:mx-50 flex flex-col gap-5">
+        <div className="z-20 px-6 mx-auto md:max-w-lg flex flex-col gap-5">
           <SectionDropIn initialNum={180}>
             <CardPublico
               titulo="CORPO ATLÉTICO E PREPARADO"

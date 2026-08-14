@@ -12,6 +12,7 @@ import ImageGradient from "@/components/ImageGradient";
 import Niveis from "@/widgets/Niveis";
 import Footer from "@/widgets/Footer";
 import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
+import FuncionamentoDesk from "@/widgets/desktop/FuncionamentoDesk";
 
 export default function MobilePage() {
   return (
@@ -28,7 +29,10 @@ export default function MobilePage() {
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative px-6 py-12 md:py-12 lg:py-0">
+        <section
+          id="beneficios"
+          className="relative py-12 md:py-12 lg:py-0"
+        >
           <div className="relative lg:hidden">
             <Beneficios />
           </div>
@@ -37,7 +41,12 @@ export default function MobilePage() {
           </div>
         </section>
         <section id="funcionamento" className="relative">
-          <Funcionamento />
+          <div className="relative lg:hidden">
+            <Funcionamento />
+          </div>
+          <div className="relative hidden lg:block">
+            <FuncionamentoDesk />
+          </div>
         </section>
         <section id="diferenciais" className="relative px-6 py-12">
           <Diferenciais />
