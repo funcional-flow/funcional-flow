@@ -23,7 +23,7 @@ export default function CardResultados({
   return (
     <article
       key={nome}
-      className="relative h-75 w-full shrink-0 overflow-hidden rounded-3xl border border-white/10 md:h-80"
+      className="relative h-75 w-full shrink-0 overflow-hidden rounded-3xl border border-white/10 md:h-80 lg:h-[65svh]"
     >
       {/* Photo */}
       <Image src={foto} alt={nome} fill className="object-cover" />
@@ -37,7 +37,7 @@ export default function CardResultados({
               </span> */}
 
       {/* Highlight pill */}
-      <div className="bg-yellow3 text-purple4 shadow-yellow3/30 absolute top-1 left-1/2 -translate-x-1/2 flex items-center gap-1.5 rounded-full px-2 py-1 text-[11px] font-bold shadow-lg">
+      <div className="bg-yellow3 text-purple4 shadow-yellow3/30 absolute top-1 left-1/2 flex -translate-x-1/2 items-center gap-1.5 rounded-full px-2 py-1 text-[11px] font-bold shadow-lg">
         <TrendingUp className="h-3.5 w-3.5" />
         {destaque}
       </div>

@@ -29,16 +29,22 @@ export default function MobilePage() {
             <Hero />
           </ImageGradient>
         </section>
-        <section
-          id="beneficios"
-          className="relative py-12 md:py-12 lg:py-0"
-        >
+        <section id="beneficios" className="relative py-12 md:py-12 lg:py-0">
           <div className="relative lg:hidden">
             <Beneficios />
           </div>
           <div className="relative hidden lg:block">
             <BeneficiosDesk />
           </div>
+        </section>
+        <section
+          id="resultados"
+          className="bg-purple4 relative py-12 lg:py-20 text-white"
+        >
+          <Resultados />
+        </section>
+        <section id="diferenciais" className="relative px-6 py-12">
+          <Diferenciais />
         </section>
         <section id="funcionamento" className="relative">
           <div className="relative lg:hidden">
@@ -47,15 +53,6 @@ export default function MobilePage() {
           <div className="relative hidden lg:block">
             <FuncionamentoDesk />
           </div>
-        </section>
-        <section id="diferenciais" className="relative px-6 py-12">
-          <Diferenciais />
-        </section>
-        <section
-          id="resultados"
-          className="bg-purple4 relative py-12 text-white"
-        >
-          <Resultados />
         </section>
         <section id="sobre" className="relative px-6 py-12">
           <Sobre />

@@ -22,7 +22,7 @@ export default function Resultados() {
         <TituloSessao centralizado={true} escuro={false}>
           <BottomUpLetters triggerOnView={true}>Resultados</BottomUpLetters>
         </TituloSessao>
-        <h2 className="text-3xl font-bold text-center tracking-normal">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center tracking-normal">
           <BlurOutUp delay={500} triggerOnView={true}>
             HISTÓRIAS DE
           </BlurOutUp>{" "}
@@ -32,7 +32,7 @@ export default function Resultados() {
             </BlurOutUp>
           </span>
         </h2>
-        <p className="text-base text-white/65">
+        <p className="text-base text-white/65 lg:text-lg">
           <BlurOutUp delay={500} triggerOnView={true}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis
             impedit sint odit officiis rem, aliquid voluptatibus, praesentium
@@ -54,7 +54,7 @@ export default function Resultados() {
           className="overflow-hidden"
         >
           {results.map((r, index) => (
-            <SwiperSlide key={index} className="px-6 md:max-w-md">
+            <SwiperSlide key={index} className="px-6 md:max-w-114 lg:max-w-158 mx-auto">
               <CardResultados
                 nome={r.name}
                 idade={r.age}
@@ -72,7 +72,7 @@ export default function Resultados() {
       {/* Nav arrows */}
       <div className="mx-auto mt-6 flex max-w-md justify-center text-center gap-3 px-6">
         <SpringCustom delayNum={0.5}>
-          <span className="ml-1 text-[12px] text-white/40">
+          <span className="text-sm text-white/40">
             Arraste para ver mais
           </span>
         </SpringCustom>
@@ -89,7 +89,7 @@ export default function Resultados() {
           <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent">
             +
           </span>
-          <div className="mt-1.5 text-[10px] leading-tight text-white/50">
+          <div className="mt-1.5 text-sm leading-tight text-white/50">
             Cidades diferentes
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function Resultados() {
             startValue={0}
             className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent"
           />
-          <div className="mt-1.5 text-[10px] leading-tight text-white/50">
+          <div className="mt-1.5 text-sm leading-tight text-white/50">
             Avaliação média
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function Resultados() {
           <span className="from-yellow3 bg-linear-to-r to-yellow-600 bg-clip-text text-xl leading-none font-bold text-transparent">
             %
           </span>
-          <div className="mt-1.5 text-[10px] leading-tight text-white/50">
+          <div className="mt-1.5 text-sm leading-tight text-white/50">
             Taxa de desistência
           </div>
         </div>
