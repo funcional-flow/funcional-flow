@@ -11,14 +11,14 @@ import { iniciante, intermediario, avancado } from "@/data/list_niveis";
 
 export default function Niveis() {
   return (
-    <div className="relative flex flex-col px-6">
+    <div className="relative flex flex-col px-6 lg:px-12 lg:mx-auto lg:container">
       {/* Eyebrow */}
       <TituloSessao centralizado={true} className="pb-3">
         <BottomUpLetters triggerOnView={true}>
           descubra seu nivel
         </BottomUpLetters>
       </TituloSessao>
-      <h2 className="text-purple3 pb-3 text-center text-3xl font-bold">
+      <h2 className="text-purple3 pb-3 text-center text-3xl lg:text-4xl font-bold">
         <span className="uppercase">
           A evolução começa quando você entende o seu ponto de partida
         </span>
