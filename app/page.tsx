@@ -13,6 +13,7 @@ import Niveis from "@/widgets/Niveis";
 import Footer from "@/widgets/Footer";
 import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
 import FuncionamentoDesk from "@/widgets/desktop/FuncionamentoDesk";
+import PlanosDesk from "@/widgets/desktop/PlanosDesk";
 
 export default function MobilePage() {
   return (
@@ -39,7 +40,7 @@ export default function MobilePage() {
         </section>
         <section
           id="resultados"
-          className="bg-purple4 relative py-12 lg:py-20 text-white"
+          className="bg-purple4 relative py-12 text-white lg:py-20"
         >
           <Resultados />
         </section>
@@ -64,7 +65,12 @@ export default function MobilePage() {
           <Niveis />
         </section>
         <section id="planos" className="bg-purple4 relative text-white">
-          <Planos />
+          <div className="relative lg:hidden">
+            <Planos />
+          </div>
+          <div className="relative hidden lg:block">
+            <PlanosDesk />
+          </div>
         </section>
         <section id="faq" className="relative py-12">
           <Faq />

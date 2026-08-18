@@ -1,0 +1,118 @@
+import {
+  listaPlanosMensal,
+  listaPlanosTrimestral,
+  listaPlanosSemestral,
+  descricaoPlanos
+} from "@/data/list_data_plans";
+import CardPlano from "@/components/CardPlano";
+import ImageBackground from "@/components/ImageBackground";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
+import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
+import TituloSessao from "@/components/TituloSessao";
+
+export default function PlanosDesk() {
+  return (
+    <ImageBackground
+      imageUrl="/planos/bg-planos5.jpg"
+      centralizado={false}
+      svh="100"
+      intensidade="97.5"
+    >
+      <div className="mx-6 flex flex-col gap-3 py-12">
+        <TituloSessao escuro={false} centralizado={true} className="">
+          <BottomUpLetters triggerOnView={true}>PLANOS</BottomUpLetters>
+        </TituloSessao>
+        <h1 className="text-center text-4xl">
+          <BlurOutUp delay={500} triggerOnView={true}>
+            ESCOLHA O SEU
+          </BlurOutUp>{" "}
+          <span className="text-yellow3 font-bold tracking-wider">
+            <BottomUpLetters triggerOnView={true}>PLANO</BottomUpLetters>
+          </span>
+        </h1>
+        <p className="pb-4 text-sm text-gray-300 md:text-center md:text-base">
+          <BlurOutUp delay={500} triggerOnView={true}>
+            Decida o plano que melhor se adapta à sua rotina e comece a
+            desenvolver um corpo mais forte e atlético através do método
+            Funcional Flow.
+          </BlurOutUp>
+        </p>
+        <Tabs defaultValue="semestral">
+          <div className="relative flex flex-col">
+            <TabsList className="mx-auto mb-7 rounded-sm bg-purple-100/20 px-2 outline">
+              <TabsTrigger value="mensal" className={"text-white"}>
+                Mensal
+              </TabsTrigger>
+              <TabsTrigger value="trimestral" className={"text-white"}>
+                Trimestral
+              </TabsTrigger>
+              <TabsTrigger value="semestral" className={"text-white"}>
+                Semestral
+              </TabsTrigger>
+            </TabsList>
+            <TabsContent value="mensal">
+              <div className="mx-auto flex items-center lg:max-w-3xl lg:gap-10">
+                {listaPlanosMensal.map((plano) => (
+                  <CardPlano
+                    key={plano.id + plano.periodo}
+                    tipo_plano={plano.tipo_plano}
+                    descricao_plano={plano.descricao_plano}
+                    preco={plano.preco || ""}
+                    duracao={plano.duracao || ""}
+                    features={plano.features}
+                    noFeatures={plano.noFeatures || []}
+                    periodo={plano.periodo}
+                    principal={plano.principal}
+                  />
+                ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="trimestral">
+              <div className="mx-auto flex items-center lg:max-w-3xl lg:gap-10">
+                {listaPlanosTrimestral.map((plano) => (
+                  <CardPlano
+                    key={plano.id + plano.periodo}
+                    tipo_plano={plano.tipo_plano}
+                    descricao_plano={plano.descricao_plano}
+                    preco={plano.preco || ""}
+                    duracao={plano.duracao || ""}
+                    features={plano.features}
+                    noFeatures={plano.noFeatures || []}
+                    periodo={plano.periodo}
+                    principal={plano.principal}
+                  />
+                ))}
+              </div>
+            </TabsContent>
+            <TabsContent value="semestral">
+              <div className="mx-auto flex items-center lg:max-w-3xl lg:gap-10">
+                {listaPlanosSemestral.map((plano) => (
+                  <CardPlano
+                    key={plano.id + plano.periodo}
+                    tipo_plano={plano.tipo_plano}
+                    descricao_plano={plano.descricao_plano}
+                    preco={plano.preco || ""}
+                    duracao={plano.duracao || ""}
+                    features={plano.features}
+                    noFeatures={plano.noFeatures || []}
+                    periodo={plano.periodo}
+                    principal={plano.principal}
+                  />
+                ))}
+              </div>
+            </TabsContent>
+          </div>
+        </Tabs>
+
+        {/* Footer */}
+        <div className="mt-6 text-center text-sm text-gray-400">
+          <p>
+            Todos os planos incluem consulta inicial gratuita. Pagamentos via
+            Pix e/ou Dinheiro.
+          </p>
+        </div>
+      </div>
+    </ImageBackground>
+  );
+}
