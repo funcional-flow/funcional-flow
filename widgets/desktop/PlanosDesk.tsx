@@ -60,7 +60,7 @@ export default function PlanosDesk() {
                     preco={plano.preco || ""}
                     duracao={plano.duracao || ""}
                     features={plano.features}
-                    noFeatures={plano.noFeatures}
+                    noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
                   />
@@ -77,7 +77,7 @@ export default function PlanosDesk() {
                     preco={plano.preco || ""}
                     duracao={plano.duracao || ""}
                     features={plano.features}
-                    noFeatures={plano.noFeatures}
+                    noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
                   />
@@ -94,7 +94,7 @@ export default function PlanosDesk() {
                     preco={plano.preco || ""}
                     duracao={plano.duracao || ""}
                     features={plano.features}
-                    noFeatures={plano.noFeatures}
+                    noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
                   />

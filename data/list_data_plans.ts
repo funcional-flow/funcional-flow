@@ -27,7 +27,7 @@ export type Plano = {
   descricao_plano: string;
   preco: string;
   duracao: string;
-  features?: Feature[];
+  features: Feature[];
   noFeatures?: Feature[];
   texto_final: string;
   principal: boolean;
@@ -163,7 +163,7 @@ export const listaPlanosMensal: Plano[] = [
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
-    features: descricaoPlanos.featuresPremium,
+    features: descricaoPlanos.featuresPremium!,
   },
   {
     id: "standard",
@@ -176,7 +176,7 @@ export const listaPlanosMensal: Plano[] = [
     texto_final:
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
-    features: descricaoPlanos.featuresStandard,
+    features: descricaoPlanos.featuresStandard!,
     noFeatures: descricaoPlanos.noFeatures
   },
 ];
@@ -193,7 +193,7 @@ export const listaPlanosTrimestral: Plano[] = [
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
-    features: descricaoPlanos.featuresPremium,
+    features: descricaoPlanos.featuresPremium!,
   },
   {
     id: "standard",
@@ -206,7 +206,7 @@ export const listaPlanosTrimestral: Plano[] = [
     texto_final:
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
-    features: descricaoPlanos.featuresStandard,
+    features: descricaoPlanos.featuresStandard!,
     noFeatures: descricaoPlanos.noFeatures
   },
 ];
@@ -224,7 +224,7 @@ export const listaPlanosSemestral: Plano[] = [
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
-    features: descricaoPlanos.featuresPremium,
+    features: descricaoPlanos.featuresPremium!,
   },
   {
     id: "standard",
@@ -237,7 +237,7 @@ export const listaPlanosSemestral: Plano[] = [
     texto_final:
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
-    features: descricaoPlanos.featuresStandard,
+    features: descricaoPlanos.featuresStandard!,
     noFeatures: descricaoPlanos.noFeatures
   },
 ];
