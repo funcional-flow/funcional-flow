@@ -14,7 +14,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
 export default function Resultados() {
-
   return (
     <div className="relative z-10">
       {/* Eyebrow + heading */}
@@ -22,7 +21,7 @@ export default function Resultados() {
         <TituloSessao centralizado={true} escuro={false}>
           <BottomUpLetters triggerOnView={true}>Resultados</BottomUpLetters>
         </TituloSessao>
-        <h2 className="text-3xl lg:text-4xl font-bold text-center tracking-normal">
+        <h2 className="text-center text-3xl font-bold tracking-normal lg:text-4xl">
           <BlurOutUp delay={500} triggerOnView={true}>
             HISTÓRIAS DE
           </BlurOutUp>{" "}
@@ -32,11 +31,9 @@ export default function Resultados() {
             </BlurOutUp>
           </span>
         </h2>
-        <p className="text-base text-white/65 lg:text-lg">
+        <p className="text-center text-base text-white/65 lg:text-lg">
           <BlurOutUp delay={500} triggerOnView={true}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nobis
-            impedit sint odit officiis rem, aliquid voluptatibus, praesentium
-            optio laborum sunt, soluta dolor voluptatem libero et.
+            Resultados construídos através do Método Funcional Flow
           </BlurOutUp>
         </p>
       </div>
@@ -54,7 +51,10 @@ export default function Resultados() {
           className="overflow-hidden"
         >
           {results.map((r, index) => (
-            <SwiperSlide key={index} className="px-6 md:max-w-114 lg:max-w-158 mx-auto">
+            <SwiperSlide
+              key={index}
+              className="mx-auto px-6 md:max-w-114 lg:max-w-158"
+            >
               <CardResultados
                 nome={r.name}
                 idade={r.age}
@@ -70,11 +70,9 @@ export default function Resultados() {
       </SectionTween>
 
       {/* Nav arrows */}
-      <div className="mx-auto mt-6 flex max-w-md justify-center text-center gap-3 px-6">
+      <div className="mx-auto mt-6 flex max-w-md justify-center gap-3 px-6 text-center">
         <SpringCustom delayNum={0.5}>
-          <span className="text-sm text-white/40">
-            Arraste para ver mais
-          </span>
+          <span className="text-sm text-white/40">Arraste para ver mais</span>
         </SpringCustom>
       </div>
 

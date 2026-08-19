@@ -17,9 +17,9 @@ export default function Publico() {
   return (
     <ImageBackground
       imageUrl="/fundo.jpeg"
-      svh="50"
+      svh="100"
       intensidade="80"
-      centralizado={false}
+      centralizado={true}
     >
       {/* <div className="pointer-events-none absolute bottom-0 h-10 w-full bg-linear-to-b from-transparent to-background" /> */}
       <div className="relative flex flex-col py-12">
@@ -28,62 +28,74 @@ export default function Publico() {
             pra quem é a consultoria
           </BottomUpLetters>
         </TituloSessao>
-        <h2 className="mx-9 pb-6 text-center text-3xl font-bold">
+        <h2 className="mx-9 pb-6 lg:pb-15 text-center lg:text-4xl text-3xl font-bold">
           <span className="uppercase">
             <BlurOutUp delay={500} triggerOnView={true}>
               do iniciante ao avançado, você pode desenvolver:
             </BlurOutUp>
           </span>
         </h2>
-        <div className="z-20 px-6 mx-auto md:max-w-lg flex flex-col gap-5">
-          <SectionDropIn initialNum={180}>
-            <CardPublico
-              titulo="CORPO ATLÉTICO E PREPARADO"
-              descricao="Desenvolva capacidades físicas que permitam correr, saltar, levantar peso, explorar novos desafios e se sentir capaz em qualquer situação."
-              icone={
-                <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
-              }
-            />
-          </SectionDropIn>
-          <SectionDropIn initialNum={180}>
-            <CardPublico
-              titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
-              descricao="Construa um corpo que se move com mais liberdade, gera força com eficiência e responde melhor às demandas do dia a dia."
-              icone={
-                <BicepsFlexed className="h-10 w-10 shrink-0 text-purple-700" />
-              }
-            />
-          </SectionDropIn>
-          <SectionDropIn initialNum={180}>
-            <CardPublico
-              titulo="PERFORMANCE SEM ATALHOS"
-              descricao="Evolua através de um processo estruturado, focado em progresso consistente e desenvolvimento real de capacidades."
-              icone={
-                <ChartNoAxesCombined className="h-10 w-10 shrink-0 text-purple-700" />
-              }
-            />
-          </SectionDropIn>
-          <SectionDropIn initialNum={180}>
-            <CardPublico
-              titulo="TREINAR COM PROPÓSITO"
-              descricao="Entenda o objetivo de cada etapa do treinamento e saiba exatamente o que está desenvolvendo em cada sessão."
-              icone={<Target className="h-10 w-10 shrink-0 text-purple-700" />}
-            />
-          </SectionDropIn>
-          <SectionDropIn initialNum={180}>
-            <CardPublico
-              titulo="QUALIDADE DE MOVIMENTO"
-              descricao="Aprenda a controlar melhor o próprio corpo, aprimorar padrões de movimento e se movimentar com mais confiança."
-              icone={<Medal className="h-10 w-10 shrink-0 text-purple-700" />}
-            />
-          </SectionDropIn>
-          <SectionDropIn initialNum={180}>
-            <CardPublico
-              titulo="RESULTADOS DURADOUROS"
-              descricao="Construa hábitos, capacidades e resultados que continuam evoluindo no longo prazo."
-              icone={<Trophy className="h-10 w-10 shrink-0 text-purple-700" />}
-            />
-          </SectionDropIn>
+        <div className="z-20 mx-auto flex flex-col gap-5 px-6 md:max-w-lg lg:max-w-full">
+          <div className="flex flex-col gap-5 lg:flex-row">
+            <SectionDropIn initialNum={180}>
+              <CardPublico
+                titulo="CORPO ATLÉTICO E PREPARADO"
+                descricao="Desenvolva capacidades físicas que te permitam correr, saltar, levantar peso e explorar novos desafios em qualquer situação."
+                icone={
+                  <ClipboardCheck className="h-10 w-10 shrink-0 text-purple-700" />
+                }
+              />
+            </SectionDropIn>
+            <SectionDropIn initialNum={180}>
+              <CardPublico
+                titulo="MAIS MOBILIDADE, FORÇA E CONTROLE"
+                descricao="Construa um corpo que se move com mais liberdade, gera força com eficiência e responde melhor às demandas do dia a dia."
+                icone={
+                  <BicepsFlexed className="h-10 w-10 shrink-0 text-purple-700" />
+                }
+              />
+            </SectionDropIn>
+          </div>
+
+          <div className="flex flex-col gap-5 lg:flex-row">
+            <SectionDropIn initialNum={180}>
+              <CardPublico
+                titulo="PERFORMANCE SEM ATALHOS"
+                descricao="Evolua através de um processo estruturado, focado em progresso consistente e desenvolvimento real de capacidades."
+                icone={
+                  <ChartNoAxesCombined className="h-10 w-10 shrink-0 text-purple-700" />
+                }
+              />
+            </SectionDropIn>
+            <SectionDropIn initialNum={180}>
+              <CardPublico
+                titulo="TREINAR COM PROPÓSITO"
+                descricao="Entenda o objetivo de cada etapa do treinamento e saiba exatamente o que está desenvolvendo em cada sessão."
+                icone={
+                  <Target className="h-10 w-10 shrink-0 text-purple-700" />
+                }
+              />
+            </SectionDropIn>
+          </div>
+
+          <div className="flex flex-col gap-5 lg:flex-row">
+            <SectionDropIn initialNum={180}>
+              <CardPublico
+                titulo="QUALIDADE DE MOVIMENTO"
+                descricao="Aprenda a controlar melhor o próprio corpo, aprimorar padrões de movimento e se movimentar com mais confiança."
+                icone={<Medal className="h-10 w-10 shrink-0 text-purple-700" />}
+              />
+            </SectionDropIn>
+            <SectionDropIn initialNum={180}>
+              <CardPublico
+                titulo="RESULTADOS DURADOUROS"
+                descricao="Construa hábitos, capacidades e resultados que continuam evoluindo no longo prazo."
+                icone={
+                  <Trophy className="h-10 w-10 shrink-0 text-purple-700" />
+                }
+              />
+            </SectionDropIn>
+          </div>
         </div>
       </div>
     </ImageBackground>
