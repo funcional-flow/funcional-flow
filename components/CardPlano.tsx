@@ -8,14 +8,15 @@ import {
 } from "@/components/ui/accordion";
 import { Card } from "./ui/card";
 import { BorderBeam } from "./ui/border-beam";
+import { Feature } from "@/data/list_data_plans";
 
 interface CardPlanoProps {
   tipo_plano: string;
   descricao_plano: string;
   preco?: string;
   duracao: string;
-  features: { title: string; description: string }[];
-  noFeatures: { title: string; description: string }[];
+  features: Feature[];
+  noFeatures: Feature[];
   periodo: string;
   principal: boolean;
 }

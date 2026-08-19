@@ -2,7 +2,6 @@ import {
   listaPlanosMensal,
   listaPlanosTrimestral,
   listaPlanosSemestral,
-  descricaoPlanos
 } from "@/data/list_data_plans";
 import CardPlano from "@/components/CardPlano";
 import ImageBackground from "@/components/ImageBackground";
@@ -60,7 +59,7 @@ export default function PlanosDesk() {
                     descricao_plano={plano.descricao_plano}
                     preco={plano.preco || ""}
                     duracao={plano.duracao || ""}
-                    features={plano.features}
+                    features={plano.features || []}
                     noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
@@ -77,7 +76,7 @@ export default function PlanosDesk() {
                     descricao_plano={plano.descricao_plano}
                     preco={plano.preco || ""}
                     duracao={plano.duracao || ""}
-                    features={plano.features}
+                    features={plano.features || []}
                     noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
@@ -94,7 +93,7 @@ export default function PlanosDesk() {
                     descricao_plano={plano.descricao_plano}
                     preco={plano.preco || ""}
                     duracao={plano.duracao || ""}
-                    features={plano.features}
+                    features={plano.features || []}
                     noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}

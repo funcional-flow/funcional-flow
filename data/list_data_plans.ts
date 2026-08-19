@@ -1,3 +1,15 @@
+// mensal:
+// standard= 147
+// premium= 197
+
+// trimestral:
+// standard= 3x 132,33 (397, desconto de R$ 44,00)
+// premium= 3x 182,33 (547, desconto de R$ 44,00)
+
+// semestral:
+// standard= 6x 119,50 (717, desconto de R$ 165,00)
+// premium= 6x 149,50 (897, desconto de R$ 285,00)
+
 export type Feature = {
   title: string;
   description: string;
@@ -21,18 +33,6 @@ export type Plano = {
   principal: boolean;
   periodo: string;
 };
-
-// mensal:
-// standard= 147
-// premium= 197
-
-// trimestral:
-// standard= 3x 132,33 (397, desconto de R$ 44,00)
-// premium= 3x 182,33 (547, desconto de R$ 44,00)
-
-// semestral:
-// standard= 6x 119,50 (717, desconto de R$ 165,00)
-// premium= 6x 149,50 (897, desconto de R$ 285,00)
 
 export const descricaoPlanos: Features = {
   featuresPremium: [
