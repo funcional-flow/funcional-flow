@@ -39,7 +39,7 @@ export default function ImageGradient({
         }}
       />
       <div
-        className={`absolute inset-0 hidden bg-cover ${posicao} lg:block`}
+        className={`absolute inset-0 hidden bg-cover ${posicao} md:block`}
         style={{
           backgroundImage: `url(${desktopImageUrl})`,
         }}
