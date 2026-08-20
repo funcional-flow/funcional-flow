@@ -15,7 +15,7 @@ export default function Faq() {
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="pl-5">{faq.resposta}</div>
+                <div className="pl-5 text-black/70">{faq.resposta}</div>
               </AccordionContent>
             </AccordionItem>
           ))}

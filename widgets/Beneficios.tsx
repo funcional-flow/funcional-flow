@@ -8,7 +8,7 @@ import SectionDropIn from "@/components/motion_custom/SectionDropIn";
 
 export default function Beneficios() {
   return (
-    <div className="flex flex-col gap-3 md:gap-6">
+    <div className="flex flex-col gap-3 md:gap-6 px-6">
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>
       </TituloSessao>
