@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${geistSans.variable} ${teko.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${teko.variable} scroll-smooth h-full antialiased`}
     >
       <body className="flex flex-col font-teko text-lg tracking-wide">{children}</body>
     </html>

@@ -13,7 +13,7 @@ import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button
 
 export default function Hero() {
   return (
-    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:container lg:mx-auto lg:min-h-auto">
+    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:container lg:mx-auto lg:min-h-auto xl:min-h-svh">
       <div className="flex items-center justify-between pt-6">
         <span className="text-sm font-bold tracking-[0.25em] text-white">
           <BottomUpLetters delay={500}>FUNCIONAL</BottomUpLetters>
@@ -97,8 +97,11 @@ export default function Hero() {
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 lg:h-4 lg:w-4" />
               </button>
             </div>
-            <div className="mx-auto hidden w-md items-center justify-center lg:flex">
-              <InteractiveHoverButton className="w-full">
+            <div className="mx-auto hidden w-xs items-center justify-center lg:flex">
+              <InteractiveHoverButton
+                onClick={() => (window.location.href = "#planos")}
+                className="w-full text-sm"
+              >
                 PARTICIPE AGORA
               </InteractiveHoverButton>
             </div>
@@ -106,7 +109,7 @@ export default function Hero() {
         </div>
 
         {/* Level pills */}
-        <div className="flex justify-center gap-2 md:gap-7 md:pt-2 lg:pt-0">
+        <div className="flex justify-center gap-2 md:gap-7 md:pt-2 lg:gap-3 lg:pt-0">
           <SpringCustom delayNum={2}>
             <button
               onClick={() => (window.location.href = "#niveis")}
