@@ -15,19 +15,19 @@ export default function Hero() {
   return (
     <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:container lg:mx-auto lg:min-h-auto xl:min-h-svh">
       <div className="flex items-center justify-between pt-6">
-        <span className="text-sm font-bold tracking-[0.25em] text-white">
+        <span className="text-sm lg:text-xs font-bold tracking-[0.25em] text-white">
           <BottomUpLetters delay={500}>FUNCIONAL</BottomUpLetters>
           <span className="text-yellow3">
             <BottomUpLetters delay={1300}>FLOW</BottomUpLetters>
           </span>
         </span>
-        <span className="text-sm font-medium tracking-widest text-white/60 uppercase">
+        <span className="text-sm lg:text-xs font-medium tracking-widest text-white/60 uppercase">
           <TypewriterText>Bruno Levien</TypewriterText>
         </span>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full lg:pt-5">
+      <div className="relative z-10 mx-auto w-full lg:pt-5.5">
         {/* Eyebrow */}
         <div className="mb-3 flex items-center gap-2 md:mt-6 md:mb-2">
           <SectionTween horizontal={true} initialNum={-100} delay={0.25}>
@@ -119,7 +119,7 @@ export default function Hero() {
             </button>
             <ShinyButton
               onClick={() => (window.location.href = "#niveis")}
-              className="bg-purple3/10 hidden rounded-full text-base font-medium lg:block"
+              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block"
             >
               Iniciante
             </ShinyButton>
@@ -133,7 +133,7 @@ export default function Hero() {
             </button>
             <ShinyButton
               onClick={() => (window.location.href = "#niveis")}
-              className="bg-purple3/10 hidden rounded-full text-base font-medium lg:block"
+              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block"
             >
               Intermediário
             </ShinyButton>
@@ -147,7 +147,7 @@ export default function Hero() {
             </button>
             <ShinyButton
               onClick={() => (window.location.href = "#niveis")}
-              className="bg-purple3/10 hidden rounded-full text-base font-medium lg:block"
+              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block"
             >
               Avançado
             </ShinyButton>
