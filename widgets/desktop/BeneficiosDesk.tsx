@@ -9,7 +9,7 @@ import { Particles } from "@/components/ui/particles";
 
 export default function BeneficiosDesk() {
   return (
-    <div className="relative flex min-h-svh flex-col justify-center gap-6 py-20 xl:py-0">
+    <div className="relative flex min-h-svh flex-col justify-center gap-6 py-12 xl:py-0">
       <Particles className="absolute inset-0 z-0" color={"var(--purple4)"} />
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>
@@ -69,7 +69,7 @@ export default function BeneficiosDesk() {
             </CardFlowDesk>
           </SectionDropIn>
         </div>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex justify-center gap-5">
           <SectionDropIn initialNum={180}>
             <CardFlowDesk
               icone="feedback_tecnico.png"

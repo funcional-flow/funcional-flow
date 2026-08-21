@@ -32,7 +32,7 @@ export default function MobilePage() {
         </section>
         <section
           id="beneficios"
-          className="relative overflow-hidden py-12 md:py-12 lg:py-0"
+          className="relative overflow-hidden"
         >
           <div className="relative lg:hidden">
             <Beneficios />
