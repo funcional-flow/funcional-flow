@@ -19,8 +19,8 @@ export default function MobilePage() {
   return (
     <>
       <header className="container mx-auto">{/* <Navbar /> */}</header>
-      <main className="flex flex-col overflow-hidden">
-        <section id="hero" className="relative">
+      <main className="flex flex-col">
+        <section id="hero" className="relative overflow-hidden">
           <ImageGradient
             imageUrl="/hero/hero.png"
             desktopImageUrl="/hero/hero_desktop.png"
@@ -30,7 +30,10 @@ export default function MobilePage() {
             <Hero />
           </ImageGradient>
         </section>
-        <section id="beneficios" className="relative py-12 md:py-12 lg:py-0">
+        <section
+          id="beneficios"
+          className="relative overflow-hidden py-12 md:py-12 lg:py-0"
+        >
           <div className="relative lg:hidden">
             <Beneficios />
           </div>
@@ -40,14 +43,17 @@ export default function MobilePage() {
         </section>
         <section
           id="resultados"
-          className="bg-purple4 relative py-12 text-white lg:py-20"
+          className="bg-purple4 relative overflow-hidden py-12 text-white lg:py-20"
         >
           <Resultados />
         </section>
-        <section id="diferenciais" className="relative px-6 py-12">
+        <section
+          id="diferenciais"
+          className="relative overflow-hidden px-6 py-12"
+        >
           <Diferenciais />
         </section>
-        <section id="funcionamento" className="relative">
+        <section id="funcionamento" className="relative overflow-hidden">
           <div className="relative lg:hidden">
             <Funcionamento />
           </div>
@@ -55,7 +61,7 @@ export default function MobilePage() {
             <FuncionamentoDesk />
           </div>
         </section>
-        <section id="sobre" className="relative px-6 py-12">
+        <section id="sobre" className="relative overflow-hidden px-6 py-12">
           <Sobre />
         </section>
         <section id="publico" className="bg-purple4 relative text-white">
@@ -64,7 +70,10 @@ export default function MobilePage() {
         <section id="niveis" className="relative py-12">
           <Niveis />
         </section>
-        <section id="planos" className="bg-purple4 relative text-white">
+        <section
+          id="planos"
+          className="bg-purple4 relative overflow-hidden text-white"
+        >
           <div className="relative lg:hidden">
             <Planos />
           </div>
@@ -72,29 +81,19 @@ export default function MobilePage() {
             <PlanosDesk />
           </div>
         </section>
-        <section id="faq" className="relative py-12">
+        <section id="faq" className="relative overflow-hidden py-12">
           <Faq />
         </section>
-        <section id="cta" className="bg-purple4 relative px-6 py-12 text-white">
+        <section
+          id="cta"
+          className="bg-purple4 relative overflow-hidden px-6 py-12 text-white"
+        >
           <Cta />
         </section>
       </main>
-      <footer className="relative overflow-hidden bg-gray-500 text-white">
+      <footer className="relative bg-gray-500 text-white">
         <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
         <Footer />
-        {/* <div className="z-1000 text-3xl font-bold text-black">Footer</div>
-        <p>Contatos</p>
-        <p>
-          Desenvolvido por{" "}
-          <a
-            href="https://portfolio-rm-one.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600"
-          >
-            Renato Monteiro
-          </a>
-        </p> */}
       </footer>
     </>
   );
