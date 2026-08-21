@@ -12,7 +12,7 @@ export default function CardFlowDesk({
   children,
 }: CardFlowDeskProps) {
   return (
-    <div className="group shadow-purple3 relative max-w-2xs overflow-hidden rounded-2xl p-1 shadow-lg">
+    <div className="group shadow-purple3 relative max-w-2xs overflow-hidden rounded-2xl p-1 shadow-lg xl:max-w-xs">
       <div className="bg-purple2 absolute inset-0" />
       <div className="shine-light absolute inset-0" />
 
