@@ -15,7 +15,7 @@ import { Pagination } from "swiper/modules";
 
 export default function Resultados() {
   return (
-    <div className="relative z-10">
+    <div className="relative">
       {/* Eyebrow + heading */}
       <div className="mx-auto mb-8 flex flex-col gap-3 px-6 md:w-full">
         <TituloSessao centralizado={true} escuro={false}>

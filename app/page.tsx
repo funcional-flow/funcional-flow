@@ -32,7 +32,7 @@ export default function MobilePage() {
         </section>
         <section
           id="beneficios"
-          className="relative overflow-hidden"
+          className="relative overflow-hidden lg:sticky lg:-top-12 lg:z-10"
         >
           <div className="relative lg:hidden">
             <Beneficios />
@@ -43,17 +43,17 @@ export default function MobilePage() {
         </section>
         <section
           id="resultados"
-          className="bg-purple4 relative overflow-hidden py-12 text-white lg:py-20"
+          className="bg-purple4 st relative overflow-hidden py-12 text-white lg:z-20"
         >
           <Resultados />
         </section>
         <section
           id="diferenciais"
-          className="relative overflow-hidden px-6 py-12"
+          className="bg-background relative z-20 px-6 pt-6 pb-12"
         >
           <Diferenciais />
         </section>
-        <section id="funcionamento" className="relative overflow-hidden">
+        <section id="funcionamento" className="relative z-20 overflow-hidden">
           <div className="relative lg:hidden">
             <Funcionamento />
           </div>
@@ -61,18 +61,21 @@ export default function MobilePage() {
             <FuncionamentoDesk />
           </div>
         </section>
-        <section id="sobre" className="relative overflow-hidden px-6 py-12">
+        <section
+          id="sobre"
+          className="bg-background relative z-20 overflow-hidden px-6 py-12"
+        >
           <Sobre />
         </section>
-        <section id="publico" className="bg-purple4 relative text-white">
+        <section id="publico" className="bg-purple4 relative z-20 text-white">
           <Publico />
         </section>
-        <section id="niveis" className="relative py-12">
+        <section id="niveis" className="bg-background relative z-20 py-12">
           <Niveis />
         </section>
         <section
           id="planos"
-          className="bg-purple4 relative overflow-hidden text-white"
+          className="bg-purple4 relative z-20 overflow-hidden text-white"
         >
           <div className="relative lg:hidden">
             <Planos />
@@ -81,12 +84,15 @@ export default function MobilePage() {
             <PlanosDesk />
           </div>
         </section>
-        <section id="faq" className="relative overflow-hidden py-12">
+        <section
+          id="faq"
+          className="bg-background relative z-20 overflow-hidden py-12"
+        >
           <Faq />
         </section>
         <section
           id="cta"
-          className="bg-purple4 relative overflow-hidden px-6 py-12 text-white"
+          className="bg-purple4 relative z-20 overflow-hidden px-6 py-12 text-white"
         >
           <Cta />
         </section>
