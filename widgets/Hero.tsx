@@ -13,15 +13,15 @@ import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button
 
 export default function Hero() {
   return (
-    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:container lg:mx-auto lg:min-h-auto xl:min-h-svh">
+    <div className="relative flex min-h-svh w-full flex-col justify-between overflow-hidden px-6 pb-12 lg:container lg:mx-auto">
       <div className="flex items-center justify-between pt-6">
-        <span className="text-sm lg:text-xs font-bold tracking-[0.25em] text-white">
+        <span className="text-sm font-bold tracking-[0.25em] text-white lg:text-xs xl:text-sm">
           <BottomUpLetters delay={500}>FUNCIONAL</BottomUpLetters>
           <span className="text-yellow3">
             <BottomUpLetters delay={1300}>FLOW</BottomUpLetters>
           </span>
         </span>
-        <span className="text-sm lg:text-xs font-medium tracking-widest text-white/60 uppercase">
+        <span className="text-sm font-medium tracking-widest text-white/60 uppercase lg:text-xs xl:text-sm">
           <TypewriterText>Bruno Levien</TypewriterText>
         </span>
       </div>
@@ -33,7 +33,7 @@ export default function Hero() {
           <SectionTween horizontal={true} initialNum={-100} delay={0.25}>
             <motion.div className="bg-yellow3 mb-1 h-px w-8" />
           </SectionTween>
-          <span className="text-yellow3 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-yellow3 text-xs font-semibold tracking-[0.25em] uppercase xl:text-sm">
             <SectionTween horizontal={true} initialNum={-100} delay={0.5}>
               Treino de alta performance
             </SectionTween>
@@ -41,7 +41,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="mb-6 flex flex-col text-4xl font-bold tracking-normal text-white">
+        <h1 className="mb-6 flex flex-col text-4xl font-bold tracking-normal text-white xl:text-5xl">
           <SectionTween horizontal={false} initialNum={-100} delay={0.75}>
             Reconstrua
           </SectionTween>
@@ -63,7 +63,7 @@ export default function Hero() {
       {/* Subheading */}
       <div className="relative z-10 mx-auto w-full lg:pt-5">
         <SectionTween horizontal={true} initialNum={-100} delay={1.5}>
-          <p className="mb-8 text-lg text-white/75">
+          <p className="mb-8 text-lg text-white/75 xl:text-center xl:text-xl">
             Acompanhamento personalizado para desenvolver capacidades físicas e
             construir um corpo atlético, seja qual for o seu nível de
             treinamento:{" "}
@@ -86,9 +86,9 @@ export default function Hero() {
       {/* CTAs */}
       <div className="relative z-10 lg:pt-5">
         {/* Button */}
-        <div className="mx-auto w-full pb-5 md:w-lg">
+        <div className="pb-5">
           <SpringCustom delayNum={1.75}>
-            <div className="flex flex-col lg:hidden">
+            <div className="mx-auto flex w-full flex-col md:w-md lg:hidden">
               <button
                 onClick={() => (window.location.href = "#planos")}
                 className="group from-yellow3 text-purple4 shadow-yellow3/30 hover:shadow-yellow3/50 flex items-center justify-center gap-2 rounded-xl bg-linear-to-r to-yellow-500 px-6 py-4 text-[15px] font-bold shadow-xl transition active:scale-[0.98] md:text-lg lg:text-sm"
@@ -97,10 +97,10 @@ export default function Hero() {
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 lg:h-4 lg:w-4" />
               </button>
             </div>
-            <div className="mx-auto hidden w-xs items-center justify-center lg:flex">
+            <div className="mx-auto hidden items-center justify-center lg:flex lg:w-xs xl:w-lg">
               <InteractiveHoverButton
                 onClick={() => (window.location.href = "#planos")}
-                className="w-full text-sm"
+                className="w-full text-sm xl:text-xl"
               >
                 PARTICIPE AGORA
               </InteractiveHoverButton>
@@ -119,7 +119,7 @@ export default function Hero() {
             </button>
             <ShinyButton
               onClick={() => (window.location.href = "#niveis")}
-              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block"
+              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block xl:text-lg"
             >
               Iniciante
             </ShinyButton>
@@ -133,7 +133,7 @@ export default function Hero() {
             </button>
             <ShinyButton
               onClick={() => (window.location.href = "#niveis")}
-              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block"
+              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block xl:text-lg"
             >
               Intermediário
             </ShinyButton>
@@ -147,7 +147,7 @@ export default function Hero() {
             </button>
             <ShinyButton
               onClick={() => (window.location.href = "#niveis")}
-              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block"
+              className="bg-purple3/10 hidden rounded-full text-sm font-medium lg:block xl:text-lg"
             >
               Avançado
             </ShinyButton>
