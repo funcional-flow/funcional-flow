@@ -9,12 +9,12 @@ import { Particles } from "@/components/ui/particles";
 
 export default function BeneficiosDesk() {
   return (
-    <div className="relative flex min-h-svh flex-col justify-center gap-6 py-12 xl:py-0">
+    <div className="relative flex min-h-svh flex-col justify-center gap-6 py-12 xl:gap-0 xl:py-0">
       <Particles className="absolute inset-0 z-0" color={"var(--purple4)"} />
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>
       </TituloSessao>
-      <h1 className="text-purple3 mx-auto flex items-center justify-center gap-1 pb-5 text-center text-3xl font-bold uppercase xl:text-5xl">
+      <h1 className="text-purple3 mx-auto flex items-center justify-center gap-1 pb-5 text-center text-3xl font-bold uppercase xl:pt-3 xl:pb-12 xl:text-5xl">
         <span>Tudo o que você precisa para evoluir com</span>
         <span className="text-yellow3 font-bold tracking-wider">
           <BlurOutUp delay={800} triggerOnView={true}>
@@ -34,7 +34,7 @@ export default function BeneficiosDesk() {
         </BlurOutUp>
       </h1>
       {/* Cards */}
-      <div className="mx-auto flex flex-col gap-5 xl:gap-10 px-12">
+      <div className="mx-auto flex flex-col gap-5 px-12 xl:gap-10">
         <div className="flex gap-5 xl:gap-10">
           <SectionDropIn initialNum={180}>
             <CardFlowDesk
