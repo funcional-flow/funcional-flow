@@ -14,7 +14,7 @@ export default function BeneficiosDesk() {
       <TituloSessao>
         <BottomUpLetters triggerOnView={true}>Benefícios</BottomUpLetters>
       </TituloSessao>
-      <h1 className="text-purple3 mx-auto flex items-center justify-center gap-1 pb-5 text-center text-3xl font-bold uppercase">
+      <h1 className="text-purple3 mx-auto flex items-center justify-center gap-1 pb-5 text-center text-3xl font-bold uppercase xl:text-5xl">
         <span>Tudo o que você precisa para evoluir com</span>
         <span className="text-yellow3 font-bold tracking-wider">
           <BlurOutUp delay={800} triggerOnView={true}>
@@ -33,8 +33,9 @@ export default function BeneficiosDesk() {
           {"."}
         </BlurOutUp>
       </h1>
-        <div className="mx-auto flex flex-col gap-5 px-12">
-        <div className="flex gap-5">
+      {/* Cards */}
+      <div className="mx-auto flex flex-col gap-5 xl:gap-10 px-12">
+        <div className="flex gap-5 xl:gap-10">
           <SectionDropIn initialNum={180}>
             <CardFlowDesk
               icone="treino_personalizado.png"
@@ -69,7 +70,7 @@ export default function BeneficiosDesk() {
             </CardFlowDesk>
           </SectionDropIn>
         </div>
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-center gap-5 xl:gap-10">
           <SectionDropIn initialNum={180}>
             <CardFlowDesk
               icone="feedback_tecnico.png"

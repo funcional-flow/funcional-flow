@@ -32,7 +32,7 @@ export default function MobilePage() {
         </section>
         <section
           id="beneficios"
-          className="relative overflow-hidden lg:sticky lg:-top-12 lg:z-10"
+          className="relative overflow-hidden lg:sticky lg:-top-12 lg:z-10 xl:top-0"
         >
           <div className="relative lg:hidden">
             <Beneficios />

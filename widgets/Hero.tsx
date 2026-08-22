@@ -22,7 +22,9 @@ export default function Hero() {
           </span>
         </span>
         <span className="text-sm font-medium tracking-widest text-white/60 uppercase lg:text-xs xl:text-sm">
-          <TypewriterText>Bruno Levien</TypewriterText>
+          <a href="#sobre">
+            <TypewriterText>Bruno Levien</TypewriterText>
+          </a>
         </span>
       </div>
 
@@ -41,7 +43,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="mb-6 flex flex-col text-4xl font-bold tracking-normal text-white xl:text-5xl">
+        <h1 className="mb-6 flex flex-col text-4xl font-bold tracking-normal text-white xl:text-6xl">
           <SectionTween horizontal={false} initialNum={-100} delay={0.75}>
             Reconstrua
           </SectionTween>
@@ -63,7 +65,7 @@ export default function Hero() {
       {/* Subheading */}
       <div className="relative z-10 mx-auto w-full lg:pt-5">
         <SectionTween horizontal={true} initialNum={-100} delay={1.5}>
-          <p className="mb-8 text-lg text-white/75 xl:text-center xl:text-xl">
+          <p className="mb-8 text-lg text-white/75 xl:text-center xl:text-2xl">
             Acompanhamento personalizado para desenvolver capacidades físicas e
             construir um corpo atlético, seja qual for o seu nível de
             treinamento:{" "}
