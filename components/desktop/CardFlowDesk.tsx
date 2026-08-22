@@ -33,7 +33,7 @@ export default function CardFlowDesk({
               />
             </div>
           </div>
-          <p className="mt-2 pb-3 text-base leading-6 text-zinc-600 xl:text-2xl xl:leading-8 xl:text-zinc-500">
+          <p className="mt-2 pb-3 text-base leading-6 text-zinc-600 xl:text-2xl xl:leading-9 xl:tracking-wide xl:text-zinc-500">
             {children}
           </p>
         </div>
