@@ -114,7 +114,7 @@ export default function Sobre() {
 
         {/* CTA */}
         <SpringCustom delayNum={0.5}>
-          <div className="mx-auto mt-8 max-w-md">
+          <div className="mx-auto mt-8 max-w-md ">
             <button className="bg-yellow-400 text-purple4 shadow-yellow3/20 hover:shadow-yellow3/50 flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 text-[15px] font-bold shadow-xl transition active:scale-[0.98]">
               QUERO MELHORAR MEU CORPO
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
