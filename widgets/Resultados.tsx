@@ -55,16 +55,15 @@ export default function Resultados() {
           {results.map((r, index) => (
             <SwiperSlide
               key={index}
-              className="mx-auto px-6 md:max-w-114 lg:max-w-158 xl:max-w-4xl"
+              className="mx-auto px-6 md:max-w-114 lg:max-w-100 xl:max-w-150"
             >
               <CardResultados
                 nome={r.name}
                 idade={r.age}
-                duracao={r.duration}
                 destaque={r.highlight}
-                nivel={r.level}
                 foto={r.photo}
                 avaliacao={r.rating}
+                quote={r.quote}
               />
             </SwiperSlide>
           ))}
@@ -79,7 +78,7 @@ export default function Resultados() {
       </div>
 
       {/* Stats strip */}
-      <div className="mx-auto mt-10 flex justify-center gap-3 xl:gap-6">
+      <div className="mx-auto mt-6 flex justify-center gap-3 lg:mt-3 xl:mt-6 xl:gap-6">
         <DadosResultados descricao="Cidades diferentes">
           <NumberTicker
             value={12}
@@ -123,7 +122,7 @@ export default function Resultados() {
       <SpringCustom delayNum={0.5}>
         <div className="mx-auto mt-8 max-w-md px-6 xl:max-w-xl">
           <button className="bg-yellow3 text-purple4 shadow-yellow3/20 hover:shadow-yellow3/50 flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 text-[15px] font-bold shadow-xl transition active:scale-[0.98] xl:text-xl">
-            QUERO MELHORAR MEU DESEMPENHO
+            QUERO MELHORAR MEU CORPO
             <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </button>
         </div>

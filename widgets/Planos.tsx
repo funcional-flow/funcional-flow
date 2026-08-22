@@ -30,7 +30,7 @@ export default function Planos() {
             <BottomUpLetters triggerOnView={true}>PLANO</BottomUpLetters>
           </span>
         </h1>
-        <p className="pb-4 text-sm md:text-base md:text-center text-gray-300">
+        <p className="pb-4 text-sm text-gray-300 md:text-center md:text-base">
           <BlurOutUp delay={500} triggerOnView={true}>
             Decida o plano que melhor se adapta à sua rotina e comece a
             desenvolver um corpo mais forte e atlético através do método
@@ -107,8 +107,8 @@ export default function Planos() {
         {/* Footer */}
         <div className="mt-6 text-center text-sm text-gray-400">
           <p>
-            Todos os planos incluem consulta inicial gratuita. Pagamentos via
-            Pix e/ou Dinheiro.
+            Todos os planos incluem uma semana gratuita para experienciar o
+            método. Pagamentos via Cartão de crédito e Pix.
           </p>
         </div>
       </div>

@@ -1,8 +1,6 @@
 export type Result = {
   name: string;
   age: number;
-  level: string;
-  duration: string;
   photo: string;
   rating: number;
   quote: string;
@@ -11,58 +9,48 @@ export type Result = {
 
 export const results: Result[] = [
   {
-    name: 'Carlos Eduardo',
+    name: "Pedro Henrique",
     age: 34,
-    level: 'Intermediária',
-    duration: '6 meses',
-    photo: '/resultados/resultado1.png',
+    photo: "/resultados/resultado1.png",
     rating: 5,
     quote:
-      'Cheguei com dores crônicas nas costas e sem saber por onde começar. Em seis meses reconstruí meu movimento inteiro — hoje treino sem dor e com uma disposição que não tinha há anos.',
-    highlight: 'Sem dores + 8kg eliminados',
+      "Percebi que a musculação pode ser prazeroza e dinâmica. Percebi a importância de ter um core forte, me deu mais força a autoconhecimento corporal.",
+    highlight: "Sem dores + 8kg eliminados",
   },
   {
-    name: 'Juliana Martins',
+    name: "Emidio Lopes",
+    age: 25,
+    photo: "/resultados/resultado5.png",
+    rating: 5,
+    quote:
+      "Consegui uma namorada.",
+    highlight: "Conseguiu uma namorada",
+  },
+  {
+    name: "Juliana Martins",
     age: 41,
-    level: 'Avançada',
-    duration: '1 ano',
-    photo: '/resultados/resultado2.png',
+    photo: "/resultados/resultado2.png",
     rating: 5,
     quote:
-      'Já treinava há anos, mas estava estagnado. O Rafael ajustou detalhes que eu nem percebia. Bati recordes pessoais que estavam parados há mais de dois anos.',
-    highlight: 'PR no agachamento +20kg',
+      "Já treinava há anos, mas estava estagnado. O Rafael ajustou detalhes que eu nem percebia. Bati recordes pessoais que estavam parados há mais de dois anos.",
+    highlight: "PR no agachamento +20kg",
   },
   {
-    name: 'Fernanda Costa',
+    name: "Marcus Vinicius",
     age: 28,
-    level: 'Iniciante',
-    duration: '4 meses',
-    photo: '/resultados/resultado3.png',
+    photo: "/resultados/resultado3.png",
     rating: 5,
     quote:
-      'Nunca tinha pisado numa academia. O acompanhamento próximo me deu segurança para começar do zero. Hoje me sinto forte, confiante e finalmente gosto de treinar.',
-    highlight: 'Primeira vez treinando',
+      "Consegui ter um acompanhamento que alinhasse meus objetivos entre academia, corrida e as demais atividades físicas. Uma complementando a outra sem causar problemas",
+    highlight: "Acompanhamento ideal",
   },
   {
-    name: 'Ricardo Alves',
-    age: 37,
-    level: 'Intermediária',
-    duration: '8 meses',
-    photo: '/resultados/resultado4.png',
+    name: "Rodrigo Levien",
+    age: 28,
+    photo: "/resultados/resultado4.png",
     rating: 5,
     quote:
-      'A vídeo-análise mudou tudo. Corrigi falhas de movimento que estavam me limitando. A evolução foi visível já nas primeiras semanas — recomendo de olhos fechados.',
-    highlight: 'Postura corrigida',
-  },
-  {
-    name: 'Fulano de tals',
-    age: 37,
-    level: 'Intermediária',
-    duration: '8 meses',
-    photo: '/resultados/resultado_3.jpeg',
-    rating: 5,
-    quote:
-      'A vídeo-análise mudou tudo. Corrigi falhas de movimento que estavam me limitando. A evolução foi visível já nas primeiras semanas — recomendo de olhos fechados.',
-    highlight: 'Postura corrigida',
+      "Desde que comecei a treinar minha auto estima é completamente outra. Além de me sentir mais forte, mais disposto, me sinto muito melhor comigo mesmo.",
+    highlight: "Postura corrigida",
   },
 ];

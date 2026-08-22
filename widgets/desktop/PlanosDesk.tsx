@@ -107,8 +107,8 @@ export default function PlanosDesk() {
         {/* Footer */}
         <div className="mt-6 text-center text-sm text-gray-400">
           <p>
-            Todos os planos incluem consulta inicial gratuita. Pagamentos via
-            Pix e/ou Dinheiro.
+            Todos os planos incluem uma semana gratuita para experienciar o
+            método. Pagamentos via Cartão de crédito e Pix.
           </p>
         </div>
       </div>

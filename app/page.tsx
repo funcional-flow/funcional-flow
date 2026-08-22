@@ -43,7 +43,7 @@ export default function MobilePage() {
         </section>
         <section
           id="resultados"
-          className="bg-purple4 st relative overflow-hidden py-12 text-white lg:z-20"
+          className="bg-purple4 relative overflow-hidden py-12 text-white lg:z-20"
         >
           <Resultados />
         </section>
