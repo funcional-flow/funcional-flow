@@ -7,7 +7,7 @@ import { Award, Users, Dumbbell, Quote, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
-  { icon: Award, startValue: 0, value: 8, label: "Anos de experiência" },
+  { icon: Award, startValue: 0, value: 5, label: "Anos de experiência" },
   { icon: Users, startValue: 200, value: 320, label: "Alunos atendidos" },
   { icon: Dumbbell, startValue: 0, value: 12, label: "Certificações" },
 ];
