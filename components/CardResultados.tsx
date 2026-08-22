@@ -23,7 +23,7 @@ export default function CardResultados({
   return (
     <article
       key={nome}
-      className="relative h-75 w-full shrink-0 overflow-hidden rounded-3xl border border-white/10 md:h-80 lg:h-[65svh]"
+      className="relative h-75 w-full shrink-0 overflow-hidden rounded-3xl border border-white/10 md:h-80 lg:h-[65svh] xl:h-[75svh]"
     >
       {/* Photo */}
       <Image src={foto} alt={nome} fill className="object-cover" />
@@ -37,8 +37,8 @@ export default function CardResultados({
               </span> */}
 
       {/* Highlight pill */}
-      <div className="bg-yellow3 text-purple4 shadow-yellow3/30 absolute top-1 left-1/2 flex -translate-x-1/2 items-center gap-1.5 rounded-full px-2 py-1 text-[11px] font-bold shadow-lg">
-        <TrendingUp className="h-3.5 w-3.5" />
+      <div className="bg-yellow3 text-purple4 shadow-yellow3/30 absolute top-1 left-1/2 flex -translate-x-1/2 items-center gap-1.5 rounded-full px-2 py-1 text-[11px] font-bold shadow-lg lg:items-start xl:top-2 xl:px-6 xl:py-2 xl:text-base">
+        <TrendingUp className="h-3.5 w-3.5 xl:h-5 xl:w-5" />
         {destaque}
       </div>
 
@@ -52,7 +52,7 @@ export default function CardResultados({
 
         {/* Identity */}
         <div className="flex flex-col justify-between border-t border-white/15 pt-3">
-          <div className="flex w-full justify-between text-[15px] leading-tight font-bold">
+          <div className="flex w-full justify-between text-[15px] leading-tight font-bold xl:text-2xl xl:leading-10">
             <span>
               {nome}, {idade}
             </span>
@@ -61,12 +61,12 @@ export default function CardResultados({
               {Array.from({ length: avaliacao }).map((_, si) => (
                 <Star
                   key={si}
-                  className="fill-yellow3 text-yellow3 h-3.5 w-3.5"
+                  className="fill-yellow3 text-yellow3 h-3.5 w-3.5 xl:h-5 xl:w-5"
                 />
               ))}
             </div>
           </div>
-          <div className="mt-0.5 text-[11px] text-white/50">
+          <div className="mt-0.5 text-[11px] text-white/50 xl:text-lg">
             {nivel} • {duracao} de treino
           </div>
         </div>
