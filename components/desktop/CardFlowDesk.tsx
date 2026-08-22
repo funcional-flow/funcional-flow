@@ -12,15 +12,15 @@ export default function CardFlowDesk({
   children,
 }: CardFlowDeskProps) {
   return (
-    <div className="group shadow-purple3 relative max-w-2xs overflow-hidden rounded-2xl p-1 shadow-lg xl:max-w-xs">
-      <div className="bg-purple2 absolute inset-0" />
+    <div className="group shadow-purple3 hover:shadow-yellow3 relative max-w-2xs overflow-hidden rounded-2xl p-1 shadow-lg duration-200 hover:z-1000 hover:scale-105 xl:max-w-xs">
+      <div className="bg-purple2 group-hover:bg-yellow3 absolute inset-0" />
       <div className="shine-light absolute inset-0" />
 
       {/* Conteudo */}
       <div className="relative rounded-2xl bg-white">
         <div className="flex flex-col px-5">
           <div className="relative flex justify-between pt-2">
-            <h3 className="text-purple3 pt-5 text-lg font-semibold xl:text-xl">
+            <h3 className="group-hover:text-yellow3 text-purple3 pt-5 text-lg font-semibold duration-200 xl:text-xl">
               {titulo}
             </h3>
             <div className="h-16 w-16">
