@@ -49,7 +49,7 @@ export default function MobilePage() {
         </section>
         <section
           id="diferenciais"
-          className="bg-background relative z-20 px-6 pt-6 pb-12"
+          className="bg-background relative z-20 "
         >
           <Diferenciais />
         </section>

@@ -13,7 +13,6 @@ interface CardResultadosProps {
 export default function CardResultados({
   nome,
   idade,
-  destaque,
   foto,
   avaliacao,
   quote,

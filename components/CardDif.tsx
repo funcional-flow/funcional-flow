@@ -15,12 +15,12 @@ export default function CardDif({ titulo, descricao }: CardDifProps) {
         <motion.div className="bg-yellow3 animate-stripe-front absolute top-0 left-0 px-10 py-1" />
       </SectionDropIn>
       <div className="relative top-8 flex flex-col">
-        <h3 className="text-purple3 text-xl font-bold">
+        <h3 className="text-purple3 text-xl font-bold xl:text-3xl">
           <MaskRevealUp triggerOnView={true} delay={500}>
             {titulo}
           </MaskRevealUp>
         </h3>
-        <p>
+        <p className="xl:text-2xl xl:text-black/65 xl:leading-9">
           <MaskRevealUp triggerOnView={true} delay={500}>
             {descricao}
           </MaskRevealUp>

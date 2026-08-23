@@ -3,11 +3,11 @@ import { DiaTextReveal } from "@/components/ui/dia-text-reveal";
 
 export default function Diferenciais() {
   return (
-    <div className="bg-background relative">
+    <div className="bg-background relative px-6 pt-6 pb-12 xl:pb-50">
       <div className="bg-background sticky top-0 z-30 py-6">
         {/* Fade contínuo */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-35 bg-gradient-to-b from-white via-white/90 to-transparent" />
-        <h2 className="relative text-purple3 text-center text-4xl font-bold z-10">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-35 bg-linear-to-b from-white via-white/90 to-transparent" />
+        <h2 className="text-purple3 relative z-10 text-center text-4xl font-bold xl:text-5xl">
           O QUE TORNA NOSSO{" "}
           <DiaTextReveal
             repeat
@@ -26,9 +26,11 @@ export default function Diferenciais() {
           />
         </h2>
         {/* Transição suave */}
-        <div className="pointer-events-none from-background absolute inset-x-0 h-35 bg-linear-to-b via-transparent to-transparent" />
+        <div className="from-background pointer-events-none absolute inset-x-0 h-35 bg-linear-to-b via-transparent to-transparent" />
       </div>
-      <div className="z-200 mx-auto flex flex-col gap-20 py-10 md:max-w-lg">
+
+      {/* Cards */}
+      <div className="mx-auto flex flex-col gap-20 py-10 md:w-lg xl:w-xl xl:gap-25">
         <CardDif
           titulo="ATENDIMENTO TOTALMENTE INDIVIDUAL"
           descricao="Aqui, cada exercício é escolhido pensando no seu nível atual."
