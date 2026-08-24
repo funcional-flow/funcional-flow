@@ -60,7 +60,6 @@ export default function Resultados() {
               <CardResultados
                 nome={r.name}
                 idade={r.age}
-                destaque={r.highlight}
                 foto={r.photo}
                 avaliacao={r.rating}
                 quote={r.quote}

@@ -4,7 +4,6 @@ import Image from "next/image";
 interface CardResultadosProps {
   nome: string;
   idade: number;
-  destaque: string;
   foto: string;
   avaliacao: number;
   quote: string;
