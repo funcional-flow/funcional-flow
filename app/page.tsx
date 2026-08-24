@@ -63,7 +63,7 @@ export default function MobilePage() {
         </section>
         <section
           id="sobre"
-          className="bg-background relative z-20 overflow-hidden px-6 py-12"
+          className="bg-background relative z-20 overflow-hidden"
         >
           <Sobre />
         </section>
