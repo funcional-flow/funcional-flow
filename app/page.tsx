@@ -14,6 +14,7 @@ import Footer from "@/widgets/Footer";
 import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
 import FuncionamentoDesk from "@/widgets/desktop/FuncionamentoDesk";
 import PlanosDesk from "@/widgets/desktop/PlanosDesk";
+import PublicoDesk from "@/widgets/desktop/PublicoDesk";
 
 export default function MobilePage() {
   return (
@@ -32,7 +33,7 @@ export default function MobilePage() {
         </section>
         <section
           id="beneficios"
-          className="relative overflow-hidden lg:sticky lg:-top-6 lg:z-10"
+          className="relative overflow-hidden lg:sticky lg:-top-6 lg:z-0"
         >
           <div className="relative lg:hidden">
             <Beneficios />
@@ -43,14 +44,11 @@ export default function MobilePage() {
         </section>
         <section
           id="resultados"
-          className="bg-purple4 relative overflow-hidden py-12 text-white lg:z-20"
+          className="bg-purple4 relative overflow-hidden py-12 text-white lg:z-20 xl:py-20"
         >
           <Resultados />
         </section>
-        <section
-          id="diferenciais"
-          className="bg-background relative z-20 "
-        >
+        <section id="diferenciais" className="snap-proximity relative z-20">
           <Diferenciais />
         </section>
         <section id="funcionamento" className="relative z-20 overflow-hidden">
@@ -67,8 +65,16 @@ export default function MobilePage() {
         >
           <Sobre />
         </section>
+        {/* <section className="bg-purple4 z-20">
+          <BentoGallery />
+        </section> */}
         <section id="publico" className="bg-purple4 relative z-20 text-white">
-          <Publico />
+          <div className="relative lg:hidden">
+            <Publico />
+          </div>
+          <div className="relative hidden lg:block">
+            <PublicoDesk />
+          </div>
         </section>
         <section id="niveis" className="bg-background relative z-20 py-12">
           <Niveis />
