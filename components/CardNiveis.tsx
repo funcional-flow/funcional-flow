@@ -24,24 +24,42 @@ export default function CardNiveis({
     >
       {/* conteudo */}
       <div className="bg-purple4 relative flex min-w-full rounded-2xl text-white">
+        <div className="absolute top-6 -left-0.5 z-100">
+          <span
+            className={` ${
+              inicio
+                ? "via-yellow3 from-yellow-400 to-yellow-600 text-shadow-2xs text-shadow-black"
+                : "via-purple2 to-purple3 from-purple-500"
+            } rounded-r-lg bg-linear-to-b px-3 py-2 italic xl:py-1 xl:text-2xl`}
+          >
+            {numero}
+          </span>
+        </div>
         <div className="flex flex-col py-4 pr-6">
-          <h2 className="flex items-center gap-2 pb-3 font-bold uppercase">
-            <div
-              className={`${inicio ? "from-yellow-400 via-yellow3 to-yellow-600 text-shadow-black text-shadow-2xs" : "via-purple2 to-purple3 from-purple-500"} rounded-r-lg bg-linear-to-b px-3 py-2 italic`}
-            >
-              {numero}
-            </div>
-            <span className="text-base md:text-lg italic">{titulo}</span>
+          {/* Titulo */}
+          <h2 className="pt-1 pb-3 pl-10 text-base font-bold uppercase italic md:text-2xl xl:pt-2 xl:pb-8 xl:pl-11">
+            {titulo}
           </h2>
-          <ul className="flex flex-col gap-2 pl-6">
+
+          <ul className="flex flex-col gap-2 pl-6 xl:gap-4">
             {descricao.map((desc, index) => (
               <li key={index} className="flex items-center gap-2">
-                <div className={`${inicio ? "bg-yellow-900 border-yellow-500" : "bg-purple3 border-purple-500"} inline-flex items-center justify-center rounded-full border`}>
+                <div
+                  className={` ${
+                    inicio
+                      ? "border-yellow-500 bg-yellow-900"
+                      : "bg-purple3 border-purple-500"
+                  } inline-flex items-center justify-center rounded-full border`}
+                >
                   <Check
-                    className={`${inicio ? "text-yellow-500" : "text-purple-500"} h-4 w-4 stroke-5 p-1`}
+                    className={`${
+                      inicio ? "text-yellow-500" : "text-purple-500"
+                    } h-4 w-4 stroke-5 p-1`}
                   />
                 </div>
-                <span className="text-xs md:text-base text-white/85">{desc}</span>
+                <span className="text-xs text-white/85 md:text-base xl:text-xl">
+                  {desc}
+                </span>
               </li>
             ))}
           </ul>
