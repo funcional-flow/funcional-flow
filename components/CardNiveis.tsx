@@ -22,26 +22,25 @@ export default function CardNiveis({
     <div
       className={`${inicio ? "shadow-yellow3 from-yellow3 to-yellow-500" : "shadow-purple3 from-purple3 to-purple-900"} relative min-w-full rounded-2xl bg-linear-to-br p-0.5 text-white shadow-lg`}
     >
-      {/* conteudo */}
       <div className="bg-purple4 relative flex min-w-full rounded-2xl text-white">
-        <div className="absolute top-6 -left-0.5 z-100">
+        <div className="absolute top-6 -left-0.5 z-100 xl:top-12">
           <span
             className={` ${
               inicio
                 ? "via-yellow3 from-yellow-400 to-yellow-600 text-shadow-2xs text-shadow-black"
                 : "via-purple2 to-purple3 from-purple-500"
-            } rounded-r-lg bg-linear-to-b px-3 py-2 italic xl:py-1 xl:text-2xl`}
+            } rounded-r-lg text-base bg-linear-to-b px-3 md:text-xl py-1.5 italic xl:py-1 xl:text-2xl`}
           >
             {numero}
           </span>
         </div>
-        <div className="flex flex-col py-4 pr-6">
+        <div className="flex flex-col py-4 pr-6 xl:py-10">
           {/* Titulo */}
-          <h2 className="pt-1 pb-3 pl-10 text-base font-bold uppercase italic md:text-2xl xl:pt-2 xl:pb-8 xl:pl-11">
+          <h2 className="pt-2 pb-5 pl-10 text-base font-bold uppercase italic md:pl-11 md:text-xl xl:text-2xl xl:pt-2 xl:pb-8 xl:pl-12">
             {titulo}
           </h2>
 
-          <ul className="flex flex-col gap-2 pl-6 xl:gap-4">
+          <ul className="flex flex-col gap-2 pl-6 xl:gap-4 xl:pl-12">
             {descricao.map((desc, index) => (
               <li key={index} className="flex items-center gap-2">
                 <div
@@ -66,7 +65,7 @@ export default function CardNiveis({
         </div>
 
         {/* imagem */}
-        <div className="relative flex min-w-[40%] flex-1 items-center pr-1">
+        <div className="relative flex min-w-[30%] flex-1 items-center pr-1 xl:min-w-[40%]">
           <div className="z-10 overflow-hidden">
             <Image
               src="/niveis/background4.jpg"
@@ -93,7 +92,10 @@ export default function CardNiveis({
         </div>
       </div>
       {ultimo ? null : (
-        <ArrowDown className="text-purple3 absolute -bottom-2.5 left-1/2 z-0 -translate-x-1/2 translate-y-1/2 stroke-4" />
+        <div>
+          <div className="bg-purple4 absolute -bottom-1 left-1/2 z-0 h-5 w-1 -translate-x-1/2 translate-y-1/2" />
+          <ArrowDown className="text-purple3 absolute -bottom-4 left-1/2 z-0 -translate-x-1/2 translate-y-1/2 stroke-4" />
+        </div>
       )}
     </div>
   );

@@ -46,7 +46,7 @@ export default function Niveis() {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="iniciante">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-8">
               {iniciante.map((nivel, index) => (
                 <div key={index}>
                   <CardNiveis

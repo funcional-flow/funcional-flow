@@ -22,7 +22,7 @@ export default function PublicoDesk() {
       centralizado={true}
     >
       {/* <div className="pointer-events-none absolute bottom-0 h-10 w-full bg-linear-to-b from-transparent to-background" /> */}
-      <div className="relative flex flex-col py-12">
+      <div className="relative flex flex-col py-12 xl:py-20">
         <TituloSessao escuro={false} className="mb-3">
           <BottomUpLetters triggerOnView={true}>
             pra quem é a consultoria

@@ -76,7 +76,7 @@ export default function MobilePage() {
             <PublicoDesk />
           </div>
         </section>
-        <section id="niveis" className="bg-background relative z-20 py-12">
+        <section id="niveis" className="bg-background relative z-20 py-12 xl:py-20">
           <Niveis />
         </section>
         <section
