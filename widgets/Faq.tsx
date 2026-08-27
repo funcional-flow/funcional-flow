@@ -11,11 +11,11 @@ export default function Faq() {
             <AccordionItem key={index} value={index.toString()}>
               <AccordionTrigger>
                 <div className="flex gap-1">
-                  <p className="text-base">{faq.pergunta}</p>
+                  <p className="text-base xl:text-2xl">{faq.pergunta}</p>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="pl-5 text-black/70">{faq.resposta}</div>
+                <div className="pl-5 text-black/70 xl:text-lg">{faq.resposta}</div>
               </AccordionContent>
             </AccordionItem>
           ))}
