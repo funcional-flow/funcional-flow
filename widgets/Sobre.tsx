@@ -1,3 +1,4 @@
+import BotaoCta from "@/components/BotaoCta";
 import SectionTween from "@/components/motion_custom/SectionTween";
 import SpringCustom from "@/components/motion_custom/SpringCustom";
 import TituloSessao from "@/components/TituloSessao";
@@ -117,14 +118,11 @@ export default function Sobre() {
       </div>
 
       {/* CTA */}
-      <SpringCustom delayNum={0.5}>
-        <div className="mx-auto w-sm xl:w-lg">
-          <button className="text-purple4 shadow-yellow3/20 hover:shadow-yellow3/50 flex w-full items-center justify-center gap-2 rounded-xl bg-yellow-400 px-6 py-4 text-base font-bold shadow-xl transition active:scale-[0.98] xl:items-start">
-            QUERO MELHORAR MEU CORPO
-            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </button>
-        </div>
-      </SpringCustom>
+      <div className="w-full">
+        <SpringCustom delayNum={0.5}>
+          <BotaoCta sessao="#planos" texto="quero melhorar meu corpo" />
+        </SpringCustom>
+      </div>
     </div>
   );
 }

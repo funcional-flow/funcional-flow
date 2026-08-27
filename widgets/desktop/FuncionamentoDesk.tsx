@@ -8,7 +8,7 @@ import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
 export default function FuncionamentoDesk() {
   return (
     <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="100">
-      <div className="xl:pb-30 relative flex flex-col gap-3 px-6 pt-12 pb-12 text-white md:pt-20 md:pb-20">
+      <div className="relative flex flex-col gap-3 px-6 pt-12 pb-12 text-white md:pt-20 md:pb-20 xl:pb-30">
         {/* Título principal */}
         <TituloSessao escuro={false} className="md:pb-3">
           <BottomUpLetters triggerOnView={true}>Funcionamento</BottomUpLetters>
@@ -31,7 +31,7 @@ export default function FuncionamentoDesk() {
           </BlurOutUp>
         </p>
         {/* Etapas */}
-        <div className="mx-auto flex w-full flex-col gap-10 xl:w-3xl xl:gap-13">
+        <div className="mx-auto flex w-xl flex-col gap-10 xl:w-3xl xl:gap-13">
           <CardEtapas
             numero="#1"
             titulo="PDF COM DETALHES"

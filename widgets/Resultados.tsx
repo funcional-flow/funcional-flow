@@ -1,5 +1,5 @@
 "use client";
-import { ArrowRight } from "lucide-react";
+
 import TituloSessao from "@/components/TituloSessao";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
@@ -13,6 +13,7 @@ import { results } from "@/data/list_results";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import DadosResultados from "@/components/DadosResultados";
+import BotaoCta from "@/components/BotaoCta";
 
 export default function Resultados() {
   return (
@@ -70,14 +71,14 @@ export default function Resultados() {
       </SectionTween>
 
       {/* Nav arrows */}
-      <div className="mx-auto mt-6 flex max-w-md justify-center gap-3 px-6 text-center">
-        {/* <SpringCustom delayNum={0.5}>
+      {/* <div className="mx-auto pt-6 flex max-w-md justify-center gap-3 px-6 text-center">
+        <SpringCustom delayNum={0.5}>
           <span className="text-sm text-white/40">Arraste para ver mais</span>
-        </SpringCustom> */}
-      </div>
+        </SpringCustom>
+      </div> */}
 
       {/* Stats strip */}
-      <div className="mx-auto mt-6 flex justify-center gap-3 lg:mt-3 xl:mt-6 xl:gap-6">
+      <div className="mx-auto pt-12 flex justify-center gap-3 lg:mt-3 xl:mt-6 xl:gap-6">
         <DadosResultados descricao="Cidades diferentes">
           <NumberTicker
             value={12}
@@ -118,14 +119,11 @@ export default function Resultados() {
       </div>
 
       {/* CTA */}
-      <SpringCustom delayNum={0.5}>
-        <div className="mx-auto mt-8 max-w-md px-6 xl:max-w-xl">
-          <button className="bg-yellow3 text-purple4 shadow-yellow3/20 hover:shadow-yellow3/50 flex w-full items-center justify-center gap-2 rounded-xl px-6 py-4 text-[15px] font-bold shadow-xl transition active:scale-[0.98] xl:text-xl">
-            QUERO MELHORAR MEU CORPO
-            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </button>
-        </div>
-      </SpringCustom>
+      <div className="mt-8 w-sm md:w-86 lg:w-95 mx-auto xl:w-131">
+        <SpringCustom delayNum={0.5}>
+          <BotaoCta sessao="#planos" texto="quero melhorar meu corpo" />
+        </SpringCustom>
+      </div>
     </div>
   );
 }
