@@ -44,7 +44,8 @@ export default function Footer() {
             <div className="flex gap-5 pt-5">
               <div className="flex items-center gap-1">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/brunobad_"
+                  target="_blank"
                   aria-label="Instagram"
                   className="flex items-center justify-center gap-1"
                 >
@@ -56,8 +57,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-1">
                 <a
-                  href="#"
-                  aria-label="Instagram"
+                  href="https://wa.me/5553991560855"
+                  target="_blank"
+                  aria-label="Whatsapp"
                   className="flex items-center justify-center gap-1"
                 >
                   <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80">

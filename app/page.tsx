@@ -15,7 +15,7 @@ import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
 import FuncionamentoDesk from "@/widgets/desktop/FuncionamentoDesk";
 import PlanosDesk from "@/widgets/desktop/PlanosDesk";
 import PublicoDesk from "@/widgets/desktop/PublicoDesk";
-import BentoGallery from "@/components/teste/BentoGallery";
+// import BentoGallery from "@/components/teste/BentoGallery";
 
 export default function MobilePage() {
   return (
