@@ -19,7 +19,7 @@ export default function CardResultados({
   return (
     <article
       key={nome}
-      className="hover:shadow-lg hover:shadow-yellow3 relative h-75 w-full shrink-0 overflow-hidden rounded-3xl border border-white/10 md:h-80 lg:h-[50svh] xl:h-[50svh]"
+      className="relative h-75 w-full shrink-0 overflow-hidden rounded-3xl border border-white/10 md:h-80 lg:h-[50svh] xl:h-[50svh]"
     >
       {/* Photo */}
       <Image src={foto} alt={nome} fill className="object-cover" />
