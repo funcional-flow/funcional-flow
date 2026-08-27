@@ -11,15 +11,15 @@ function converterParaPadraoLink(texto: string): string {
 const texto_cta = "Eai treinador! Quero saber mais sobre a metodologia.";
 const texto_plano_standard_mensal = "Quero fazer parte do FuncionalFlow!";
 const texto_plano_standard_trimestral = "Quero fazer parte do FuncionalFlow!";
-const texto_plano_standard_anual = "Quero fazer parte do FuncionalFlow!";
+const texto_plano_standard_semestral = "Quero fazer parte do FuncionalFlow!";
 const texto_plano_premium_mensal = "Quero fazer parte do FuncionalFlow!";
 const texto_plano_premium_trimestral = "Quero fazer parte do FuncionalFlow!";
-const texto_plano_premium_anual = "Quero fazer parte do FuncionalFlow!";
+const texto_plano_premium_semestral = "Quero fazer parte do FuncionalFlow!";
 
 export const link_cta = converterParaPadraoLink(texto_cta);
 export const link_plano_standard_mensal = converterParaPadraoLink(texto_plano_standard_mensal);
 export const link_plano_standard_trimestral = converterParaPadraoLink(texto_plano_standard_trimestral);
-export const link_plano_standard_anual = converterParaPadraoLink(texto_plano_standard_anual);
+export const link_plano_standard_semestral = converterParaPadraoLink(texto_plano_standard_semestral);
 export const link_plano_premium_mensal = converterParaPadraoLink(texto_plano_premium_mensal);
 export const link_plano_premium_trimestral = converterParaPadraoLink(texto_plano_premium_trimestral);
-export const link_plano_premium_anual = converterParaPadraoLink(texto_plano_premium_anual);
+export const link_plano_premium_semestral = converterParaPadraoLink(texto_plano_premium_semestral);

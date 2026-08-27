@@ -19,6 +19,7 @@ interface CardPlanoDeskProps {
   noFeatures: Feature[];
   periodo: string;
   principal: boolean;
+  link_plano: string;
 }
 
 export default function CardPlanoDesk({
@@ -29,6 +30,7 @@ export default function CardPlanoDesk({
   features,
   noFeatures,
   principal,
+  link_plano,
 }: CardPlanoDeskProps) {
   let bordaCard = "outline";
   if (principal === true) {
@@ -82,7 +84,7 @@ export default function CardPlanoDesk({
             {features.map((feature, index) => (
               <AccordionItem key={index} value={index.toString()}>
                 <AccordionTrigger>
-                  <div className="flex gap-1 items-center">
+                  <div className="flex items-center gap-1">
                     {principal ? (
                       <Check className="text-yellow3 bg-yellow3/20 mr-1 h-5 w-5 rounded-full stroke-5 p-1" />
                     ) : (
@@ -103,34 +105,29 @@ export default function CardPlanoDesk({
           </Accordion>
 
           {noFeatures?.map((nofeature, index) => (
-            <div key={index} className="relative flex items-start">
-              <X className="absolute top-1 -left-1 h-3 w-3 text-red-600" />
-              <p className="ml-3 tracking-normal text-gray-300 line-through">
+            <div key={index} className="relative flex items-center">
+              <X className="h-3 w-3 text-red-600 xl:h-4 xl:w-4" />
+              <p className="ml-1 tracking-normal text-gray-300 line-through xl:text-lg">
                 {nofeature.title}
               </p>
             </div>
           ))}
         </div>
-        <a href="#/" className="absolute bottom-5 left-0 w-full px-4">
-          {principal ? (
-            <Button className="bg-yellow3 w-full p-5">
-              <div className="flex items-center gap-1">
-                <span className="mt-1 text-xl text-shadow-lg">
-                  ASSINAR O PREMIUM
-                </span>
-                <ArrowRight className="h-5 w-5" />
-              </div>
-            </Button>
-          ) : (
-            <Button className="bg-purple4 w-full p-5">
-              <div className="flex items-center gap-1">
-                <span className="mt-1 text-xl text-shadow-lg">
-                  ASSINAR O STANDARD
-                </span>
-                <ArrowRight className="h-5 w-5" />
-              </div>
-            </Button>
-          )}
+        <a
+          href={link_plano}
+          target="_blank"
+          className="absolute bottom-5 left-0 w-full px-12"
+        >
+          <Button
+            className={`w-full cursor-pointer p-6 hover:scale-105 hover:shadow-xs hover:duration-300 ${principal ? "bg-yellow3" : "bg-purple4"}`}
+          >
+            <div className="flex items-center gap-1">
+              <span className="mt-1 text-xl text-shadow-lg">
+                {principal ? "ASSINAR O PREMIUM" : "ASSINAR O STANDARD"}
+              </span>
+              <ArrowRight className="h-5 w-5" />
+            </div>
+          </Button>
         </a>
         {principal && (
           <>

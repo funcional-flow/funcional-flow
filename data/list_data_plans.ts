@@ -10,6 +10,15 @@
 // standard= 6x 119,50 (717, desconto de R$ 165,00)
 // premium= 6x 149,50 (897, desconto de R$ 285,00)
 
+import {
+  link_plano_premium_mensal,
+  link_plano_premium_trimestral,
+  link_plano_premium_semestral,
+  link_plano_standard_mensal,
+  link_plano_standard_trimestral,
+  link_plano_standard_semestral,
+} from "./whatsapp";
+
 export type Feature = {
   title: string;
   description: string;
@@ -32,6 +41,7 @@ export type Plano = {
   texto_final: string;
   principal: boolean;
   periodo: string;
+  link_plano: string;
 };
 
 export const descricaoPlanos: Features = {
@@ -164,6 +174,7 @@ export const listaPlanosMensal: Plano[] = [
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
     features: descricaoPlanos.featuresPremium!,
+    link_plano: link_plano_premium_mensal,
   },
   {
     id: "standard",
@@ -177,7 +188,8 @@ export const listaPlanosMensal: Plano[] = [
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
     features: descricaoPlanos.featuresStandard!,
-    noFeatures: descricaoPlanos.noFeatures
+    noFeatures: descricaoPlanos.noFeatures,
+    link_plano: link_plano_standard_mensal
   },
 ];
 
@@ -194,6 +206,7 @@ export const listaPlanosTrimestral: Plano[] = [
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
     features: descricaoPlanos.featuresPremium!,
+    link_plano: link_plano_premium_trimestral,
   },
   {
     id: "standard",
@@ -207,7 +220,8 @@ export const listaPlanosTrimestral: Plano[] = [
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
     features: descricaoPlanos.featuresStandard!,
-    noFeatures: descricaoPlanos.noFeatures
+    noFeatures: descricaoPlanos.noFeatures,
+    link_plano: link_plano_standard_trimestral,
   },
 ];
 
@@ -225,6 +239,7 @@ export const listaPlanosSemestral: Plano[] = [
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
     features: descricaoPlanos.featuresPremium!,
+    link_plano: link_plano_premium_semestral,
   },
   {
     id: "standard",
@@ -238,6 +253,7 @@ export const listaPlanosSemestral: Plano[] = [
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
     features: descricaoPlanos.featuresStandard!,
-    noFeatures: descricaoPlanos.noFeatures
+    noFeatures: descricaoPlanos.noFeatures,
+    link_plano: link_plano_standard_semestral,
   },
 ];

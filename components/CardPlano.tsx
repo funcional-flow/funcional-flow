@@ -19,6 +19,7 @@ interface CardPlanoProps {
   noFeatures: Feature[];
   periodo: string;
   principal: boolean;
+  link_plano: string;
 }
 
 export default function CardPlano({
@@ -29,6 +30,7 @@ export default function CardPlano({
   features,
   noFeatures,
   principal,
+  link_plano
 }: CardPlanoProps) {
   let bordaCard = "outline";
   if (principal === true) {
@@ -109,7 +111,7 @@ export default function CardPlano({
             </div>
           ))}
         </div>
-        <a href="#/">
+        <a href={link_plano} target="_blank">
           {principal ? (
             <Button className="bg-yellow3 w-full p-5">
               <div className="flex items-center gap-1">

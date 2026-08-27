@@ -63,6 +63,7 @@ export default function Planos() {
                     noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
+                    link_plano={plano.link_plano}
                   />
                 ))}
               </div>
@@ -80,6 +81,7 @@ export default function Planos() {
                     noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
+                    link_plano={plano.link_plano}
                   />
                 ))}
               </div>
@@ -97,6 +99,7 @@ export default function Planos() {
                     noFeatures={plano.noFeatures || []}
                     periodo={plano.periodo}
                     principal={plano.principal}
+                    link_plano={plano.link_plano}
                   />
                 ))}
               </div>
