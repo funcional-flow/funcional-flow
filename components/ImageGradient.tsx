@@ -27,7 +27,7 @@ export default function ImageGradient({
           loop
           muted
           playsInline
-          className="pointer-events-none absolute inset-0 z-10 h-full w-full object-cover mix-blend-screen hidden lg:block"
+          className="pointer-events-none absolute inset-0 z-10 h-full w-full object-cover mix-blend-screen"
         >
           <source src="/hero/fumaca.mp4" type="video/mp4" />
         </video>

@@ -4,7 +4,7 @@ import SpringCustom from "@/components/motion_custom/SpringCustom";
 import TituloSessao from "@/components/TituloSessao";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import BottomUpLetters from "@/components/ui/smoothui/bottom-up-letters";
-import { Award, Users, Dumbbell, Quote, ArrowRight } from "lucide-react";
+import { Award, Users, Dumbbell, Quote } from "lucide-react";
 import Image from "next/image";
 
 const stats = [
