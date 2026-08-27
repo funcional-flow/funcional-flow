@@ -16,7 +16,7 @@ export default function Cta() {
         consulta e dê o primeiro passo na sua evolução.
       </p>
       <a href={link_cta} target="_blank" className="pt-5">
-        <Button className="flex bg-yellow3 w-full mx-auto p-5 text-lg text-shadow-lg xl:text-2xl xl:w-md xl:py-7">
+        <Button className="cursor-pointer active:scale-98 hover:scale-103 hover:shadow-md hover:shadow-yellow-600 transition-transform flex bg-yellow3 w-full mx-auto p-5 text-lg text-shadow-lg xl:text-2xl xl:w-md xl:py-7">
           AGENDAR CONSULTA GRATUITA
         </Button>
       </a>
