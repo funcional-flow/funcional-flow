@@ -47,10 +47,22 @@ export default function MobilePage() {
           id="resultados"
           className="bg-purple4 relative overflow-hidden py-12 text-white lg:z-20 xl:py-20"
         >
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 hidden lg:block">
             <MeshGradient
               width={1920}
               height={1080}
+              colors={["#130821", "#1c0c32", "#180335"]}
+              distortion={0.8}
+              swirl={0.1}
+              grainMixer={0}
+              grainOverlay={0}
+              speed={1}
+            />
+          </div>
+          <div className="absolute inset-0 z-0 lg:hidden">
+            <MeshGradient
+              width={450}
+              height={760}
               colors={["#130821", "#1c0c32", "#180335"]}
               distortion={0.8}
               swirl={0.1}
