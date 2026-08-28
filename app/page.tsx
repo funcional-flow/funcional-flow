@@ -12,10 +12,8 @@ import ImageGradient from "@/components/ImageGradient";
 import Niveis from "@/widgets/Niveis";
 import Footer from "@/widgets/Footer";
 import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
-import FuncionamentoDesk from "@/widgets/desktop/FuncionamentoDesk";
 import PlanosDesk from "@/widgets/desktop/PlanosDesk";
 import PublicoDesk from "@/widgets/desktop/PublicoDesk";
-// import BentoGallery from "@/components/teste/BentoGallery";
 
 export default function MobilePage() {
   return (
@@ -32,6 +30,7 @@ export default function MobilePage() {
             <Hero />
           </ImageGradient>
         </section>
+        <section className="bg-purple4 relative"></section>
         <section
           id="beneficios"
           className="relative overflow-hidden lg:sticky lg:-top-6 lg:z-0"
@@ -49,16 +48,11 @@ export default function MobilePage() {
         >
           <Resultados />
         </section>
-        <section id="diferenciais" className="snap-proximity relative z-20">
+        <section id="diferenciais" className="relative z-20 snap-proximity">
           <Diferenciais />
         </section>
         <section id="funcionamento" className="relative z-20 overflow-hidden">
-          <div className="relative lg:hidden">
-            <Funcionamento />
-          </div>
-          <div className="relative hidden lg:block">
-            <FuncionamentoDesk />
-          </div>
+          <Funcionamento />
         </section>
         <section
           id="sobre"
@@ -66,9 +60,6 @@ export default function MobilePage() {
         >
           <Sobre />
         </section>
-        {/* <section className="bg-purple4 z-20">
-          <BentoGallery />
-        </section> */}
         <section id="publico" className="bg-purple4 relative z-20 text-white">
           <div className="relative lg:hidden">
             <Publico />
@@ -77,7 +68,10 @@ export default function MobilePage() {
             <PublicoDesk />
           </div>
         </section>
-        <section id="niveis" className="bg-background relative z-20 py-12 xl:py-20">
+        <section
+          id="niveis"
+          className="bg-background relative z-20 py-12 xl:py-20"
+        >
           <Niveis />
         </section>
         <section
