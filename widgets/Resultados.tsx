@@ -16,10 +16,7 @@ import { Pagination } from "swiper/modules";
 import DadosResultados from "@/components/DadosResultados";
 import BotaoCta from "@/components/BotaoCta";
 import { useState } from "react";
-import {
-  ArrowLeft,
-  ArrowRight,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Resultados() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
@@ -81,7 +78,7 @@ export default function Resultados() {
         <button
           type="button"
           onClick={() => swiperInstance?.slidePrev()}
-          className="cursor-pointer hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+          className="hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
           aria-label="Resultado anterior"
         >
           <ArrowLeft />
@@ -90,7 +87,7 @@ export default function Resultados() {
         <button
           type="button"
           onClick={() => swiperInstance?.slideNext()}
-          className="cursor-pointer hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+          className="hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
           aria-label="Próximo resultado"
         >
           <ArrowRight />

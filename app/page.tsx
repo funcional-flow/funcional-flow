@@ -14,6 +14,7 @@ import Footer from "@/widgets/Footer";
 import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
 import PlanosDesk from "@/widgets/desktop/PlanosDesk";
 import PublicoDesk from "@/widgets/desktop/PublicoDesk";
+import { MeshGradient } from "@paper-design/shaders-react";
 
 export default function MobilePage() {
   return (
@@ -46,6 +47,18 @@ export default function MobilePage() {
           id="resultados"
           className="bg-purple4 relative overflow-hidden py-12 text-white lg:z-20 xl:py-20"
         >
+          <div className="absolute inset-0 z-0">
+            <MeshGradient
+              width={1920}
+              height={1080}
+              colors={["#130821", "#1c0c32", "#180335"]}
+              distortion={0.8}
+              swirl={0.1}
+              grainMixer={0}
+              grainOverlay={0}
+              speed={1}
+            />
+          </div>
           <Resultados />
         </section>
         <section id="diferenciais" className="relative z-20 snap-proximity">
