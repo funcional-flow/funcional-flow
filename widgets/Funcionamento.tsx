@@ -8,7 +8,7 @@ import BlurOutUp from "@/components/ui/smoothui/blur-out-up";
 export default function FuncionamentoDesk() {
   return (
     <ImageBackground imageUrl="/funcionamento/fundo2.jpeg" svh="100">
-      <div className="relative flex flex-col gap-3 px-6 py-12 text-white md:py-20">
+      <div className="relative flex flex-col gap-3 px-6 py-12 text-white md:py-20 xl:py-40">
         {/* Título principal */}
         <TituloSessao escuro={false} className="md:pb-3">
           <BottomUpLetters triggerOnView={true}>Funcionamento</BottomUpLetters>

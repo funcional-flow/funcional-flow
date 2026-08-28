@@ -114,7 +114,7 @@ export const avancado: Nivel[] = [
     descricao: [
       "Risco de overtraining e lesões",
       "Falta de estímulos novos para evoluir",
-      "?Exige alta precisão técnica nos movimentos?",
+      "Exige alta precisão técnica nos movimentos?",
     ],
     imagem: "/niveis/avan_desafio.jpg",
     numero: "02",

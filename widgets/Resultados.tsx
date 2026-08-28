@@ -18,6 +18,7 @@ import BotaoCta from "@/components/BotaoCta";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { MeshGradient } from "@paper-design/shaders-react";
+import BackgroundMesh from "@/components/BackgroundMesh";
 
 export default function Resultados() {
   const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
@@ -25,18 +26,7 @@ export default function Resultados() {
   );
   return (
     <div className="relative py-12 text-white lg:z-20 xl:py-20">
-      <div className="absolute inset-0 z-0 hidden lg:block">
-        <MeshGradient
-          width={1920}
-          height={1080}
-          colors={["#130821", "#18092a", "#0c0515", "#130821", "#0c0515"]}
-          distortion={0.8}
-          swirl={0.1}
-          grainMixer={0}
-          grainOverlay={0}
-          speed={1}
-        />
-      </div>
+      <BackgroundMesh/>
       <div className="relative">
         {/* Eyebrow + heading */}
         <div className="mx-auto mb-8 flex flex-col gap-1 px-6 md:w-full">
