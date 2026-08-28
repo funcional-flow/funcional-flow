@@ -11,11 +11,20 @@ import CardResultados from "@/components/CardResultados";
 import { results } from "@/data/list_results";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperInstance } from "swiper";
 import { Pagination } from "swiper/modules";
 import DadosResultados from "@/components/DadosResultados";
 import BotaoCta from "@/components/BotaoCta";
+import { useState } from "react";
+import {
+  ArrowLeft,
+  ArrowRight,
+} from "lucide-react";
 
 export default function Resultados() {
+  const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
+    null,
+  );
   return (
     <div className="relative">
       {/* Eyebrow + heading */}
@@ -33,30 +42,27 @@ export default function Resultados() {
             </BlurOutUp>
           </span>
         </h2>
-        <p className="text-center text-base text-white/65 lg:text-lg xl:pt-3 xl:text-2xl">
-          <BlurOutUp delay={500} triggerOnView={true}>
-            Resultados construídos através do Método Funcional Flow, arraste
-            para ver mais.
-          </BlurOutUp>
-        </p>
       </div>
 
       {/* Horizontal swipe feed */}
       <SectionTween upToDown={false} initialNum={60} amountCustom={0.2}>
         <Swiper
+          onSwiper={setSwiperInstance}
           slidesPerView={"auto"}
           spaceBetween={1}
           loop={true}
           pagination={{
             clickable: true,
           }}
+          //   navigation={true}
           modules={[Pagination]}
+          //   modules={[Pagination, Navigation]}
           className="overflow-hidden"
         >
           {results.map((r, index) => (
             <SwiperSlide
               key={index}
-              className="mx-auto px-6 md:max-w-114 lg:max-w-100 xl:max-w-150"
+              className="mx-auto px-6 md:max-w-114 lg:max-w-100 lg:pb-2 xl:max-w-150"
             >
               <CardResultados
                 nome={r.name}
@@ -71,14 +77,34 @@ export default function Resultados() {
       </SectionTween>
 
       {/* Nav arrows */}
-      {/* <div className="mx-auto pt-6 flex max-w-md justify-center gap-3 px-6 text-center">
-        <SpringCustom delayNum={0.5}>
-          <span className="text-sm text-white/40">Arraste para ver mais</span>
-        </SpringCustom>
-      </div> */}
+      <div className="mt-6 flex justify-center gap-4">
+        <button
+          type="button"
+          onClick={() => swiperInstance?.slidePrev()}
+          className="cursor-pointer hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+          aria-label="Resultado anterior"
+        >
+          <ArrowLeft />
+        </button>
+
+        <button
+          type="button"
+          onClick={() => swiperInstance?.slideNext()}
+          className="cursor-pointer hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+          aria-label="Próximo resultado"
+        >
+          <ArrowRight />
+        </button>
+
+        {/* <p className="text-center text-base text-white/65 lg:text-lg xl:pt-3 xl:text-2xl">
+          <BlurOutUp delay={500} triggerOnView={true}>
+            Arraste para ver mais.
+          </BlurOutUp>
+        </p> */}
+      </div>
 
       {/* Stats strip */}
-      <div className="mx-auto pt-12 flex justify-center gap-3 lg:mt-3 xl:mt-6 xl:gap-6">
+      <div className="mx-auto flex justify-center gap-3 pt-6 lg:mt-3 xl:mt-6 xl:gap-6">
         <DadosResultados descricao="Cidades diferentes">
           <NumberTicker
             value={12}
@@ -119,7 +145,7 @@ export default function Resultados() {
       </div>
 
       {/* CTA */}
-      <div className="mt-8 w-sm md:w-86 lg:w-95 mx-auto xl:w-131">
+      <div className="mx-auto mt-8 w-sm md:w-86 lg:w-95 xl:w-131">
         <SpringCustom delayNum={0.5}>
           <BotaoCta sessao="#planos" texto="quero melhorar meu corpo" />
         </SpringCustom>
