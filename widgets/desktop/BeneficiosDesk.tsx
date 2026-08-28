@@ -79,7 +79,7 @@ export default function BeneficiosDesk() {
             >
               Análises individuais da sua prática para corrigir detalhes,
               aperfeiçoar a execução e desenvolver suas capacidades com mais
-              eficiência prevenindo possívels lesões.
+              eficiência prevenindo possíveis lesões.
             </CardFlowDesk>
           </SectionDropIn>
           <SectionDropIn initialNum={180}>
