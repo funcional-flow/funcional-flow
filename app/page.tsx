@@ -51,19 +51,7 @@ export default function MobilePage() {
             <MeshGradient
               width={1920}
               height={1080}
-              colors={["#130821", "#1c0c32", "#180335"]}
-              distortion={0.8}
-              swirl={0.1}
-              grainMixer={0}
-              grainOverlay={0}
-              speed={1}
-            />
-          </div>
-          <div className="absolute inset-0 z-0 lg:hidden">
-            <MeshGradient
-              width={450}
-              height={760}
-              colors={["#130821", "#1c0c32", "#180335"]}
+              colors={["#130821", "#18092a", "#0c0515"]}
               distortion={0.8}
               swirl={0.1}
               grainMixer={0}
