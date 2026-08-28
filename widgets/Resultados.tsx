@@ -17,7 +17,6 @@ import DadosResultados from "@/components/DadosResultados";
 import BotaoCta from "@/components/BotaoCta";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { MeshGradient } from "@paper-design/shaders-react";
 import BackgroundMesh from "@/components/BackgroundMesh";
 
 export default function Resultados() {
@@ -26,7 +25,7 @@ export default function Resultados() {
   );
   return (
     <div className="relative py-12 text-white lg:z-20 xl:py-20">
-      <BackgroundMesh/>
+      {/* <BackgroundMesh/> */}
       <div className="relative">
         {/* Eyebrow + heading */}
         <div className="mx-auto mb-8 flex flex-col gap-1 px-6 md:w-full">
@@ -82,7 +81,7 @@ export default function Resultados() {
           <button
             type="button"
             onClick={() => swiperInstance?.slidePrev()}
-            className="hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+            className="hover:shadow-yellow3 bg-purple4 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
             aria-label="Resultado anterior"
           >
             <ArrowLeft />
@@ -91,7 +90,7 @@ export default function Resultados() {
           <button
             type="button"
             onClick={() => swiperInstance?.slideNext()}
-            className="hover:shadow-yellow3 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+            className="hover:shadow-yellow3 bg-purple4 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
             aria-label="Próximo resultado"
           >
             <ArrowRight />

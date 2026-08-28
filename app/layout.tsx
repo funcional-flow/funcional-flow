@@ -3,6 +3,7 @@ import { Geist, Teko } from "next/font/google";
 import ReactLenis from "lenis/react";
 
 import "./globals.css";
+import { MotionProvider } from "@/contexts/MotionContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,7 @@ export default function RootLayout({
     >
       <ReactLenis root>
         <body className="font-teko flex flex-col text-lg tracking-wide">
-          {children}
+          <MotionProvider>{children}</MotionProvider>
         </body>
       </ReactLenis>
     </html>
