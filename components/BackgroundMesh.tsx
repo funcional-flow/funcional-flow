@@ -15,7 +15,7 @@ export default function BackgroundMesh() {
         colors={["#130821", "#0d001a", "#000000", "#18092a"]}
         distortion={0.8}
         swirl={0.1}
-        speed={1}
+        speed={2}
         minPixelRatio={1}
         maxPixelCount={720 * 480}
         // speed={motionEnabled ? 1 : 0}
