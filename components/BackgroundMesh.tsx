@@ -11,10 +11,14 @@ export default function BackgroundMesh() {
       <MeshGradient
         width={1920}
         height={1080}
-        colors={["#130821", "#18092a"]}
+        // colors={["#130821", "#18092a", "#0c0515"]}
+        colors={["#130821", "#0d001a", "#000000", "#18092a"]}
         distortion={0.8}
         swirl={0.1}
-        speed={motionEnabled ? 1 : 0}
+        speed={1}
+        minPixelRatio={1}
+        maxPixelCount={720 * 480}
+        // speed={motionEnabled ? 1 : 0}
       />
     </div>
   );
