@@ -14,7 +14,7 @@ import Footer from "@/widgets/Footer";
 import BeneficiosDesk from "@/widgets/desktop/BeneficiosDesk";
 import PlanosDesk from "@/widgets/desktop/PlanosDesk";
 import PublicoDesk from "@/widgets/desktop/PublicoDesk";
-import MotionToggle from "@/components/MotionToggle";
+// import MotionToggle from "@/components/MotionToggle";
 
 export default function MobilePage() {
   return (

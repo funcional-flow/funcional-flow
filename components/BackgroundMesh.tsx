@@ -1,10 +1,10 @@
 "use client";
 
 import { MeshGradient } from "@paper-design/shaders-react";
-import { useMotion } from "@/contexts/MotionContext";
+// import { useMotion } from "@/contexts/MotionContext";
 
 export default function BackgroundMesh() {
-  const { motionEnabled } = useMotion();
+//   const { motionEnabled } = useMotion();
 
   return (
     <div className="absolute inset-0 z-0">

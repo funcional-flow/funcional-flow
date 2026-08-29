@@ -8,7 +8,7 @@ interface CardFlowProps {
 
 export default function CardFlow({ icone, titulo, descricao }: CardFlowProps) {
   return (
-    <div className="group shadow-purple3 relative overflow-hidden rounded-2xl p-1 shadow-lg">
+    <div className="active:scale-98 transition-transform group shadow-purple3 relative overflow-hidden rounded-2xl p-1 shadow-lg">
       
       <div className="bg-purple2 absolute inset-0" />
       <div className="shine-light absolute inset-0" />

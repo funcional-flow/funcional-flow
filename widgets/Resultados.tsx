@@ -81,7 +81,7 @@ export default function Resultados() {
           <button
             type="button"
             onClick={() => swiperInstance?.slidePrev()}
-            className="hover:shadow-yellow3 bg-purple4 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+            className="hover:shadow-yellow3 bg-purple4 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-90"
             aria-label="Resultado anterior"
           >
             <ArrowLeft />
@@ -90,7 +90,7 @@ export default function Resultados() {
           <button
             type="button"
             onClick={() => swiperInstance?.slideNext()}
-            className="hover:shadow-yellow3 bg-purple4 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-80"
+            className="hover:shadow-yellow3 bg-purple4 hover:text-yellow3 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white transition hover:shadow-sm active:scale-90"
             aria-label="Próximo resultado"
           >
             <ArrowRight />
