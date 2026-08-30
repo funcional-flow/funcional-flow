@@ -3,7 +3,7 @@ import { DiaTextReveal } from "@/components/ui/dia-text-reveal";
 
 export default function Diferenciais() {
   return (
-    <div className="bg-background relative px-6 pt-6 pb-12 xl:pb-50">
+    <div className="bg-background relative px-6 pt-6 pb-12 xl:pb-20">
       <div className="bg-background sticky top-0 z-30 py-6">
         {/* Fade contínuo */}
         <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-35 bg-linear-to-b from-background via-background/90 to-transparent" />
