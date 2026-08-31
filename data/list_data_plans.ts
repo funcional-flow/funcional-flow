@@ -63,6 +63,7 @@ export const descricaoPlanos: Features = {
     },
     {
       title: "Treinos adaptados à sua rotina e disponibilidade",
+    //   title: "Treinos adaptados à sua rotina",
       description:
         "Treine de forma eficiente sem precisar reorganizar toda sua vida para isso.",
     },
@@ -115,6 +116,7 @@ export const descricaoPlanos: Features = {
     },
     {
       title: "Treinos adaptados à sua rotina e disponibilidade",
+    //   title: "Treinos adaptados à sua rotina",
       description:
         "Treine de forma eficiente sem precisar reorganizar toda sua vida para isso.",
     },
@@ -130,11 +132,6 @@ export const descricaoPlanos: Features = {
     },
   ],
   noFeatures: [
-    {
-      title: "Ajustes frequentes do treino",
-      description:
-        "Acompanhamento contínuo e ajustes frequentes do planejamento.",
-    },
     {
       title: "Análise técnica em vídeo",
       description:
@@ -153,11 +150,16 @@ export const descricaoPlanos: Features = {
       description:
         "Avaliação periódica do progresso e reestruturação do plano quando necessário.",
     },
-    {
-      title: "Suporte diário via WhatsApp",
-      description:
-        "Suporte direto e constante via WhatsApp para ajustes e orientação diária.",
-    },
+    // {
+    //   title: "Ajustes frequentes do treino",
+    //   description:
+    //     "Acompanhamento contínuo e ajustes frequentes do planejamento.",
+    // },
+    // {
+    //   title: "Suporte diário via WhatsApp",
+    //   description:
+    //     "Suporte direto e constante via WhatsApp para ajustes e orientação diária.",
+    // },
   ],
 };
 

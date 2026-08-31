@@ -60,7 +60,7 @@ export default function PlanosDesk() {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="mensal">
-              <div className="mx-auto flex items-center lg:w-3xl lg:gap-10 xl:w-5xl">
+              <div className="largura-planos">
                 {listaPlanosMensal.map((plano) => (
                   <CardPlanoDesk
                     key={plano.id + plano.periodo}
@@ -78,7 +78,7 @@ export default function PlanosDesk() {
               </div>
             </TabsContent>
             <TabsContent value="trimestral">
-              <div className="mx-auto flex items-center lg:w-3xl lg:gap-10 xl:w-5xl">
+              <div className="largura-planos">
                 {listaPlanosTrimestral.map((plano) => (
                   <CardPlanoDesk
                     key={plano.id + plano.periodo}
@@ -96,7 +96,7 @@ export default function PlanosDesk() {
               </div>
             </TabsContent>
             <TabsContent value="semestral">
-              <div className="mx-auto flex items-center lg:w-3xl lg:gap-10 xl:w-5xl">
+              <div className="largura-planos">
                 {listaPlanosSemestral.map((plano) => (
                   <CardPlanoDesk
                     key={plano.id + plano.periodo}

@@ -42,9 +42,14 @@ export default function CardPlanoDesk({
     bordaCard = "outline outline-yellow3";
   }
   return (
-    <div className="relative mx-auto md:w-md xl:w-lg">
+    <div className="group relative md:w-md lg:w-sm xl:w-md">
+      {/* {principal ? (
+        <div className="bg-yellow3 transition-transform hover:-translate-x-1 hover:-translate-y-1 absolute inset-0 z-0 rounded-xl" />
+      ) : (
+        <div className="absolute transition-transform hover:-translate-x-1 hover:-translate-y-1 inset-0 z-0 rounded-xl bg-gray-600" />
+      )} */}
       {principal && (
-        <div className="absolute -top-3 left-1/2 z-100 -translate-x-1/2">
+        <div className="absolute -top-3.5 left-1/2 z-100 -translate-x-1/2 duration-200">
           <div className="bg-yellow3 shadow-yellow3/30 relative flex items-center gap-1 rounded-full px-3 shadow-md">
             <Star className="mb-1 h-3 w-3 fill-black text-black xl:h-4 xl:w-4" />
             <span className="text-base font-bold text-black xl:text-lg">
@@ -54,7 +59,7 @@ export default function CardPlanoDesk({
         </div>
       )}
       <Card
-        className={`text-purple4 relative bg-white/15 px-10 py-6 text-base xl:min-h-200 ${bordaCard}`}
+        className={`text-purple4 from-purple4/95 to-purple4 relative rounded-4xl bg-linear-to-tr px-10 py-6 text-base xl:min-h-180 ${bordaCard}`}
       >
         {/* Header */}
         <h2 className="pt-2 text-2xl font-bold text-white text-shadow-lg xl:pt-5 xl:pb-3 xl:text-4xl xl:tracking-wide">
@@ -81,16 +86,16 @@ export default function CardPlanoDesk({
           </span>
         </div>
 
-        <div className="relative flex flex-col gap-4">
+        <div className="relative flex flex-col gap-2">
           {features.map((feature, index) => (
             <div key={index} className="flex justify-between">
               <div className="flex items-center gap-2">
                 {principal ? (
-                  <Check className="text-yellow3 bg-yellow3/20 mr-1 h-5 w-5 rounded-full stroke-5 p-1" />
+                  <Check className="text-yellow3 bg-yellow3/20 h-5 w-5 rounded-full stroke-5 p-1 xl:h-5 xl:w-5" />
                 ) : (
                   <Check className="h-4 w-4 text-green-600" />
                 )}
-                <p className="text-base text-gray-100 xl:text-xl">
+                <p className="text-base text-gray-100 xl:text-lg">
                   {feature.title}
                 </p>
               </div>
@@ -98,7 +103,9 @@ export default function CardPlanoDesk({
                 <HoverCardTrigger
                   delay={0}
                   closeDelay={10}
-                  render={<Info className="mt-1 ml-2 h-6 w-6 text-gray-300" />}
+                  render={
+                    <Info className="mt-1 ml-2 h-5 w-5 text-gray-300 xl:h-6 xl:w-6" />
+                  }
                 />
                 <HoverCardContent
                   side="right"
@@ -109,16 +116,17 @@ export default function CardPlanoDesk({
               </HoverCard>
             </div>
           ))}
-          <div className="flex-col flex">
             {noFeatures?.map((nofeature, index) => (
-              <div key={index} className="relative flex items-center">
-                <X className="h-3 w-3 text-red-500 xl:h-4 xl:w-4" />
-                <p className="ml-2 tracking-normal text-gray-300 line-through xl:text-xl">
+              <div
+                key={index}
+                className="relative flex items-center gap-2"
+              >
+                <X className="h-4 w-4 text-red-500" />
+                <p className="text-gray-300 line-through xl:text-xl">
                   {nofeature.title}
                 </p>
               </div>
             ))}
-          </div>
         </div>
 
         {/* Features */}
@@ -156,13 +164,9 @@ export default function CardPlanoDesk({
             </div>
           ))}
         </div> */}
-        <a
-          href={link_plano}
-          target="_blank"
-          className="absolute bottom-9 left-0 w-full px-10"
-        >
+        <a href={link_plano} target="_blank" className="w-full pt-8">
           <Button
-            className={`w-full cursor-pointer p-6 hover:scale-105 hover:shadow-xs hover:duration-300 ${principal ? "bg-yellow3" : "bg-purple4"}`}
+            className={`w-full cursor-pointer p-6 hover:scale-105 hover:shadow-xs hover:duration-300 ${principal ? "bg-yellow3" : "bg-yellow3"}`}
           >
             <div className="flex items-center gap-1">
               <span className="mt-1 text-xl text-shadow-lg">
