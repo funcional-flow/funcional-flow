@@ -196,7 +196,7 @@ export const listaPlanosTrimestral: Plano[] = [
     id: "premium",
     tipo_plano: "PLANO PREMIUM",
     preco: "R$ 182,33", // "R$ 547,00",
-    duracao: "/ por 3 meses",
+    duracao: "/ Mês",
     periodo: "trimestral",
     descricao_plano: "*Renovação a cada 3 meses.",
     texto_final:
