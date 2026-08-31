@@ -18,7 +18,8 @@ const teko = Teko({
 
 export const metadata: Metadata = {
   title: "Funcional Flow",
-  description: "Core - À Prova de Balas",
+  description:
+    "Treino de alta performance. Reconstrua seu movimento, Domine sua performance e Transforme sua estética.",
 };
 
 export default function RootLayout({

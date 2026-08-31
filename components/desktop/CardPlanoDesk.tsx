@@ -1,14 +1,19 @@
-import { Check, X, Crown, Rocket, ArrowRight, Star } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Check, X, Crown, Rocket, ArrowRight, Star, Info } from "lucide-react";
+// import {
+//   Accordion,
+//   AccordionContent,
+//   AccordionItem,
+//   AccordionTrigger,
+// } from "@/components/ui/accordion";
 import { Feature } from "@/data/list_data_plans";
 import { Card } from "../ui/card";
 import { Button } from "../ui/button";
 import { BorderBeam } from "../ui/border-beam";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "../ui/hover-card";
 
 interface CardPlanoDeskProps {
   tipo_plano: string;
@@ -49,37 +54,75 @@ export default function CardPlanoDesk({
         </div>
       )}
       <Card
-        className={`text-purple4 relative bg-white/15 p-6 text-base xl:min-h-240 ${bordaCard} ${principal ? "" : ""}`}
+        className={`text-purple4 relative bg-white/15 px-10 py-6 text-base xl:min-h-200 ${bordaCard}`}
       >
         {/* Header */}
-        <div className="relative flex gap-5 xl:pt-5">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-bold text-white text-shadow-lg xl:pb-3 xl:text-4xl xl:tracking-wide">
-              <div className="relative flex items-center justify-between gap-2 xl:min-w-md">
-                <span>{tipo_plano}</span>
-                {principal ? (
-                  <Crown className="text-yellow3 h-7 w-7 xl:h-9 xl:w-9" />
-                ) : (
-                  <Rocket className="h-7 w-7 text-white xl:h-9 xl:w-9" />
-                )}
-              </div>
-            </h2>
-            <p className="text-sm tracking-wider text-gray-300 italic xl:pb-4 xl:text-xl">
-              {descricao_plano}
+        <h2 className="pt-2 text-2xl font-bold text-white text-shadow-lg xl:pt-5 xl:pb-3 xl:text-4xl xl:tracking-wide">
+          <div className="relative flex items-center justify-between gap-2">
+            <span>{tipo_plano}</span>
+            {principal ? (
+              <Crown className="text-yellow3 h-7 w-7 xl:h-9 xl:w-9" />
+            ) : (
+              <Rocket className="h-7 w-7 text-white xl:h-9 xl:w-9" />
+            )}
+          </div>
+        </h2>
+
+        {/* Preço */}
+        <div className="relative flex flex-col gap-2 pb-5">
+          <div className="flex items-end gap-1">
+            <p className="hover:text-shadow-yellow3 text-4xl font-bold text-white transition-colors text-shadow-md text-shadow-yellow-600 xl:text-5xl">
+              {preco}
             </p>
+            <span className="text-lg font-normal text-gray-300">{duracao}</span>
+          </div>
+          <span className="text-base font-normal text-gray-300 xl:text-sm">
+            {descricao_plano}
+          </span>
+        </div>
+
+        <div className="relative flex flex-col gap-4">
+          {features.map((feature, index) => (
+            <div key={index} className="flex justify-between">
+              <div className="flex items-center gap-2">
+                {principal ? (
+                  <Check className="text-yellow3 bg-yellow3/20 mr-1 h-5 w-5 rounded-full stroke-5 p-1" />
+                ) : (
+                  <Check className="h-4 w-4 text-green-600" />
+                )}
+                <p className="text-base text-gray-100 xl:text-xl">
+                  {feature.title}
+                </p>
+              </div>
+              <HoverCard>
+                <HoverCardTrigger
+                  delay={0}
+                  closeDelay={10}
+                  render={<Info className="mt-1 ml-2 h-6 w-6 text-gray-300" />}
+                />
+                <HoverCardContent
+                  side="right"
+                  className="border-yellow3 bg-purple4 border text-gray-300 xl:w-md xl:pl-8 xl:text-xl"
+                >
+                  {feature.description}
+                </HoverCardContent>
+              </HoverCard>
+            </div>
+          ))}
+          <div className="flex-col flex">
+            {noFeatures?.map((nofeature, index) => (
+              <div key={index} className="relative flex items-center">
+                <X className="h-3 w-3 text-red-500 xl:h-4 xl:w-4" />
+                <p className="ml-2 tracking-normal text-gray-300 line-through xl:text-xl">
+                  {nofeature.title}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Preço */}
-        <div className="relative flex flex-col gap-2">
-          <p className="text-4xl font-bold text-white">
-            {preco}{" "}
-            <span className="text-lg font-normal text-gray-300">{duracao}</span>
-          </p>
-        </div>
-
         {/* Features */}
-        <div className="relative flex flex-col gap-2">
+        {/* <div className="relative flex flex-col gap-2">
           <Accordion defaultValue={["0"]} className="">
             {features.map((feature, index) => (
               <AccordionItem key={index} value={index.toString()}>
@@ -112,11 +155,11 @@ export default function CardPlanoDesk({
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
         <a
           href={link_plano}
           target="_blank"
-          className="absolute bottom-5 left-0 w-full px-12"
+          className="absolute bottom-9 left-0 w-full px-10"
         >
           <Button
             className={`w-full cursor-pointer p-6 hover:scale-105 hover:shadow-xs hover:duration-300 ${principal ? "bg-yellow3" : "bg-purple4"}`}

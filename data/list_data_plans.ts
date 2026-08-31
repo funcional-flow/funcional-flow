@@ -47,11 +47,6 @@ export type Plano = {
 export const descricaoPlanos: Features = {
   featuresPremium: [
     {
-      title: "Ajustes frequentes do treino",
-      description:
-        "Acompanhamento contínuo com ajustes frequentes do planejamento.",
-    },
-    {
       title: "Progressão adaptada ao seu nível",
       description:
         "Cada etapa respeita sua capacidade atual para garantir evolução consistente e segura.",
@@ -67,14 +62,19 @@ export const descricaoPlanos: Features = {
         "Seu programa evolui junto com você, respeitando adaptações e novas necessidades.",
     },
     {
-      title: "Suporte diário via WhatsApp",
-      description:
-        "Contato mais próximo para dúvidas, feedbacks e acompanhamento constante.",
-    },
-    {
       title: "Treinos adaptados à sua rotina e disponibilidade",
       description:
         "Treine de forma eficiente sem precisar reorganizar toda sua vida para isso.",
+    },
+    {
+      title: "Ajustes frequentes do treino",
+      description:
+        "Acompanhamento contínuo com ajustes frequentes do planejamento.",
+    },
+    {
+      title: "Suporte diário via WhatsApp",
+      description:
+        "Contato mais próximo para dúvidas, feedbacks e acompanhamento constante.",
     },
     {
       title: "Análise técnica em vídeo",
@@ -99,11 +99,6 @@ export const descricaoPlanos: Features = {
   ],
   featuresStandard: [
     {
-      title: "Treino personalizado mensal",
-      description:
-        "Programa desenvolvido de acordo com seus objetivos, nível atual e rotina.",
-    },
-    {
       title: "Progressão adaptada ao seu nível",
       description:
         "Cada etapa respeita sua capacidade atual para garantir evolução consistente e segura.",
@@ -119,14 +114,19 @@ export const descricaoPlanos: Features = {
         "Seu programa evolui junto com você, respeitando adaptações e novas necessidades.",
     },
     {
-      title: "Suporte via WhatsApp para dúvidas gerais",
-      description:
-        "Canal direto para esclarecer dúvidas e manter o foco durante o processo.",
-    },
-    {
       title: "Treinos adaptados à sua rotina e disponibilidade",
       description:
         "Treine de forma eficiente sem precisar reorganizar toda sua vida para isso.",
+    },
+    {
+      title: "Treino personalizado mensal",
+      description:
+        "Programa desenvolvido de acordo com seus objetivos, nível atual e rotina.",
+    },
+    {
+      title: "Suporte via WhatsApp para dúvidas gerais",
+      description:
+        "Canal direto para esclarecer dúvidas e manter o foco durante o processo.",
     },
   ],
   noFeatures: [
@@ -168,8 +168,7 @@ export const listaPlanosMensal: Plano[] = [
     preco: "R$ 197,00",
     duracao: "/ Mês",
     periodo: "mensal",
-    descricao_plano:
-      "Para quem quer um acompanhamento completo e mais próximo durante toda a evolução.",
+    descricao_plano: "*Renovação mensal.",
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
@@ -182,14 +181,13 @@ export const listaPlanosMensal: Plano[] = [
     preco: "R$ 147,00",
     duracao: "/ Mês",
     periodo: "mensal",
-    descricao_plano:
-      "Para quem quer um acompanhamento estruturado para evoluir de forma consistente.",
+    descricao_plano: "*Renovação mensal.",
     texto_final:
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
     features: descricaoPlanos.featuresStandard!,
     noFeatures: descricaoPlanos.noFeatures,
-    link_plano: link_plano_standard_mensal
+    link_plano: link_plano_standard_mensal,
   },
 ];
 
@@ -200,8 +198,7 @@ export const listaPlanosTrimestral: Plano[] = [
     preco: "R$ 182,33", // "R$ 547,00",
     duracao: "/ por 3 meses",
     periodo: "trimestral",
-    descricao_plano:
-      "Para quem quer um acompanhamento completo e mais próximo durante toda a evolução.",
+    descricao_plano: "*Renovação a cada 3 meses.",
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
@@ -212,10 +209,9 @@ export const listaPlanosTrimestral: Plano[] = [
     id: "standard",
     tipo_plano: "PLANO STANDARD",
     preco: "R$ 132,33", // "R$ 397,00",
-    duracao: "/ por 3 meses",
+    duracao: "/ Mês",
     periodo: "trimestral",
-    descricao_plano:
-      "Para quem quer um acompanhamento estruturado para evoluir de forma consistente.",
+    descricao_plano: "*Renovação a cada 3 meses.",
     texto_final:
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,
@@ -230,11 +226,9 @@ export const listaPlanosSemestral: Plano[] = [
     id: "premium",
     tipo_plano: "PLANO PREMIUM",
     preco: "R$ 149,50", // "R$ 897,00",
-    duracao: "/ por 6 meses",
+    duracao: "/ Mês",
     periodo: "semestral",
-    descricao_plano:
-      "Para quem quer um acompanhamento completo e mais próximo durante toda a evolução.",
-
+    descricao_plano: "*Renovação a cada 6 meses.",
     texto_final:
       "Ideal para quem busca resultados mais rápidos e acompanhamento próximo.",
     principal: true,
@@ -245,10 +239,9 @@ export const listaPlanosSemestral: Plano[] = [
     id: "standard",
     tipo_plano: "PLANO STANDARD",
     preco: "R$ 119,50", // "R$ 717,00",
-    duracao: "/ por 6 meses",
+    duracao: "/ Mês",
     periodo: "semestral",
-    descricao_plano:
-      "Para quem quer um acompanhamento estruturado para evoluir de forma consistente.",
+    descricao_plano: "*Renovação a cada 6 meses.",
     texto_final:
       "Ideal para quem busca evolução com planejamento e consistência.",
     principal: false,

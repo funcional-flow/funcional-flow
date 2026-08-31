@@ -30,14 +30,14 @@ export default function CardPlano({
   features,
   noFeatures,
   principal,
-  link_plano
+  link_plano,
 }: CardPlanoProps) {
   let bordaCard = "outline";
   if (principal === true) {
     bordaCard = "outline outline-yellow3";
   }
   return (
-    <div className="relative mx-auto md:max-w-md">
+    <div className="relative mx-auto md:w-md">
       {principal && (
         <div className="absolute -top-3 left-1/2 z-100 -translate-x-1/2">
           <div className="bg-yellow3 shadow-yellow3/30 relative flex items-center gap-1 rounded-full px-3 shadow-md">
@@ -49,37 +49,36 @@ export default function CardPlano({
         </div>
       )}
       <Card
-        className={`text-purple4 relative bg-white/15 p-6 text-base ${bordaCard} ${principal ? "" : ""}`}
+        className={`text-purple4 relative bg-white/15 p-6 text-base ${bordaCard}`}
       >
         {/* Header */}
-        <div className="relative flex gap-5">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-bold text-white text-shadow-lg">
-              <div className="relative flex items-center justify-between gap-2">
-                <p>{tipo_plano}</p>
-                {principal ? (
-                  <Crown className="text-yellow3 h-7 w-7" />
-                ) : (
-                  <Rocket className="h-7 w-7 text-white" />
-                )}
-              </div>
-            </h2>
-            <p className="text-sm tracking-wider text-gray-300 italic">
-              {descricao_plano}
-            </p>
+        <h2 className="text-2xl font-bold text-white text-shadow-lg">
+          <div className="relative flex items-center justify-between gap-2">
+            <p>{tipo_plano}</p>
+            {principal ? (
+              <Crown className="text-yellow3 h-7 w-7" />
+            ) : (
+              <Rocket className="h-7 w-7 text-white" />
+            )}
           </div>
-        </div>
+        </h2>
 
         {/* Preço */}
+        {/* Preço */}
         <div className="relative flex flex-col gap-2">
-          <p className="text-4xl font-bold text-white">
-            {preco}{" "}
+          <div className="flex items-end gap-1">
+            <p className="hover:text-shadow-yellow3 text-4xl font-bold text-white transition-colors text-shadow-md text-shadow-yellow-600 xl:text-5xl">
+              {preco}
+            </p>
             <span className="text-lg font-normal text-gray-300">{duracao}</span>
-          </p>
+          </div>
+          <span className="text-base font-normal text-gray-300 xl:text-sm">
+            {descricao_plano}
+          </span>
         </div>
 
         {/* Features */}
-        <div className="relative flex flex-col gap-2">
+        <div className="relative flex flex-col pb-5 gap-2">
           <Accordion defaultValue={["0"]} className="">
             {features.map((feature, index) => (
               <AccordionItem key={index} value={index.toString()}>
@@ -94,7 +93,7 @@ export default function CardPlano({
                   </div>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="pl-5 text-gray-300">
+                  <div className="max-w-70 pl-5 text-gray-300">
                     {feature.description}
                   </div>
                 </AccordionContent>
