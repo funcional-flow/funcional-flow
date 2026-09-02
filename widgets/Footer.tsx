@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="my-5 h-px bg-linear-to-r from-transparent via-white/15 to-transparent" />
 
         <div className="relative flex gap-2 md:gap-4">
-          <div className="relative flex-[0.5] md:flex-[0.32] xl:flex-[0.4]">
+          <div className="relative flex-[0.5] md:flex-[0.3]">
             <Image
               src="/footer/perfil2.jpg"
               alt="Perfil"
