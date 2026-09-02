@@ -24,7 +24,7 @@ export default function Resultados() {
     null,
   );
   return (
-    <div className="relative py-12 text-white lg:z-20 xl:py-20">
+    <div className="relative bg-purple4 py-12 text-white lg:z-20 xl:py-20">
       <BackgroundMesh/>
       <div className="relative">
         {/* Eyebrow + heading */}
