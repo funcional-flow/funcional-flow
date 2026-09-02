@@ -1,10 +1,10 @@
 function converterParaPadraoLink(texto: string): string {
-  const link_wpp = "https://wa.me/send?phone=";
+  const link_wpp = "https://wa.me/";
   const numero_wpp = "5553991560855";
   // 1. Codifica o texto para o padrão de URL (transforma "!" em "%21" e espaço em "%20")
   const textoCodificado = encodeURIComponent(texto);
   const textoCodificadoFinal = textoCodificado.replace(/%20/g, "+");
-  const link_final = link_wpp + numero_wpp + "&text=" + textoCodificadoFinal;
+  const link_final = link_wpp + numero_wpp + "?text=" + textoCodificadoFinal;
   return link_final;
 }
 
