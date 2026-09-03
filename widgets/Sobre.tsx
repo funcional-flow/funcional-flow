@@ -28,7 +28,7 @@ export default function Sobre() {
             <div className="from-yellow3 absolute -inset-1 rounded-3xl bg-linear-to-tr to-[#2e0a4d] opacity-60 blur-sm" />
             <div className="relative h-44 w-44 xl:h-80 xl:w-80">
               <Image
-                src="/sobre/bruno1.png"
+                src="/sobre/bruno.png"
                 alt="Bruno Levien"
                 className="absolute inset-0 rounded-3xl border border-white/10 object-cover xl:h-60 xl:w-60"
                 fill
