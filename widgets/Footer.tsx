@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="mx-auto px-6 md:w-3xl xl:w-5xl">
+    <div className="select-none mx-auto px-6 md:w-3xl xl:w-5xl">
       {/* Glow decorativo */}
       {/* <div className="bg-yellow3/10 pointer-events-none absolute -top-32 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full blur-3xl" /> */}
 
@@ -20,8 +20,9 @@ export default function Footer() {
 
         <div className="my-5 h-px bg-linear-to-r from-transparent via-white/15 to-transparent" />
 
-        <div className="relative flex gap-2 md:gap-4">
-          <div className="relative flex-[0.5] md:flex-[0.3]">
+        {/* Textos */}
+        <div className="relative flex gap-2 pb-5 md:mx-auto md:w-lg md:items-center md:gap-4 md:pb-3 xl:w-full">
+          <div className="relative flex-[0.5] md:flex-[0.25] lg:flex-[0.4] xl:flex-[0.35]">
             <Image
               src="/footer/perfil2.jpg"
               alt="Perfil"
@@ -30,7 +31,7 @@ export default function Footer() {
               className="rounded-full object-cover"
             />
           </div>
-          <div className="flex flex-1 flex-col">
+          <div className="relative flex flex-1 flex-col">
             <p className="pb-3 text-sm text-white/90 italic xl:text-2xl">
               “À medida que você evolui e supera desafios, a confiança deixa de
               depender apenas da aparência e passa a vir do que seu corpo é
@@ -43,33 +44,33 @@ export default function Footer() {
             <span className="text-xs text-white/50 xl:text-lg">
               Personal Trainer
             </span>
-
-            {/* Redes Sociais */}
-            <div className="flex gap-5 pt-5 xl:pt-11">
-              <a
-                href="https://www.instagram.com/brunobad_"
-                target="_blank"
-                aria-label="Instagram"
-                className="group flex items-center justify-center gap-1 rounded-xl transition-all hover:scale-105 hover:duration-250 xl:gap-2"
-              >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition-colors group-hover:border-none group-hover:bg-linear-to-bl group-hover:from-pink-500 group-hover:via-yellow-600 group-hover:to-yellow-300 xl:h-12 xl:w-12">
-                  <IconBrandInstagram className="h-6 w-6 xl:h-10 xl:w-10" />
-                </div>
-                <span className="xl:text-2xl">Instagram</span>
-              </a>
-              <a
-                href="https://wa.me/5553991560855"
-                target="_blank"
-                aria-label="Whatsapp"
-                className="group flex items-center justify-center gap-1 rounded-xl transition-all hover:scale-105 hover:duration-250 lg:px-2 xl:gap-2"
-              >
-                <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition-colors group-hover:border-none group-hover:bg-green-500 xl:h-12 xl:w-12">
-                  <IconBrandWhatsapp className="h-6 w-6 xl:h-10 xl:w-10" />
-                </div>
-                <span className="xl:text-2xl">Whatsapp</span>
-              </a>
-            </div>
           </div>
+        </div>
+
+        {/* Redes Sociais */}
+        <div className="absolute top-[50%] left-[26%] flex gap-5 md:top-[46.5%] md:left-[50%] md:-translate-x-1/2 md:gap-10 lg:top-[49%] xl:top-[51%]">
+          <a
+            href="https://www.instagram.com/brunobad_"
+            target="_blank"
+            aria-label="Instagram"
+            className="group flex items-center justify-center gap-1 rounded-xl transition-all hover:scale-105 hover:duration-250 xl:gap-2"
+          >
+            <div className="flex h-6.5 w-6.5 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition-colors group-hover:border-none group-hover:bg-linear-to-bl group-hover:from-pink-500 group-hover:via-yellow-600 group-hover:to-yellow-300 lg:h-8 lg:w-8 xl:h-12 xl:w-12">
+              <IconBrandInstagram className="h-4.5 w-4.5 lg:h-6 lg:w-6 xl:h-10 xl:w-10" />
+            </div>
+            <span className="text-base lg:text-lg xl:text-2xl">Instagram</span>
+          </a>
+          <a
+            href="https://wa.me/5553991560855"
+            target="_blank"
+            aria-label="Whatsapp"
+            className="group flex items-center justify-center gap-1 rounded-xl transition-all hover:scale-105 hover:duration-250 lg:px-2 xl:gap-2"
+          >
+            <div className="flex h-6.5 w-6.5 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition-colors group-hover:border-none group-hover:bg-green-500 lg:h-8 lg:w-8 xl:h-12 xl:w-12">
+              <IconBrandWhatsapp className="h-4.5 w-4.5 lg:h-6 lg:w-6 xl:h-10 xl:w-10" />
+            </div>
+            <span className="text-base lg:text-lg xl:text-2xl">Whatsapp</span>
+          </a>
         </div>
 
         {/* Divisor */}

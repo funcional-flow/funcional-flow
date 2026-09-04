@@ -44,12 +44,12 @@ export default function CardPlanoDesk({
   return (
     <div className="group relative md:w-md lg:w-xs xl:w-md">
       {principal ? (
-        <div className="bg-yellow3 transition-transform hover:-translate-x-1 hover:-translate-y-1 absolute inset-0 z-0 rounded-4xl" />
+        <div className="bg-yellow3 absolute inset-0 z-0 rounded-4xl transition-transform hover:-translate-x-1 hover:-translate-y-1" />
       ) : (
-        <div className="absolute transition-transform hover:-translate-x-1 hover:-translate-y-1 inset-0 z-0 rounded-4xl bg-gray-600" />
+        <div className="absolute inset-0 z-0 rounded-4xl bg-gray-600 transition-transform hover:-translate-x-1 hover:-translate-y-1" />
       )}
       {principal && (
-        <div className="group-hover:left-[49%] group-hover:-top-4.5 absolute -top-3.5 left-[50%] z-100 translate-x-[-50%] duration-200">
+        <div className="absolute -top-3.5 left-[50%] z-100 translate-x-[-50%] duration-200 group-hover:-top-4.5 group-hover:left-[49%]">
           <div className="bg-yellow3 shadow-yellow3/30 relative flex items-center gap-1 rounded-full px-3 shadow-md">
             <Star className="mb-1 h-3 w-3 fill-black text-black xl:h-4 xl:w-4" />
             <span className="text-base font-bold text-black xl:text-lg">
@@ -59,7 +59,7 @@ export default function CardPlanoDesk({
         </div>
       )}
       <Card
-        className={`${principal ? "group-hover:-translate-x-1 group-hover:-translate-y-1" : "group-hover:translate-x-1 group-hover:-translate-y-1"} transition-transform text-purple4 from-purple4 to-purple4/90 relative rounded-4xl bg-linear-to-bl px-5 py-3 xl:px-10 xl:py-6 ${bordaCard}`}
+        className={`${principal ? "group-hover:-translate-x-1 group-hover:-translate-y-1" : "group-hover:translate-x-1 group-hover:-translate-y-1"} text-purple4 from-purple4 to-purple4/90 relative rounded-4xl bg-linear-to-bl px-5 py-3 transition-transform xl:px-10 xl:py-6 ${bordaCard}`}
       >
         {/* Header */}
         <h2 className="pt-2 text-2xl font-bold text-white text-shadow-lg xl:pt-5 xl:pb-3 xl:text-4xl xl:tracking-wide">
@@ -117,7 +117,7 @@ export default function CardPlanoDesk({
             </div>
           ))}
           {noFeatures.length > 0 && (
-            <div className="flex flex-col gap-3 xl:gap-2 pt-1 xl:pt-0">
+            <div className="flex flex-col gap-2 pt-0 xl:pt-0">
               {noFeatures?.map((nofeature, index) => (
                 <div key={index} className="relative flex items-center gap-2">
                   <X className="h-4 w-4 text-red-500" />
