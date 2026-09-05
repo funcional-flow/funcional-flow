@@ -34,7 +34,7 @@ export default function MobilePage() {
         <section className="bg-purple4 relative"></section>
         <section
           id="beneficios"
-          className="relative overflow-hidden lg:sticky lg:-top-6 lg:z-0 select-none"
+          className="relative overflow-hidden lg:sticky lg:-top-6 lg:z-10 select-none"
         >
           <div className="relative lg:hidden">
             <Beneficios />
@@ -45,7 +45,7 @@ export default function MobilePage() {
         </section>
         <section
           id="resultados"
-          className="bg-purple4 relative overflow-hidden"
+          className="bg-purple4 relative overflow-hidden z-20"
         >
           <Resultados />
         </section>

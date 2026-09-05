@@ -20,6 +20,7 @@ export default function TituloFixo({
         <DiaTextReveal
           repeat
           repeatDelay={1.2}
+          className="lg:mb-0.5 xl:mb-0"
           colors={[
             "oklch(0.8301 0.0904 79.25)",
             "oklch(0.7659 0.1132 80.72)",

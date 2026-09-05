@@ -62,7 +62,7 @@ export default function Resultados() {
             {results.map((r, index) => (
               <SwiperSlide
                 key={index}
-                className="mx-auto px-6 md:max-w-114 lg:max-w-100 lg:pb-2 xl:max-w-150"
+                className="mx-auto px-6 md:max-w-114 lg:max-w-lg lg:pb-2 xl:max-w-150"
               >
                 <CardResultados
                   nome={r.name}
